@@ -1,0 +1,18 @@
+﻿processo;passos;entrada_ultimo_passo;entrada_acumulada;saida_acumulada;moeda;custo_execucao;fator_n_1
+Triagem e encaminhamento de solicitações internas;1;2250;2250;200;USD;0.00069;1.0
+Triagem e encaminhamento de solicitações internas;4;3750;12000;800;USD;0.00336;4.869565217391305
+Triagem e encaminhamento de solicitações internas;5;4250;16250;1000;USD;0.00445;6.449275362318841
+Triagem e encaminhamento de solicitações internas;10;6750;45000;2000;USD;0.0114;16.521739130434785
+Triagem e encaminhamento de solicitações internas;20;11750;140000;4000;USD;0.0328;47.536231884057976
+Triagem e encaminhamento de solicitações internas;40;21750;480000;8000;USD;0.1056;153.04347826086956
+Preparação de minutas de ofícios padronizados;1;3200;3200;400;USD;0.00112;1.0
+Preparação de minutas de ofícios padronizados;5;8000;28000;2000;USD;0.008;7.142857142857143
+Preparação de minutas de ofícios padronizados;6;9200;37200;2400;USD;0.01032;9.214285714285715
+Preparação de minutas de ofícios padronizados;10;14000;86000;4000;USD;0.022;19.642857142857142
+Preparação de minutas de ofícios padronizados;20;26000;292000;8000;USD;0.068;60.71428571428572
+Preparação de minutas de ofícios padronizados;40;50000;1064000;16000;USD;0.232;207.14285714285717
+Conferência documental de pedidos de pagamento;1;4500;4500;500;USD;0.0015;1.0
+Conferência documental de pedidos de pagamento;5;12500;42500;2500;USD;0.0115;7.666666666666666
+Conferência documental de pedidos de pagamento;10;22500;135000;5000;USD;0.033;22.0
+Conferência documental de pedidos de pagamento;20;42500;470000;10000;USD;0.106;70.66666666666666
+Conferência documental de pedidos de pagamento;40;82500;1740000;20000;USD;0.372;248.0

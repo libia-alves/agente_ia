@@ -1,0 +1,13 @@
+PARECER TÉCNICO — PILOTO DE AUTOMAÇÃO POR AGENTES
+
+Estudo didático com dados hipotéticos. Autores da dupla: __________________ e __________________. Órgão/setor: __________________.
+
+Recomenda-se um piloto de Triagem e encaminhamento de solicitações internas, com 200 execuções mensais e 4 etapas. Adotando 95,00% de sucesso por etapa independente, a confiabilidade composta é 81,45%; a probabilidade de pelo menos uma falha é 18,55%. O custo mensal estimado de tokens é USD 0,335200, aplicando a Tabela 2 original ao modelo gpt-5.6-luna. A triagem tem o menor número de etapas e permite corrigir encaminhamentos. A taxa composta ainda exige supervisão no piloto.
+
+O processo está no quadrante Reversível / detecção rápida. Prazo de detecção assumido: Até um dia útil, assumindo revisão diária de todos os encaminhamentos durante o piloto. Autonomia: Durante o piloto, encaminhar automaticamente apenas assuntos cobertos pela matriz vigente, com revisão diária integral. Conferência humana obrigatória: Antes do encaminhamento de casos ambíguos, sensíveis ou sem competência definida; revisar diariamente todos os encaminhamentos do piloto.
+
+Para funcionar, o agente precisa receber: Matriz vigente de responsabilidades, incluindo exceções e substituições temporárias. Hoje essa informação está em: Conhecimento da equipe, comunicados internos e planilhas mantidas pelas chefias. O piloto deve registrar decisões e correções e medir a taxa de acerto e o tempo de atendimento antes de ampliar sua autonomia.
+
+Não se recomenda automatizar integralmente Conferência documental de pedidos de pagamento: suas 10 etapas resultam em 59,87% de confiabilidade composta, com 40,13% de chance de ao menos uma falha. Uma autorização indevida pode causar perda financeira e ser percebida apenas na conciliação. Restringir eventual uso do agente à preparação de relatório, mantendo a decisão e a liberação com pessoas autorizadas.
+
+Limites: estimativas sob independência das etapas e uma chamada por etapa; preços reproduzidos do script didático fornecido, sem validação como preços comerciais atuais. Não incluem trabalho humano, infraestrutura, tarifas de ferramentas, impostos ou retrabalho. Conferir quadrantes e falhas com as seções 5 e 8, ainda não fornecidas. O cabeçalho do script chama a aritmética de Seção 5; o enunciado, de Seção 6.

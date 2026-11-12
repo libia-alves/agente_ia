@@ -1,0 +1,219 @@
+MINI LAB — AVALIAÇÃO DE PROCESSOS
+DADOS HIPOTÉTICOS — substituir pelos dados do órgão.
+Tabelas originais reproduzidas de calcular_tabelas_original.py, na pasta aula01.
+Valores e nomes de modelos são os do material didático fornecido; não são cotações atuais verificadas.
+Nota: o script original menciona Seção 5, enquanto o enunciado menciona Seção 6.
+====================================================================
+Tabela 1 — Confiabilidade composta: a chance de tudo dar certo
+====================================================================
+
+  passos         99%        95%        90%        80%
+--------------------------------------------------------
+       1       99.0%      95.0%      90.0%      80.0%
+       3       97.0%      85.7%      72.9%      51.2%
+       5       95.1%      77.4%      59.0%      32.8%
+      10       90.4%      59.9%      34.9%      10.7%
+      20       81.8%      35.8%      12.2%       1.2%
+
+A célula que ancora a discussão: dez passos a 95% por passo
+resultam em 60% de acerto no processo inteiro.
+
+====================================================================
+Tabela 2 — O custo do laço, que cresce com o quadrado dos passos
+====================================================================
+
+prompt de sistema 600 + esquemas 400 = 1000 tokens fixos
+cada passo acrescenta 250 tokens de observação
+
+ passos   entrada do      entrada          US$          US$
+        último passo    acumulada         luna        terra
+------------------------------------------------------------
+      1         1000         1000      0.00034      0.00344
+      5         2000         7500      0.00222      0.02220
+     10         3250        21250      0.00569      0.05690
+     20         5750        67500      0.01638      0.16380
+     40        10750       235000      0.05276      0.52760
+
+Quarenta passos custam 153 vezes um passo, e não quarenta.
+Dobrar o número de passos aproximadamente quadruplica a conta, porque
+cada passo novo paga também tudo o que veio antes dele.
+
+APLICAÇÃO DA TABELA 1 AOS PROCESSOS
+Hipótese: P(sucesso completo) = p ** n, com etapas independentes.
+p = 95,00%
+Etapas | Sucesso completo | Ao menos uma falha
+     1 |           95,00% | 5,00%
+     2 |           90,25% | 9,75%
+     3 |           85,74% | 14,26%
+     4 |           81,45% | 18,55%
+     5 |           77,38% | 22,62%
+     6 |           73,51% | 26,49%
+     7 |           69,83% | 30,17%
+     8 |           66,34% | 33,66%
+     9 |           63,02% | 36,98%
+    10 |           59,87% | 40,13%
+
+APLICAÇÃO DA TABELA 2 AOS PROCESSOS
+Modelo selecionado: gpt-5.6-luna. Moeda: USD. Parâmetros originais da aula.
+A fórmula original é aplicada ao número exato de etapas, inclusive quando não há essa linha na tabela.
+Processo | Chamadas | Entrada total | Saída total | Custo/execução | Volume/mês | Custo/mês | Fator n/1
+Triagem e encaminhamento de solicitações internas | 4 | 5500 | 480 | USD 0,001676 | 200 | USD 0,335200 | 4,87x
+Preparação de minutas de ofícios padronizados | 6 | 9750 | 720 | USD 0,002814 | 80 | USD 0,225120 | 8,18x
+Conferência documental de pedidos de pagamento | 10 | 21250 | 1200 | USD 0,005690 | 40 | USD 0,227600 | 16,54x
+
+DESAFIO OPCIONAL — PARÂMETROS PERSONALIZADOS
+Preços personalizados: Valores do modelo gpt-5.6-luna transcritos do script didático fornecido (USD por milhão de tokens); sem validação comercial atual.
+Processo | Custo/execução | Custo/mês | Fator n/1 | Fator 40/1
+Triagem e encaminhamento de solicitações internas | USD 0,003360 | USD 0,672000 | 4,87x | 153,04x
+Preparação de minutas de ofícios padronizados | USD 0,010320 | USD 0,825600 | 9,21x | 207,14x
+Conferência documental de pedidos de pagamento | USD 0,033000 | USD 1,320000 | 22,00x | 248,00x
+
+Tabela 2 personalizada — Triagem e encaminhamento de solicitações internas
+Passos | Entrada último passo | Entrada acumulada | Saída acumulada | Custo/execução | Fator n/1
+1 | 2250 | 2250 | 200 | USD 0,000690 | 1,00x
+4 | 3750 | 12000 | 800 | USD 0,003360 | 4,87x
+5 | 4250 | 16250 | 1000 | USD 0,004450 | 6,45x
+10 | 6750 | 45000 | 2000 | USD 0,011400 | 16,52x
+20 | 11750 | 140000 | 4000 | USD 0,032800 | 47,54x
+40 | 21750 | 480000 | 8000 | USD 0,105600 | 153,04x
+
+Tabela 2 personalizada — Preparação de minutas de ofícios padronizados
+Passos | Entrada último passo | Entrada acumulada | Saída acumulada | Custo/execução | Fator n/1
+1 | 3200 | 3200 | 400 | USD 0,001120 | 1,00x
+5 | 8000 | 28000 | 2000 | USD 0,008000 | 7,14x
+6 | 9200 | 37200 | 2400 | USD 0,010320 | 9,21x
+10 | 14000 | 86000 | 4000 | USD 0,022000 | 19,64x
+20 | 26000 | 292000 | 8000 | USD 0,068000 | 60,71x
+40 | 50000 | 1064000 | 16000 | USD 0,232000 | 207,14x
+
+Tabela 2 personalizada — Conferência documental de pedidos de pagamento
+Passos | Entrada último passo | Entrada acumulada | Saída acumulada | Custo/execução | Fator n/1
+1 | 4500 | 4500 | 500 | USD 0,001500 | 1,00x
+5 | 12500 | 42500 | 2500 | USD 0,011500 | 7,67x
+10 | 22500 | 135000 | 5000 | USD 0,033000 | 22,00x
+20 | 42500 | 470000 | 10000 | USD 0,106000 | 70,67x
+40 | 82500 | 1740000 | 20000 | USD 0,372000 | 248,00x
+Fator original de 40 passos / 1 passo: 153,37x (153x após arredondamento).
+Compare a coluna 40/1 personalizada com essa referência; n/1 usa as etapas reais do processo.
+Os parâmetros personalizados ainda são exemplos hipotéticos, não medições do órgão.
+
+Modelo de custo: uma chamada por etapa; mesma simplificação de histórico do script original.
+S=sistema; F=número de ferramentas × tokens por definição; Q=consulta; R=retorno; O=saída por etapa.
+Entrada do agente = n×(S+F+Q) + n×(n−1)/2×R. Saída do agente = n×O.
+A saída é cobrada, mas não é adicionada ao histórico de entrada no modelo didático original.
+No cenário original: S=600, F=400, Q=0, R=250, O=120.
+Um passo de referência inclui sistema, esquemas de ferramentas e uma saída.
+Custo = (entrada×preço_entrada + saída×preço_saída)/1.000.000.
+O fator compara n passos com 1 passo do mesmo agente, usando os mesmos parâmetros e preços.
+O fator de 153x não é universal e depende dos tamanhos de contexto e da relação entre os preços.
+Custos excluem tarifas externas, infraestrutura, revisão humana, impostos e retrabalho.
+
+GRADE DE AUTONOMIA (CLASSIFICAÇÃO PROVISÓRIA)
+Reversível / detecção rápida: Triagem e encaminhamento de solicitações internas
+Reversível / detecção tardia: Preparação de minutas de ofícios padronizados
+Difícil de reverter / detecção rápida: Nenhum
+Difícil de reverter / detecção tardia: Conferência documental de pedidos de pagamento
+
+TRIAGEM E ENCAMINHAMENTO DE SOLICITAÇÕES INTERNAS
+Natureza: Atendimento
+Volume mensal: 200
+PEAS:
+  Medida de desempenho: Percentual de encaminhamentos corretos, tempo de atendimento e quantidade de devoluções.
+  Ambiente: Sistema de chamados e setores internos do órgão.
+  Atuadores: Classificar assunto, encaminhar chamado e registrar movimentação.
+  Sensores: Texto da solicitação, anexos e matriz de competências.
+Etapas:
+1. Ler a solicitação e seus anexos.
+2. Identificar o assunto e os dados necessários ao atendimento.
+3. Consultar a matriz de competências dos setores.
+4. Encaminhar a solicitação ao setor identificado e registrar a movimentação.
+Ferramentas: Consulta ao sistema de chamados; Consulta à matriz de competências; Encaminhamento e registro no sistema
+Parâmetros de tokens: {"sistema_tokens": 1200, "numero_ferramentas": 3, "tokens_por_ferramenta": 250, "consulta_tokens": 300, "retorno_ferramenta_tokens": 500, "saida_por_etapa_tokens": 200}
+Confiabilidade: 81,45%
+Quadrante: Reversível / detecção rápida. Detecção: Até um dia útil, assumindo revisão diária de todos os encaminhamentos durante o piloto.
+Escopo da classificação: Processo descrito nas etapas.
+Autonomia: Durante o piloto, encaminhar automaticamente apenas assuntos cobertos pela matriz vigente, com revisão diária integral.
+Conferência humana: Antes do encaminhamento de casos ambíguos, sensíveis ou sem competência definida; revisar diariamente todos os encaminhamentos do piloto.
+Falhas prováveis (confirmar nomes na Seção 8):
+- Classificação incorreta: Solicitações podem usar descrições vagas ou conter mais de um assunto.
+- Uso de informação desatualizada: Mudanças de competência podem não ter sido incorporadas à matriz consultada.
+Informação ausente: Matriz vigente de responsabilidades, incluindo exceções e substituições temporárias.
+Onde está hoje: Conhecimento da equipe, comunicados internos e planilhas mantidas pelas chefias.
+
+PREPARAÇÃO DE MINUTAS DE OFÍCIOS PADRONIZADOS
+Natureza: Produção documental
+Volume mensal: 80
+PEAS:
+  Medida de desempenho: Percentual de minutas aprovadas sem correção e tempo de elaboração.
+  Ambiente: Sistema de processos administrativos, editor e repositório de modelos oficiais.
+  Atuadores: Preencher modelo, gerar documento e salvar rascunho para revisão.
+  Sensores: Solicitação, documentos do processo, dados do destinatário e modelo vigente.
+Etapas:
+1. Ler a demanda de elaboração do ofício.
+2. Consultar os documentos do processo administrativo.
+3. Selecionar o modelo oficial vigente.
+4. Extrair os dados necessários e identificar campos sem informação.
+5. Gerar a minuta com referência às fontes utilizadas.
+6. Salvar a minuta e encaminhá-la para revisão humana.
+Ferramentas: Consulta ao sistema processual; Consulta ao repositório de modelos; Editor de documentos; Fila de revisão humana
+Parâmetros de tokens: {"sistema_tokens": 1500, "numero_ferramentas": 4, "tokens_por_ferramenta": 250, "consulta_tokens": 700, "retorno_ferramenta_tokens": 1200, "saida_por_etapa_tokens": 400}
+Confiabilidade: 73,51%
+Quadrante: Reversível / detecção tardia. Detecção: Até cinco dias úteis na fila de revisão, sempre antes da assinatura e do envio; prazo hipotético.
+Escopo da classificação: Processo descrito nas etapas.
+Autonomia: Gerar e salvar rascunhos, com identificação de pendências e fontes; sem assinatura ou envio automático.
+Conferência humana: Na revisão do conteúdo, dos dados, do destinatário e do modelo antes de assinar ou enviar.
+Falhas prováveis (confirmar nomes na Seção 8):
+- Geração de informação sem respaldo: Campos ausentes podem induzir o agente a completar nomes, datas ou justificativas sem fonte.
+- Uso de modelo desatualizado: Cópias antigas podem permanecer disponíveis ao lado da versão aprovada.
+Informação ausente: Versão aprovada dos modelos e orientações atuais para situações excepcionais.
+Onde está hoje: Pastas internas, mensagens das chefias e conhecimento dos responsáveis pela revisão.
+
+CONFERÊNCIA DOCUMENTAL DE PEDIDOS DE PAGAMENTO
+Natureza: Financeira
+Volume mensal: 40
+PEAS:
+  Medida de desempenho: Pendências identificadas, tempo de conferência e ausência de liberações indevidas.
+  Ambiente: Sistema administrativo, contratos, documentos fiscais e histórico financeiro.
+  Atuadores: Registrar inconsistências e gerar relatório de apoio à análise humana.
+  Sensores: Pedido, nota fiscal, contrato, atesto e registros de pagamentos anteriores.
+Etapas:
+1. Abrir o pedido de pagamento.
+2. Identificar o fornecedor e os documentos apresentados.
+3. Consultar o contrato e as condições aplicáveis.
+4. Ler os dados da nota fiscal.
+5. Comparar os valores com as condições contratuais.
+6. Conferir datas, competência e vencimento.
+7. Verificar a presença e a autoria do atesto.
+8. Consultar registros anteriores em busca de duplicidade.
+9. Consolidar pendências e inconsistências encontradas.
+10. Gerar relatório para decisão humana, sem autorizar pagamento.
+Ferramentas: Consulta ao sistema administrativo; Leitor de documentos; Consulta contratual; Consulta ao histórico financeiro; Gerador de relatório
+Parâmetros de tokens: {"sistema_tokens": 2000, "numero_ferramentas": 5, "tokens_por_ferramenta": 300, "consulta_tokens": 1000, "retorno_ferramenta_tokens": 2000, "saida_por_etapa_tokens": 500}
+Confiabilidade: 59,87%
+Quadrante: Difícil de reverter / detecção tardia. Detecção: Até trinta dias na conciliação mensal ou mais em auditoria, caso a automação alcance a liberação financeira.
+Escopo da classificação: O quadrante avalia o risco de ampliar a automação até a liberação financeira. O relatório de conferência isolado é reversível; sua revisão humana pode detectar o erro antes do pagamento.
+Autonomia: Somente apoiar a conferência documental e preparar relatório; recusar automação integral com autorização e execução financeira.
+Conferência humana: Na validação de todas as conclusões relevantes, na confirmação da entrega e antes de qualquer autorização ou liberação financeira.
+Falhas prováveis (confirmar nomes na Seção 8):
+- Conclusão com contexto incompleto: Um histórico financeiro parcial pode ocultar pagamentos anteriores e cobranças duplicadas.
+- Confusão entre registro e fato verificado: A existência de um atesto não permite ao agente confirmar que o serviço foi efetivamente entregue.
+Informação ausente: Confirmação efetiva da entrega e histórico financeiro completo e conciliado.
+Onde está hoje: Registros e conhecimento do fiscal do contrato, comprovantes de recebimento e bases financeiras segregadas.
+
+Pior confiabilidade: Conferência documental de pedidos de pagamento (59,87%), pois exige o maior número de etapas bem-sucedidas em sequência sob a mesma probabilidade por etapa.
+Barreira exigida para Conferência documental de pedidos de pagamento: O agente deve possuir credenciais somente de leitura no sistema financeiro, sem permissão para autorizar ou executar pagamentos.
+A barreira acima é um requisito proposto: este programa somente calcula e gera relatórios.
+
+PARECER TÉCNICO — PILOTO DE AUTOMAÇÃO POR AGENTES
+
+Estudo didático com dados hipotéticos. Autores da dupla: __________________ e __________________. Órgão/setor: __________________.
+
+Recomenda-se um piloto de Triagem e encaminhamento de solicitações internas, com 200 execuções mensais e 4 etapas. Adotando 95,00% de sucesso por etapa independente, a confiabilidade composta é 81,45%; a probabilidade de pelo menos uma falha é 18,55%. O custo mensal estimado de tokens é USD 0,335200, aplicando a Tabela 2 original ao modelo gpt-5.6-luna. A triagem tem o menor número de etapas e permite corrigir encaminhamentos. A taxa composta ainda exige supervisão no piloto.
+
+O processo está no quadrante Reversível / detecção rápida. Prazo de detecção assumido: Até um dia útil, assumindo revisão diária de todos os encaminhamentos durante o piloto. Autonomia: Durante o piloto, encaminhar automaticamente apenas assuntos cobertos pela matriz vigente, com revisão diária integral. Conferência humana obrigatória: Antes do encaminhamento de casos ambíguos, sensíveis ou sem competência definida; revisar diariamente todos os encaminhamentos do piloto.
+
+Para funcionar, o agente precisa receber: Matriz vigente de responsabilidades, incluindo exceções e substituições temporárias. Hoje essa informação está em: Conhecimento da equipe, comunicados internos e planilhas mantidas pelas chefias. O piloto deve registrar decisões e correções e medir a taxa de acerto e o tempo de atendimento antes de ampliar sua autonomia.
+
+Não se recomenda automatizar integralmente Conferência documental de pedidos de pagamento: suas 10 etapas resultam em 59,87% de confiabilidade composta, com 40,13% de chance de ao menos uma falha. Uma autorização indevida pode causar perda financeira e ser percebida apenas na conciliação. Restringir eventual uso do agente à preparação de relatório, mantendo a decisão e a liberação com pessoas autorizadas.
+
+Limites: estimativas sob independência das etapas e uma chamada por etapa; preços reproduzidos do script didático fornecido, sem validação como preços comerciais atuais. Não incluem trabalho humano, infraestrutura, tarifas de ferramentas, impostos ou retrabalho. Conferir quadrantes e falhas com as seções 5 e 8, ainda não fornecidas. O cabeçalho do script chama a aritmética de Seção 5; o enunciado, de Seção 6.

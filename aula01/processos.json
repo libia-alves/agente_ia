@@ -1,0 +1,177 @@
+{
+  "dados_hipoteticos": true,
+  "probabilidade_por_etapa": 0.95,
+  "precos": {
+    "moeda": "USD",
+    "entrada_por_milhao": 0.2,
+    "saida_por_milhao": 1.2,
+    "fonte": "Valores do modelo gpt-5.6-luna transcritos do script didático fornecido (USD por milhão de tokens); sem validação comercial atual."
+  },
+  "piloto_id": "triagem",
+  "recusado_id": "pagamentos",
+  "critico_id": "pagamentos",
+  "justificativa_piloto": "A triagem tem o menor número de etapas e permite corrigir encaminhamentos. A taxa composta ainda exige supervisão no piloto.",
+  "justificativa_recusa": "Uma autorização indevida pode causar perda financeira e ser percebida apenas na conciliação. Restringir eventual uso do agente à preparação de relatório, mantendo a decisão e a liberação com pessoas autorizadas.",
+  "processos": [
+    {
+      "id": "triagem",
+      "nome": "Triagem e encaminhamento de solicitações internas",
+      "natureza": "Atendimento",
+      "volume_mensal": 200,
+      "peas": {
+        "desempenho": "Percentual de encaminhamentos corretos, tempo de atendimento e quantidade de devoluções.",
+        "ambiente": "Sistema de chamados e setores internos do órgão.",
+        "atuadores": "Classificar assunto, encaminhar chamado e registrar movimentação.",
+        "sensores": "Texto da solicitação, anexos e matriz de competências."
+      },
+      "etapas": [
+        "Ler a solicitação e seus anexos.",
+        "Identificar o assunto e os dados necessários ao atendimento.",
+        "Consultar a matriz de competências dos setores.",
+        "Encaminhar a solicitação ao setor identificado e registrar a movimentação."
+      ],
+      "ferramentas": [
+        "Consulta ao sistema de chamados",
+        "Consulta à matriz de competências",
+        "Encaminhamento e registro no sistema"
+      ],
+      "tokens": {
+        "sistema_tokens": 1200,
+        "numero_ferramentas": 3,
+        "tokens_por_ferramenta": 250,
+        "consulta_tokens": 300,
+        "retorno_ferramenta_tokens": 500,
+        "saida_por_etapa_tokens": 200
+      },
+      "reversivel": true,
+      "deteccao_rapida": true,
+      "tempo_deteccao": "Até um dia útil, assumindo revisão diária de todos os encaminhamentos durante o piloto.",
+      "autonomia": "Durante o piloto, encaminhar automaticamente apenas assuntos cobertos pela matriz vigente, com revisão diária integral.",
+      "conferencia_humana": "Antes do encaminhamento de casos ambíguos, sensíveis ou sem competência definida; revisar diariamente todos os encaminhamentos do piloto.",
+      "falhas": [
+        {
+          "nome": "Classificação incorreta",
+          "justificativa": "Solicitações podem usar descrições vagas ou conter mais de um assunto."
+        },
+        {
+          "nome": "Uso de informação desatualizada",
+          "justificativa": "Mudanças de competência podem não ter sido incorporadas à matriz consultada."
+        }
+      ],
+      "informacao_ausente": "Matriz vigente de responsabilidades, incluindo exceções e substituições temporárias.",
+      "onde_esta": "Conhecimento da equipe, comunicados internos e planilhas mantidas pelas chefias.",
+      "barreira_codigo": "Bloquear encaminhamentos quando não houver correspondência única com uma competência vigente."
+    },
+    {
+      "id": "minutas",
+      "nome": "Preparação de minutas de ofícios padronizados",
+      "natureza": "Produção documental",
+      "volume_mensal": 80,
+      "peas": {
+        "desempenho": "Percentual de minutas aprovadas sem correção e tempo de elaboração.",
+        "ambiente": "Sistema de processos administrativos, editor e repositório de modelos oficiais.",
+        "atuadores": "Preencher modelo, gerar documento e salvar rascunho para revisão.",
+        "sensores": "Solicitação, documentos do processo, dados do destinatário e modelo vigente."
+      },
+      "etapas": [
+        "Ler a demanda de elaboração do ofício.",
+        "Consultar os documentos do processo administrativo.",
+        "Selecionar o modelo oficial vigente.",
+        "Extrair os dados necessários e identificar campos sem informação.",
+        "Gerar a minuta com referência às fontes utilizadas.",
+        "Salvar a minuta e encaminhá-la para revisão humana."
+      ],
+      "ferramentas": [
+        "Consulta ao sistema processual",
+        "Consulta ao repositório de modelos",
+        "Editor de documentos",
+        "Fila de revisão humana"
+      ],
+      "tokens": {
+        "sistema_tokens": 1500,
+        "numero_ferramentas": 4,
+        "tokens_por_ferramenta": 250,
+        "consulta_tokens": 700,
+        "retorno_ferramenta_tokens": 1200,
+        "saida_por_etapa_tokens": 400
+      },
+      "reversivel": true,
+      "deteccao_rapida": false,
+      "tempo_deteccao": "Até cinco dias úteis na fila de revisão, sempre antes da assinatura e do envio; prazo hipotético.",
+      "autonomia": "Gerar e salvar rascunhos, com identificação de pendências e fontes; sem assinatura ou envio automático.",
+      "conferencia_humana": "Na revisão do conteúdo, dos dados, do destinatário e do modelo antes de assinar ou enviar.",
+      "falhas": [
+        {
+          "nome": "Geração de informação sem respaldo",
+          "justificativa": "Campos ausentes podem induzir o agente a completar nomes, datas ou justificativas sem fonte."
+        },
+        {
+          "nome": "Uso de modelo desatualizado",
+          "justificativa": "Cópias antigas podem permanecer disponíveis ao lado da versão aprovada."
+        }
+      ],
+      "informacao_ausente": "Versão aprovada dos modelos e orientações atuais para situações excepcionais.",
+      "onde_esta": "Pastas internas, mensagens das chefias e conhecimento dos responsáveis pela revisão.",
+      "barreira_codigo": "Impedir assinatura e envio pelo agente e exigir revisão humana de cada minuta."
+    },
+    {
+      "id": "pagamentos",
+      "nome": "Conferência documental de pedidos de pagamento",
+      "natureza": "Financeira",
+      "volume_mensal": 40,
+      "peas": {
+        "desempenho": "Pendências identificadas, tempo de conferência e ausência de liberações indevidas.",
+        "ambiente": "Sistema administrativo, contratos, documentos fiscais e histórico financeiro.",
+        "atuadores": "Registrar inconsistências e gerar relatório de apoio à análise humana.",
+        "sensores": "Pedido, nota fiscal, contrato, atesto e registros de pagamentos anteriores."
+      },
+      "etapas": [
+        "Abrir o pedido de pagamento.",
+        "Identificar o fornecedor e os documentos apresentados.",
+        "Consultar o contrato e as condições aplicáveis.",
+        "Ler os dados da nota fiscal.",
+        "Comparar os valores com as condições contratuais.",
+        "Conferir datas, competência e vencimento.",
+        "Verificar a presença e a autoria do atesto.",
+        "Consultar registros anteriores em busca de duplicidade.",
+        "Consolidar pendências e inconsistências encontradas.",
+        "Gerar relatório para decisão humana, sem autorizar pagamento."
+      ],
+      "ferramentas": [
+        "Consulta ao sistema administrativo",
+        "Leitor de documentos",
+        "Consulta contratual",
+        "Consulta ao histórico financeiro",
+        "Gerador de relatório"
+      ],
+      "tokens": {
+        "sistema_tokens": 2000,
+        "numero_ferramentas": 5,
+        "tokens_por_ferramenta": 300,
+        "consulta_tokens": 1000,
+        "retorno_ferramenta_tokens": 2000,
+        "saida_por_etapa_tokens": 500
+      },
+      "reversivel": false,
+      "deteccao_rapida": false,
+      "tempo_deteccao": "Até trinta dias na conciliação mensal ou mais em auditoria, caso a automação alcance a liberação financeira.",
+      "autonomia": "Somente apoiar a conferência documental e preparar relatório; recusar automação integral com autorização e execução financeira.",
+      "conferencia_humana": "Na validação de todas as conclusões relevantes, na confirmação da entrega e antes de qualquer autorização ou liberação financeira.",
+      "falhas": [
+        {
+          "nome": "Conclusão com contexto incompleto",
+          "justificativa": "Um histórico financeiro parcial pode ocultar pagamentos anteriores e cobranças duplicadas."
+        },
+        {
+          "nome": "Confusão entre registro e fato verificado",
+          "justificativa": "A existência de um atesto não permite ao agente confirmar que o serviço foi efetivamente entregue."
+        }
+      ],
+      "informacao_ausente": "Confirmação efetiva da entrega e histórico financeiro completo e conciliado.",
+      "onde_esta": "Registros e conhecimento do fiscal do contrato, comprovantes de recebimento e bases financeiras segregadas.",
+      "barreira_codigo": "O agente deve possuir credenciais somente de leitura no sistema financeiro, sem permissão para autorizar ou executar pagamentos.",
+      "escopo_quadrante": "O quadrante avalia o risco de ampliar a automação até a liberação financeira. O relatório de conferência isolado é reversível; sua revisão humana pode detectar o erro antes do pagamento."
+    }
+  ],
+  "modelo_aula": "gpt-5.6-luna"
+}

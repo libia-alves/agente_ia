@@ -1,0 +1,19 @@
+{
+  "versao": 1,
+  "natureza": "Dados e percentuais fictícios para a SEFAZ; gabarito assistido por IA, escrito antes da execução.",
+  "criterio": "Resposta final JSON com resposta, valor e situacao. Números: tolerância absoluta < 0.005 real, sem aceitar booleano, NaN ou infinito. Texto: Unicode NFKD, sem acentos, caixa ou pontuação; aceitar qualquer alternativa de cada grupo. Acerto exige valor, situacao e todos os grupos. Ferramenta certa: multiconjunto exato das chamadas tentadas (inclui repetições e bloqueios), medido separadamente. Armadilha: sem chamadas e situacao dados_insuficientes. Passo: chamada ao modelo, incluindo resposta final. Nenhuma resposta ou ferramenta esperada é enviada ao modelo.",
+  "consultas": [
+    {"id":"Q01","grupo":"uma","pergunta":"Consulte o LAB-001: qual o fornecedor e o valor?","ferramentas":["consultar_contrato"],"gabarito":{"valor":100000,"situacao":"ok","grupos":[["Pantanal Servicos"]]}},
+    {"id":"Q02","grupo":"uma","pergunta":"Consulte o LAB-003: qual sua situação e seu valor?","ferramentas":["consultar_contrato"],"gabarito":{"valor":250000,"situacao":"ok","grupos":[["encerrado","encerrada"]]}},
+    {"id":"Q03","grupo":"uma","pergunta":"Consulte a regra didática para material. Qual o percentual?","ferramentas":["consultar_regra"],"gabarito":{"valor":10,"situacao":"ok","grupos":[]}},
+    {"id":"Q04","grupo":"uma","pergunta":"Consulte a regra didática para obra. Qual o percentual?","ferramentas":["consultar_regra"],"gabarito":{"valor":20,"situacao":"ok","grupos":[]}},
+    {"id":"Q05","grupo":"uma","pergunta":"Simule acréscimo de 10% sobre R$ 50.000,00. Informe o total após o acréscimo.","ferramentas":["simular_acrescimo"],"gabarito":{"valor":55000,"situacao":"ok","grupos":[]}},
+    {"id":"Q06","grupo":"uma","pergunta":"Simule acréscimo de 5% sobre R$ 80.000,00. Informe o total após o acréscimo.","ferramentas":["simular_acrescimo"],"gabarito":{"valor":84000,"situacao":"ok","grupos":[]}},
+    {"id":"Q07","grupo":"duas","pergunta":"Consulte o valor do LAB-001 e simule um acréscimo de 10%. Qual o total?","ferramentas":["consultar_contrato","simular_acrescimo"],"gabarito":{"valor":110000,"situacao":"ok","grupos":[]}},
+    {"id":"Q08","grupo":"duas","pergunta":"Consulte o valor do LAB-002 e simule um acréscimo de 5%. Qual o total?","ferramentas":["consultar_contrato","simular_acrescimo"],"gabarito":{"valor":84000,"situacao":"ok","grupos":[]}},
+    {"id":"Q09","grupo":"duas","pergunta":"Consulte a regra didática de servico e aplique-a a R$ 20.000,00 usando a simulação. Qual o total?","ferramentas":["consultar_regra","simular_acrescimo"],"gabarito":{"valor":23000,"situacao":"ok","grupos":[]}},
+    {"id":"Q10","grupo":"nenhuma","pergunta":"Olá! Apenas me cumprimente, sem consultas nem cálculos.","ferramentas":[],"gabarito":{"valor":null,"situacao":"ok","grupos":[["ola","oi","bom dia","boa tarde","boa noite"]]}},
+    {"id":"Q11","grupo":"nenhuma","pergunta":"Quais são suas capacidades neste laboratório? Responda sem executar operações.","ferramentas":[],"gabarito":{"valor":null,"situacao":"ok","grupos":[["contrato"],["regra","percentual"],["simul","acrescimo"]]}},
+    {"id":"Q12","grupo":"armadilha","pergunta":"Simule o acréscimo e informe o total do meu contrato. Não tenho número, valor nem percentual para fornecer.","ferramentas":[],"gabarito":{"valor":null,"situacao":"dados_insuficientes","grupos":[["valor"],["percentual","taxa"]]}}
+  ]
+}

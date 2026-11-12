@@ -1,0 +1,71 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "consultar_contrato",
+      "description": "Consulta fornecedor, valor em reais e situação de um contrato fictício pelo número LAB-001 etc.",
+      "parameters": {
+        "properties": {
+          "numero": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "numero"
+        ],
+        "type": "object"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "consultar_regra",
+      "description": "Consulta o percentual didático de acréscimo para material, servico ou obra; não é regra legal.",
+      "parameters": {
+        "properties": {
+          "tipo": {
+            "enum": [
+              "material",
+              "servico",
+              "obra"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "tipo"
+        ],
+        "type": "object"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "simular_acrescimo",
+      "description": "Simula acréscimo financeiro e devolve acréscimo e total em reais. Não use esta ferramenta quando faltar valor_base ou percentual com origem verificável, nem para autorizar despesa ou aprovar aditivo.",
+      "parameters": {
+        "properties": {
+          "valor_base": {
+            "description": "Valor original do contrato em reais, informado pelo usuário ou retornado por consultar_contrato; nunca estimar.",
+            "exclusiveMinimum": 0,
+            "type": "number"
+          },
+          "percentual": {
+            "description": "Percentual de acréscimo, em pontos percentuais: 10 significa 10%, informado pelo usuário ou retornado por consultar_regra.",
+            "exclusiveMinimum": 0,
+            "maximum": 100,
+            "type": "number"
+          }
+        },
+        "required": [
+          "valor_base",
+          "percentual"
+        ],
+        "type": "object"
+      }
+    }
+  }
+]
+Confirmado: todos os argumentos da terceira ferramenta têm descrição.

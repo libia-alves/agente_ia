@@ -1,0 +1,14 @@
+{
+  "simples": {
+    "falsos_positivos_consultas": 3,
+    "bloqueios": 3,
+    "acertos": 9,
+    "erros": 0
+  },
+  "proveniencia": {
+    "falsos_positivos_consultas": 0,
+    "bloqueios": 0,
+    "acertos": 12,
+    "erros": 0
+  }
+}

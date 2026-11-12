@@ -1,0 +1,8 @@
+{
+  "nome": "luna",
+  "modelo": "gpt-6-luna",
+  "reasoning_effort": "low",
+  "entrada": 0.1,
+  "cache": 0.01,
+  "saida": 0.5
+}

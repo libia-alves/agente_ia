@@ -1,0 +1,34 @@
+====================================================================
+Tabela 1 — Confiabilidade composta: a chance de tudo dar certo
+====================================================================
+
+  passos         99%        95%        90%        80%
+--------------------------------------------------------
+       1       99.0%      95.0%      90.0%      80.0%
+       3       97.0%      85.7%      72.9%      51.2%
+       5       95.1%      77.4%      59.0%      32.8%
+      10       90.4%      59.9%      34.9%      10.7%
+      20       81.8%      35.8%      12.2%       1.2%
+
+A célula que ancora a discussão: dez passos a 95% por passo
+resultam em 60% de acerto no processo inteiro.
+
+====================================================================
+Tabela 2 — O custo do laço, que cresce com o quadrado dos passos
+====================================================================
+
+prompt de sistema 600 + esquemas 400 = 1000 tokens fixos
+cada passo acrescenta 250 tokens de observação
+
+ passos   entrada do      entrada          US$          US$
+        último passo    acumulada         luna        terra
+------------------------------------------------------------
+      1         1000         1000      0.00034      0.00344
+      5         2000         7500      0.00222      0.02220
+     10         3250        21250      0.00569      0.05690
+     20         5750        67500      0.01638      0.16380
+     40        10750       235000      0.05276      0.52760
+
+Quarenta passos custam 153 vezes um passo, e não quarenta.
+Dobrar o número de passos aproximadamente quadruplica a conta, porque
+cada passo novo paga também tudo o que veio antes dele.

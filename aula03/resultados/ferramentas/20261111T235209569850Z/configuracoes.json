@@ -1,0 +1,11 @@
+{
+  "fonte": "https://developers.openai.com/api/docs/pricing",
+  "fonte_nano": "https://developers.openai.com/api/docs/models/gpt-5-nano",
+  "verificado_em": "2026-11-11",
+  "unidade": "US$ por milhão de tokens; Standard, contexto curto; sem Batch/Flex",
+  "configuracoes": [
+    {"nome":"nano-economico","modelo":"gpt-5-nano","reasoning_effort":"minimal","entrada":0.05,"cache":0.005,"saida":0.40},
+    {"nome":"luna","modelo":"gpt-6-luna","reasoning_effort":"low","entrada":0.10,"cache":0.01,"saida":0.50},
+    {"nome":"sol-superior","modelo":"gpt-6.1-sol","reasoning_effort":"low","entrada":2.00,"cache":0.10,"saida":10.00}
+  ]
+}
