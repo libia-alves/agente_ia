@@ -1,0 +1,8 @@
+[
+ {"id":"valor","descricao":"Cita o valor planejado no PCA","padrao":"200\\.000(?:,00)?|200000(?:[.,]0+)?"},
+ {"id":"objeto","descricao":"Menciona backup","padrao":"\\bbackup\\b"},
+ {"id":"garantia_suporte","descricao":"Menciona garantia e suporte","todos":["garantia","suporte"]},
+ {"id":"orcamento","descricao":"Confronta o PTA e explicita diferença ou insuficiência no planejamento","todos":["\\bpta\\b","1\\.000(?:,00)?|\\b1000(?:[.,]0+)?\\b","199\\.000|199000|insuficien|diferenca|descompasso|defasagem"]},
+ {"id":"recomendacao","descricao":"Apresenta recomendação explícita","padrao":"recomend|condicion|nao autorizar"},
+ {"id":"humano","descricao":"Menciona conferência humana antes de assinatura","todos":["human","assinatura"]}
+]

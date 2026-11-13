@@ -1,0 +1,72 @@
+# Nota Técnica Preliminar  
+**Assunto:** Garantia e suporte técnico para solução de backup — SEFAZ-MT  
+**Demanda:** ID 25.3.108 — STDI  
+**Fonte:** PCA 2025, Anexo I, p. 16, consultado em 12/11/2026; cópia em `fontes/sefaz_mt_pca_2025.pdf`.
+
+## 1. Síntese do registro
+
+O PCA 2025 registra a intenção de contratar serviço de garantia e suporte técnico para solução de backup, com:
+
+- **Valor total estimado no PCA:** R$ 200.000,00;
+- **Valor registrado no PTA 2025:** R$ 1.000,00;
+- **Diferença nominal:** **R$ 199.000,00**;
+- **Prioridade:** baixa;
+- **Data desejada:** 04/11/2025.
+
+O PCA constitui instrumento de planejamento e, isoladamente, não comprova contratação, empenho, pagamento, disponibilidade orçamentária, execução ou manutenção da situação registrada em 2026.
+
+## 2. Análise técnica
+
+A contratação tem pertinência potencial com a continuidade operacional e a recuperação de dados da SEFAZ-MT. A garantia e o suporte devem assegurar, conforme definição a ser confirmada no processo:
+
+- atendimento a incidentes;
+- manutenção e suporte da solução de backup;
+- cobertura de componentes e software aplicáveis;
+- apoio à recuperação de dados;
+- níveis de serviço, prazos de atendimento e escalonamento;
+- realização ou comprovação de testes de restauração.
+
+O recorte do PCA não apresenta níveis de serviço, cobertura detalhada, quantitativos, vigência, requisitos de compatibilidade ou critérios de aceitação. Esses elementos devem ser verificados na documentação técnica original antes de qualquer decisão.
+
+## 3. Análise financeira
+
+O valor do PCA é **R$ 200.000,00**, enquanto o PTA registra **R$ 1.000,00**, resultando em diferença de **R$ 199.000,00**.
+
+Essa diferença evidencia necessidade de conciliação entre o planejamento da contratação e o registro orçamentário, mas **não permite concluir, por si só, existência de irregularidade**. O valor do PTA não equivale a saldo disponível comprovado e o registro de 2025 não demonstra a situação orçamentária atual.
+
+Antes da contratação, devem ser confirmados:
+
+- adequação orçamentária vigente;
+- existência de dotação e disponibilidade suficientes;
+- eventual atualização do valor estimado;
+- compatibilidade com o planejamento vigente;
+- necessidade de ajustes no PTA ou em outros instrumentos aplicáveis.
+
+## 4. Análise documental
+
+Devem ser conferidos nos documentos originais:
+
+1. a demanda ID 25.3.108 e sua tramitação;
+2. a justificativa técnica e a especificação do objeto;
+3. a data desejada de 04/11/2025 e eventuais alterações;
+4. atualizações do planejamento após o PCA 2025;
+5. estimativas, pesquisas de preços e documentos orçamentários;
+6. existência e conteúdo de ETP, termo de referência, análise de riscos e parecer jurídico, quando exigíveis.
+
+A ausência desses documentos não pode ser presumida a partir do PCA. Também não se deve afirmar que a situação registrada em 2025 permanece inalterada em 2026.
+
+## 5. Pendências principais
+
+- Confirmar a situação atual da demanda e sua tramitação.
+- Validar o escopo técnico, cobertura, SLA e testes de restauração.
+- Conciliar PCA, PTA e planejamento vigente.
+- Comprovar adequação e disponibilidade orçamentária atual.
+- Atualizar o valor estimado, se necessário.
+- Conferir os documentos preparatórios e jurídicos aplicáveis.
+- Verificar eventual contratação, execução ou alteração posterior ao registro de 2025.
+
+## 6. Recomendação
+
+**Recomenda-se não autorizar nem assinar a contratação com base exclusivamente no registro do PCA.** Recomenda-se prosseguir apenas após a instrução documental e técnica da demanda, a conciliação da diferença de **R$ 199.000,00**, a confirmação da disponibilidade orçamentária vigente e a validação do escopo e dos níveis de serviço.
+
+A presente nota é preliminar e baseada exclusivamente no dossiê fornecido. **Deve haver conferência humana, pela área técnica, unidade orçamentária e autoridade competente, antes de qualquer assinatura ou decisão vinculante.**

@@ -1,0 +1,57 @@
+MEDICAO 1 chamada_unica: 6/6; 1221 tokens; 7.0s
+
+
+╭────────────────────────── Tracing Preference Saved ──────────────────────────╮
+│                                                                              │
+│  Info: Tracing has been disabled.                                            │
+│                                                                              │
+│  Your preference has been saved. Future Crew/Flow executions will not        │
+│  collect traces.                                                             │
+│                                                                              │
+│  To enable tracing later, do any one of these:                               │
+│  • Set tracing=True in your Crew/Flow code                                   │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file               │
+│  • Run: crewai traces enable                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+MEDICAO 1 sem_backstory: 6/6; 11392 tokens; 36.5s
+
+
+╭────────────────────────── Tracing Preference Saved ──────────────────────────╮
+│                                                                              │
+│  Info: Tracing has been disabled.                                            │
+│                                                                              │
+│  Your preference has been saved. Future Crew/Flow executions will not        │
+│  collect traces.                                                             │
+│                                                                              │
+│  To enable tracing later, do any one of these:                               │
+│  • Set tracing=True in your Crew/Flow code                                   │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file               │
+│  • Run: crewai traces enable                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+MEDICAO 1 com_backstory: 6/6; 11903 tokens; 37.8s
+ERROR:root:OpenAI API call failed: Error code: 400 - {'error': {'message': 'Invalid JSON schema: regex lookaround is not supported. Found at $.properties.valor_estimado.anyOf[1].pattern.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'invalid_json_schema'}}
+ERROR:root:OpenAI API call failed: Error code: 400 - {'error': {'message': 'Invalid JSON schema: regex lookaround is not supported. Found at $.properties.valor_estimado.anyOf[1].pattern.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'invalid_json_schema'}}
+[CrewAIEventsBus] Warning: Event pairing mismatch. 'llm_call_failed' closed 
+'flow_started' (expected 'llm_call_started')
+ERROR:crewai.flow.runtime:Error executing listener call_llm_and_parse: Error code: 400 - {'error': {'message': 'Invalid JSON schema: regex lookaround is not supported. Found at $.properties.valor_estimado.anyOf[1].pattern.', 'type': 'invalid_request_error', 'param': 'response_format', 'code': 'invalid_json_schema'}}
+
+
+╭────────────────────────── Tracing Preference Saved ──────────────────────────╮
+│                                                                              │
+│  Info: Tracing has been disabled.                                            │
+│                                                                              │
+│  Your preference has been saved. Future Crew/Flow executions will not        │
+│  collect traces.                                                             │
+│                                                                              │
+│  To enable tracing later, do any one of these:                               │
+│  • Set tracing=True in your Crew/Flow code                                   │
+│  • Set CREWAI_TRACING_ENABLED=true in your project's .env file               │
+│  • Run: crewai traces enable                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Execução interrompida: RuntimeError; veja erro.json.

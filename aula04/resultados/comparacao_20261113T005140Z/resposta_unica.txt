@@ -1,0 +1,77 @@
+# Nota Técnica Preliminar  
+**Assunto:** Garantia e suporte técnico para solução de backup — Demanda ID 25.3.108  
+**Órgão:** Secretaria de Estado de Fazenda de Mato Grosso (SEFAZ-MT)  
+**Área técnica:** STDI  
+**Fonte:** Plano de Contratações Anual 2025, Anexo I, p. 16, consultado em 12/11/2026.
+
+## 1. Síntese do registro
+
+O PCA 2025 registra a intenção de contratar serviço de garantia e suporte técnico para solução de backup, com:
+
+- **Valor total estimado no PCA:** R$ 200.000,00;
+- **Valor registrado no PTA 2025:** R$ 1.000,00;
+- **Diferença nominal:** **R$ 199.000,00**;
+- **Prioridade:** baixa;
+- **Data desejada:** 04/11/2025.
+
+A diferença corresponde a aproximadamente **99,5%** do valor estimado no PCA. O PTA representa apenas o valor registrado no planejamento orçamentário apresentado e **não comprova saldo disponível, empenho, pagamento, contratação ou execução**.
+
+## 2. Análise técnica
+
+A contratação é tecnicamente compatível com a necessidade de assegurar continuidade operacional, proteção e recuperação de dados da solução de backup, incluindo eventual cobertura de garantia, manutenção e suporte especializado.
+
+Contudo, o recorte do PCA não informa:
+
+- níveis de serviço e prazos de atendimento;
+- escopo detalhado da garantia e do suporte;
+- cobertura de componentes, licenças ou equipamentos;
+- disponibilidade de suporte fora do horário comercial;
+- procedimentos e periodicidade de testes de restauração;
+- métricas de recuperação, como RPO e RTO;
+- vigência pretendida e critérios de aceite.
+
+Assim, o registro permite identificar a finalidade geral, mas não é suficiente para validar a adequação técnica integral da futura contratação.
+
+## 3. Análise financeira
+
+O valor estimado no PCA é de **R$ 200.000,00**, enquanto o PTA registra **R$ 1.000,00**, resultando em diferença de **R$ 199.000,00**.
+
+Essa divergência deve ser esclarecida antes de qualquer recomendação definitiva de contratação. Deve-se verificar:
+
+- adequação da dotação e da programação orçamentária vigente;
+- eventual atualização do valor estimado;
+- necessidade de ajuste do PTA ou de outro instrumento de planejamento;
+- existência de disponibilidade orçamentária atual;
+- compatibilidade do preço com pesquisa de mercado e escopo efetivo.
+
+A diferença, isoladamente, **não comprova irregularidade**, pois os documentos têm funções de planejamento distintas.
+
+## 4. Análise documental
+
+É necessário conferir, nos documentos originais e nos sistemas administrativos pertinentes:
+
+- a tramitação da Demanda ID 25.3.108;
+- eventuais alterações do PCA ou do planejamento posterior;
+- a manutenção, revisão ou cancelamento da data desejada de 04/11/2025;
+- a existência de estudos, especificações técnicas e demais documentos preparatórios;
+- a correspondência entre o objeto planejado e a necessidade atual.
+
+O PCA, isoladamente, **não permite concluir** pela inexistência de ETP, parecer jurídico ou outros documentos da contratação. Também não permite afirmar que a situação registrada em 2025 permaneça inalterada em 2026.
+
+## 5. Pendências
+
+1. Confirmar a situação atual da demanda e sua tramitação.
+2. Atualizar a necessidade técnica, o escopo, a vigência e os níveis de serviço.
+3. Verificar a existência e a atualidade da pesquisa de preços.
+4. Esclarecer a diferença entre R$ 200.000,00 e R$ 1.000,00.
+5. Confirmar adequação e disponibilidade orçamentária atuais.
+6. Conferir eventuais alterações no planejamento após 2025.
+7. Validar os documentos preparatórios exigíveis no processo concreto.
+
+## 6. Recomendação
+
+**Recomenda-se não autorizar nem encaminhar a contratação com base exclusivamente no registro do PCA 2025.** Recomenda-se prosseguir apenas após a atualização da demanda, a definição do escopo técnico, a confirmação da situação orçamentária atual e a conferência da documentação processual pertinente.
+
+A contratação poderá ser considerada tecnicamente pertinente, desde que as pendências sejam sanadas e haja justificativa atualizada para a necessidade e para o valor estimado.
+
+**Antes da assinatura de qualquer documento, deve ser realizada conferência humana formal pela área demandante, pela unidade técnica, pela área orçamentária e pelas instâncias jurídicas e administrativas competentes, conforme o fluxo aplicável.**

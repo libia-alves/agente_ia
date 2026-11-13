@@ -1,0 +1,38 @@
+{
+  "inicio_utc": "2026-11-12T23:32:06.846674+00:00",
+  "arquivos_sha256": {
+    "dossie_projeto.md": "6c6b210bc02bff2d171964a9301f9e4450702e5077f184ba48af4c16d27e1906",
+    "rubrica.json": "6d89a1193514eb94f4cd2fe9dca9f633860dff587d0b22dc8da2a13c1e3bf0c2",
+    "protocolo.json": "94a9d768c4d08e7aa0480acbced56fbd952be680884165412b551219fd4fd29a",
+    "minilab.py": "3a833aa76375832208c2b03991dd58589b3fd341be9f5953462a38efa7a548ff"
+  },
+  "modelo": "gpt-5.6-luna",
+  "configuracao": {
+    "caso": "IPHAN - pregao 90013/2025",
+    "modelo": "gpt-5.6-luna",
+    "juiz": "gpt-5.6-terra",
+    "rodadas": 2,
+    "max_iter": 5,
+    "max_rpm": 20,
+    "max_execution_time": 120,
+    "max_output_tokens": 1800,
+    "reasoning_effort": "none",
+    "precos_por_milhao": {
+      "gpt-5.6-luna": {
+        "entrada": 0.2,
+        "cache": 0.02,
+        "saida": 1.2
+      },
+      "gpt-5.6-terra": {
+        "entrada": 2.0,
+        "cache": 0.2,
+        "saida": 12.0
+      }
+    },
+    "fontes_precos": [
+      "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    ],
+    "observacao": "Precos consultados em 12/11/2026; custo estimado a partir do uso, nao fatura. Juiz contabilizado separadamente."
+  }
+}

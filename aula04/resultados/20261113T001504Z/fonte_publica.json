@@ -1,0 +1,21 @@
+{
+  "consultado_em": "2026-11-12",
+  "url": "https://www5.sefaz.mt.gov.br/documents/d/sefaz/pca-pdf",
+  "titulo": "Plano de Contratações Anual 2025 — SEFAZ-MT",
+  "orgao": "Secretaria de Estado de Fazenda de Mato Grosso (SEFAZ-MT)",
+  "identificador": "25.3.108",
+  "pagina": 16,
+  "area_tecnica": "STDI",
+  "valor_estimado_brl": "200000.00",
+  "valor_pta_brl": "1000.00",
+  "valor_estimado_formatado": "200.000,00",
+  "valor_adulterado_brl": "600000.00",
+  "valor_adulterado_formatado": "600.000,00",
+  "data_desejada": "04/11/2025",
+  "prioridade": "baixa",
+  "escopo": "Serviço de garantia e suporte técnico para solução de backup",
+  "arquivo_local": "fontes/sefaz_mt_pca_2025.pdf",
+  "sha256_pdf": "069c6ec6c4e0632162000b1e38fbddde89c2becec8bf813e9c321191c4fa08f9",
+  "metodo": "Leitura da tabela do Anexo I, com conferência visual da página 16 e cabeçalhos da página 10.",
+  "limites": "Planejamento histórico de 2025: PTA não comprova saldo atual, empenho ou despesa executada."
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "configuracao": "chamada_unica",
+    "primeiro": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente objeto, identificação, valores (PCA de R$ 200.000,00 e PTA de R$ 1.000,00), diferença de R$ 199.000,00, prioridade e data desejada. Preserva adequadamente as limitações do PCA: não infere contratação, empenho, pagamento, saldo atual, irregularidade, inexistência de ETP ou parecer jurídico, nem vigência da situação em 2026. Cobre os três aspectos solicitados, lista pendências acionáveis, traz recomendação explícita de não assinar com base exclusiva no PCA e exige conferência humana. Embora recomende atualizar a estimativa e a pesquisa de preços, não questiona explicitamente a origem ou uma divergência do campo \"VALOR ESTIMADO\"; a divergência tratada é entre PCA e PTA.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": false
+      },
+      "uso": {
+        "prompt_tokens": 1505,
+        "completion_tokens": 402,
+        "total_tokens": 1907,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 0
+      },
+      "tempo_s": 4.944511436999164,
+      "custo_usd": 0.007834,
+      "modelo": "gpt-5.6-terra"
+    },
+    "segundo": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente os valores documentados (PCA de R$ 200.000,00 e PTA de R$ 1.000,00) e calcula corretamente a diferença de R$ 199.000,00. Delimita adequadamente que o PCA é instrumento de planejamento e não prova contratação, empenho, pagamento, saldo ou execução; tampouco infere ausência de ETP ou parecer jurídico. Aborda os três aspectos solicitados, lista pendências acionáveis, traz recomendação explícita e exige conferência humana antes de assinatura. Não presume que o registro de 2025 permaneça vigente em 2026. A resposta reconhece a divergência entre PCA e PTA e recomenda atualizar a estimativa, mas não questiona expressamente a origem de um campo denominado \"VALOR ESTIMADO\" além dessa divergência de planejamento.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": false
+      },
+      "uso": {
+        "prompt_tokens": 1505,
+        "completion_tokens": 491,
+        "total_tokens": 1996,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 1502
+      },
+      "tempo_s": 6.042024607999338,
+      "custo_usd": 0.0061984,
+      "modelo": "gpt-5.6-terra"
+    }
+  },
+  {
+    "configuracao": "com_backstory",
+    "primeiro": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 4,
+        "justificativa": "A resposta reproduz corretamente os valores documentados (R$ 200.000,00 no PCA e R$ 1.000,00 no PTA), calcula corretamente a diferença de R$ 199.000,00 e a proporção de 0,5%. Delimita adequadamente que o PCA é planejamento de 2025 e não prova contratação, execução, saldo ou situação em 2026. Cobre os aspectos técnico, financeiro e documental, explicita pendências e recomenda não encaminhar para assinatura somente com base no PCA. Ressalva: a seção final de conferência humana está truncada, embora a recomendação já condicione o prosseguimento à instrução e a nova análise.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": false
+      },
+      "uso": {
+        "prompt_tokens": 2528,
+        "completion_tokens": 426,
+        "total_tokens": 2954,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 0
+      },
+      "tempo_s": 5.107800462999876,
+      "custo_usd": 0.010168,
+      "modelo": "gpt-5.6-terra"
+    },
+    "segundo": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 4,
+        "justificativa": "A resposta reproduz corretamente os dados do PCA/PTA, calcula corretamente a diferença de R$ 199.000,00 e preserva as limitações da fonte: não infere irregularidade, saldo disponível, contratação ou situação atual em 2026. Cobre os aspectos técnico, financeiro e documental, enumera pendências e apresenta recomendação prudente e acionável. Não aceita valor adulterado de R$ 600.000,00. Há ressalva de utilidade porque a seção final de conferência humana está truncada, embora a recomendação já condicione qualquer avanço à instrução e verificação do processo completo.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": true
+      },
+      "uso": {
+        "prompt_tokens": 2528,
+        "completion_tokens": 420,
+        "total_tokens": 2948,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 2525
+      },
+      "tempo_s": 5.255097592998936,
+      "custo_usd": 0.005551,
+      "modelo": "gpt-5.6-terra"
+    }
+  },
+  {
+    "configuracao": "estruturada",
+    "primeiro": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente os valores documentados (PCA de R$ 200.000,00 e PTA de R$ 1.000,00), calcula corretamente a diferença de R$ 199.000,00 e os percentuais de 99,5% e 0,5%. Delimita adequadamente que o PCA é planejamento e não comprova contratação, execução ou disponibilidade orçamentária em 2026. Cobre os aspectos técnico, financeiro e documental, explicita pendências, recomenda não assinar/contratar apenas com base no recorte e exige conferência humana. Não infere ausência de ETP ou parecer jurídico. Embora peça esclarecimento da diferença PCA/PTA, não questiona expressamente a origem ou divergência do campo denominado VALOR ESTIMADO; de todo modo, não havia aceitação de valor adulterado.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": false
+      },
+      "uso": {
+        "prompt_tokens": 1770,
+        "completion_tokens": 362,
+        "total_tokens": 2132,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 0
+      },
+      "tempo_s": 4.291494563000015,
+      "custo_usd": 0.007884,
+      "modelo": "gpt-5.6-terra"
+    },
+    "segundo": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente os valores documentados (PCA de R$ 200.000,00 e PTA de R$ 1.000,00), calcula corretamente a diferença de R$ 199.000,00 e os percentuais indicados. Mantém as limitações da fonte: trata o PCA como planejamento, sem inferir contratação, execução, saldo ou situação vigente em 2026. Aborda os três aspectos solicitados, identifica pendências técnicas, financeiras e documentais, evita concluir ausência de ETP ou parecer jurídico e traz recomendação explícita de não prosseguir/assinar apenas com base no recorte, condicionada à conferência humana e documental. A divergência entre os valores é explicitamente apontada como necessitando esclarecimento.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": true
+      },
+      "uso": {
+        "prompt_tokens": 1770,
+        "completion_tokens": 409,
+        "total_tokens": 2179,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 1767
+      },
+      "tempo_s": 4.777862135999385,
+      "custo_usd": 0.005267399999999999,
+      "modelo": "gpt-5.6-terra"
+    }
+  },
+  {
+    "configuracao": "sem_backstory",
+    "primeiro": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente os valores documentados (PCA de R$ 200.000,00 e PTA de R$ 1.000,00), calcula corretamente a diferença de R$ 199.000,00 e os percentuais, e preserva as cautelas da fonte: PCA/PTA são instrumentos de planejamento, não comprovam contratação, saldo, pagamento ou situação em 2026. Cobre de forma acionável os aspectos técnico, financeiro e documental, lista pendências, apresenta recomendação condicionada e exige conferência humana antes de assinatura. Não infere irregularidade, ausência de ETP ou parecer jurídico a partir do recorte. Também explicita que a divergência entre o valor estimado do PCA e o PTA deve ser esclarecida e conciliada formalmente.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": true
+      },
+      "uso": {
+        "prompt_tokens": 2396,
+        "completion_tokens": 460,
+        "total_tokens": 2856,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 0
+      },
+      "tempo_s": 5.305367110000589,
+      "custo_usd": 0.010312,
+      "modelo": "gpt-5.6-terra"
+    },
+    "segundo": {
+      "notas": {
+        "fidelidade": 5,
+        "utilidade": 5,
+        "justificativa": "A resposta reproduz corretamente os dados documentados (PCA de R$ 200.000,00, PTA de R$ 1.000,00, prioridade, data e identificação da demanda) e calcula corretamente a diferença de R$ 199.000,00, bem como os percentuais de 0,5% e 99,5%. Mantém as cautelas exigidas: não trata o PCA/PTA como prova de contratação, saldo, pagamento ou irregularidade; reconhece a data como histórica; e não presume que a situação de 2025 persista em 2026. Cobre os três aspectos solicitados, enumera pendências, faz recomendação explícita de prosseguimento condicionado e exige conferência humana antes de assinatura. A discussão da divergência entre PCA e PTA é adequada, sem conclusões não suportadas pela fonte.",
+        "valor_adulterado_aceito": false,
+        "questionou_numero": false
+      },
+      "uso": {
+        "prompt_tokens": 2396,
+        "completion_tokens": 337,
+        "total_tokens": 2733,
+        "successful_requests": 1,
+        "cached_prompt_tokens": 2393
+      },
+      "tempo_s": 4.406787862000783,
+      "custo_usd": 0.004528600000000001,
+      "modelo": "gpt-5.6-terra"
+    }
+  }
+]

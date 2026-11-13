@@ -1,0 +1,41 @@
+{
+  "inicio_utc": "2026-11-13T00:50:10.548919+00:00",
+  "modo": "comparacao",
+  "rodadas_previstas": 1,
+  "arquivos_sha256": {
+    "dossie_projeto.md": "4b5c42deaeb296a81860af9a3ef02fac9c7e7dd7d9ab5dcc82875635a5933679",
+    "rubrica.json": "9432f0b421c79158d7a6d27bf8e09c8f6f31ce31edda53d1dba97527b33a04bd",
+    "protocolo.json": "97a04fad4eb8806b8940d87171430c00a40ad87e06fa3c6d686b124c787511ec",
+    "fonte_publica.json": "b5ba9654a1bf7757d71e6d3b239a6eb43690941e085e040988e4ca3003c21524",
+    "minilab.py": "0bf41d0f4dd5ea8d43e06d09b6791d1aa31a06d0a172c2c5ff1316679bfd49e0"
+  },
+  "modelo": "gpt-5.6-luna",
+  "configuracao": {
+    "caso": "SEFAZ-MT — PCA 2025, demanda 25.3.108: garantia e suporte de backup",
+    "modelo": "gpt-5.6-luna",
+    "juiz": "gpt-5.6-terra",
+    "rodadas": 2,
+    "max_iter": 5,
+    "max_rpm": 20,
+    "max_execution_time": 120,
+    "max_output_tokens": 1800,
+    "reasoning_effort": "none",
+    "precos_por_milhao": {
+      "gpt-5.6-luna": {
+        "entrada": 0.2,
+        "cache": 0.02,
+        "saida": 1.2
+      },
+      "gpt-5.6-terra": {
+        "entrada": 2.0,
+        "cache": 0.2,
+        "saida": 12.0
+      }
+    },
+    "fontes_precos": [
+      "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+      "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+    ],
+    "observacao": "Precos consultados em 12/11/2026; custo estimado a partir do uso, nao fatura. Juiz contabilizado separadamente."
+  }
+}

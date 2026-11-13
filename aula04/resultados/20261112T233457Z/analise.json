@@ -1,0 +1,14 @@
+{
+  "conclusao": [
+    "Nas duas rodadas, a chamada única e as equipes cobriram 6/6; todas tiveram utilidade 5, sem vantagem de qualidade demonstrada pela equipe.",
+    "A chamada única custou em média US$ 0,000993 e levou 7,08 s; a equipe estruturada custou US$ 0,006847 e levou 36,41 s: cerca de 6,9 vezes o custo e 5,1 vezes o tempo.",
+    "A equipe oferece etapas separadas e um ponto de validação estruturada, mas esses recursos também podem ser implementados com um único agente; não justificam, por si, três agentes.",
+    "Entre os elementos adicionados à definição, o esquema de saída teve o efeito mais concreto: campos tipados e custo médio 4,3% menor que a equipe com biografia, embora os tokens totais tenham aumentado 2,0%.",
+    "Esse efeito foi pequeno e não reproduziu a forte economia da Seção 5.2; a biografia também não elevou a utilidade neste caso, que já estava no teto da escala.",
+    "Com o mesmo texto, a fidelidade da equipe com biografia mudou de 4 para 5 na reavaliação; diferenças de um ponto não sustentam um ranking, e duas rodadas não permitem generalização.",
+    "O erro de R$ 941.080,47 atravessou a cadeia sem questionamento da estimativa; o guardrail rejeitou esse valor e aceitou R$ 541.080,47, com quatro chamadas em vez de três.",
+    "Antes da assinatura, a conferência humana deve obrigatoriamente confrontar estimativa, dotação, requisitos técnicos e instrução com os documentos originais; neste recorte, a chamada única é a opção de menor custo sem perda de utilidade observada."
+  ],
+  "desafio": "Um único agente nas três tarefas obteve 6/6, fidelidade 4 e utilidade 5, com três chamadas, 10.374 tokens, 29,78 s e US$ 0,005794. Ficou próximo da equipe estruturada em qualidade, com menor consumo nesta única medição. Isso sugere que o encadeamento pesa mais que a separação de identidades, mas o perfil combinado é uma variável adicional e o ensaio não foi repetido.",
+  "historico": "A tentativa preliminar 20261112T233206Z parou por incompatibilidade do esquema Decimal. Suas três medições concluídas somam US$ 0.014985 de produção e US$ 0.020746 de juiz. O consumo da configuração interrompida não foi recuperado; portanto, o total do relatório é somente da execução completa, não o gasto integral da sessão. A correção de esquema precedeu o reinício integral com o mesmo dossiê e rubrica."
+}

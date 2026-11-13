@@ -1,0 +1,14 @@
+{
+  "conclusao": [
+    "Nas duas rodadas do caso SEFAZ-MT, as quatro configurações cumpriram 6/6 e receberam utilidade 5; a equipe não demonstrou ganho de utilidade sobre a chamada única.",
+    "A chamada única custou em média US$ 0.001348 e levou 9.65 s; a equipe estruturada custou US$ 0.007152 e levou 37.09 s: 5.3 vezes o custo e 3.8 vezes o tempo.",
+    "A saída estruturada e a validação numérica oferecem controle do fluxo, mas também podem ser usados com um único agente; não são ganhos exclusivos da equipe e não pagaram o custo adicional neste experimento.",
+    "Entre os elementos acrescentados à definição, o esquema de saída teve o efeito mais concreto: campos tipados, custo médio 5.4% menor e menor tempo que a equipe com biografia, mas sem reduzir os tokens totais.",
+    "O resultado só confirma parcialmente a Seção 5.2: houve pequena economia com o formato esperado, sem a forte queda de consumo da aula; a biografia não melhorou a utilidade, já no teto da escala.",
+    "A chamada única teve fidelidade 4 e 5 nas duas rodadas; sobre o mesmo texto da primeira rodada, o juiz mudou de 4 para 5. Essa variação impede atribuir vantagem confiável à equipe por uma diferença de um ponto.",
+    "Na falha, R$ 600.000,00 e a diferença incorreta de R$ 599.000,00 atravessaram a cadeia; o guardrail rejeitou o valor adulterado e restaurou R$ 200.000,00, mas a resposta corrigida perdeu o confronto com o PTA e ficou em 5/6.",
+    "Antes da assinatura, a conferência humana deve confrontar o PCA/PTA de 2025, a diferença de R$ 199.000,00, a situação atual e os documentos técnicos/processuais originais; neste caso, a chamada única foi a escolha de menor custo sem perda de utilidade observada."
+  ],
+  "desafio": "Um agente em três tarefas obteve 6/6, fidelidade 5 e utilidade 5, com 3 chamadas, 12497 tokens, 39.13 s e US$ 0.007039. Ficou próximo da equipe em notas e consumo, sugerindo que a especialização não acrescentou ganho evidente. É uma única medição com perfil combinado, insuficiente para isolar definitivamente esse efeito.",
+  "historico": "Este experimento usa o caso da SEFAZ-MT e sua própria rubrica, congelados antes da primeira chamada. Os resultados do IPHAN foram preservados em pastas anteriores e não entram nestas tabelas ou custos. O PDF público e seu hash estão registrados em fonte_publica.json. O juiz das falhas recebeu o dossiê íntegro, sem a trilha da intervenção: por isso sua justificativa sobre uma divergência “inventada” no contexto não deve ser tomada como prova dessa invenção. A trilha do guardrail comprova a intervenção e a correção do campo; o 5/6 registra objetivamente a omissão do confronto com o PTA."
+}

@@ -1,0 +1,21 @@
+Mesmo dossiê da SEFAZ-MT e mesmo modelo nas duas condições.
+1/2: executando uma chamada direta à IA...
+2/2: executando os três agentes: técnico, financeiro e parecerista...
+        Uma chamada à IA × equipe de três agentes         
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━┓
+┃ Medida                   ┃ IA sozinha   ┃ Três agentes ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━┩
+│ Critérios atendidos      │ 6/6          │ 6/6          │
+│ Fidelidade (1 a 5)       │ 5            │ 5            │
+│ Utilidade (1 a 5)        │ 5            │ 5            │
+│ Chamadas de produção     │ 1            │ 3            │
+│ Tokens de produção       │ 1490         │ 12286        │
+│ Tempo de produção        │ 9.18 s       │ 35.65 s      │
+│ Custo de produção        │ US$ 0.001283 │ US$ 0.006965 │
+│ Custo do juiz (separado) │ US$ 0.007170 │ US$ 0.005704 │
+└──────────────────────────┴──────────────┴──────────────┘
+Esta é uma rodada demonstrativa; os resultados podem variar.
+A IA sozinha faz uma chamada direta, sem orquestração CrewAI.
+Veja resposta_unica.txt e resposta_equipe.txt para comparar os textos.
+Resultados salvos em: /home/ficdevia-15-noite/Área de 
+trabalho/libia/agente_ia/aula04/resultados/comparacao_20261113T005140Z

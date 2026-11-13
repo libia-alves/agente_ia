@@ -1,0 +1,8 @@
+[
+ {"id":"valor","descricao":"Cita a estimativa correta","padrao":"541\\.080,47|541080[.,]47"},
+ {"id":"objeto","descricao":"Menciona backup","padrao":"\\bbackup\\b"},
+ {"id":"suporte","descricao":"Menciona suporte e instalação","todos":["suporte","instalacao"]},
+ {"id":"orcamento","descricao":"Cita dotação e indisponibilidade de informação","todos":["dotacao","nao informad|nao consta|nao ha inform|nao disponibiliz|desconhecid|nao comprov|nao foi inform|nao apresenta|nao permite"]},
+ {"id":"recomendacao","descricao":"Apresenta recomendação explícita","padrao":"recomend|condicion|nao autorizar"},
+ {"id":"humano","descricao":"Menciona revisão ou conferência humana antes de assinatura","todos":["human","assinatura"]}
+]
