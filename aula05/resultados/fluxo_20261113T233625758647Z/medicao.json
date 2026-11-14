@@ -1,0 +1,29 @@
+{
+  "chamadas_iniciadas": 1,
+  "chamadas_concluidas": 1,
+  "chamadas_falhas": 0,
+  "cenario": "simples",
+  "roteador": "modelo",
+  "eventos": [
+    {
+      "tipo": "llm_call_started",
+      "instante": "2026-11-13T23:36:27.122549+00:00",
+      "call_id": "6d1492b9-783b-4ee4-9f83-092f94ad23ac",
+      "model": "gpt-5.6-luna"
+    },
+    {
+      "tipo": "llm_call_completed",
+      "instante": "2026-11-13T23:36:28.213429+00:00",
+      "call_id": "6d1492b9-783b-4ee4-9f83-092f94ad23ac",
+      "model": "gpt-5.6-luna",
+      "usage": {
+        "prompt_tokens": 157,
+        "completion_tokens": 14,
+        "total_tokens": 171,
+        "cached_prompt_tokens": 0,
+        "reasoning_tokens": 0
+      }
+    }
+  ],
+  "token_usage_equipe": {}
+}

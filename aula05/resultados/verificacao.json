@@ -1,0 +1,9 @@
+{
+  "testes_locais": 6,
+  "resultado": "OK",
+  "execucoes_hierarquicas_sem_erro": 12,
+  "chamadas_hierarquia": 36,
+  "fluxos_verificados": 4,
+  "aprovacao_real": "pendente de revisão pelo aluno",
+  "aprovacao_simulada": "coberta pelo teste de integração"
+}

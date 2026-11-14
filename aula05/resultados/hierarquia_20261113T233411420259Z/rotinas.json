@@ -1,0 +1,5 @@
+{
+  "incompleta": {"protocolo":"LAB-001","objeto":"Renovação do suporte de backup","documentos":["solicitacao"],"restauracao_testada":true,"divergencia_planejamento":false},
+  "simples": {"protocolo":"LAB-002","objeto":"Renovação do suporte de backup","documentos":["solicitacao","termo_referencia"],"restauracao_testada":true,"divergencia_planejamento":false},
+  "complexa": {"protocolo":"LAB-003","objeto":"Renovação do suporte de backup","documentos":["solicitacao","termo_referencia"],"restauracao_testada":false,"divergencia_planejamento":true}
+}

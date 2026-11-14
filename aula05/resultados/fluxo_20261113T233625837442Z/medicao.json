@@ -1,0 +1,9 @@
+{
+  "chamadas_iniciadas": 0,
+  "chamadas_concluidas": 0,
+  "chamadas_falhas": 0,
+  "cenario": "simples",
+  "roteador": "regra",
+  "eventos": [],
+  "token_usage_equipe": {}
+}

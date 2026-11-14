@@ -1,0 +1,187 @@
+{
+  "nodes": {
+    "receber": {
+      "type": "start",
+      "class_name": "Triagem"
+    },
+    "conferir": {
+      "type": "start",
+      "class_name": "Triagem"
+    },
+    "distribuir": {
+      "type": "router",
+      "class_name": "Triagem",
+      "is_router": true,
+      "router_events": [
+        "complementar",
+        "encaminhar",
+        "assinar"
+      ],
+      "trigger_condition_type": "AND",
+      "condition_type": "AND",
+      "trigger_methods": [
+        "receber",
+        "conferir"
+      ],
+      "trigger_condition": {
+        "type": "AND",
+        "conditions": [
+          "receber",
+          "conferir"
+        ]
+      }
+    },
+    "solicitar_documentos": {
+      "type": "listen",
+      "class_name": "Triagem",
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "complementar"
+      ]
+    },
+    "encaminhar_atendimento": {
+      "type": "listen",
+      "class_name": "Triagem",
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "encaminhar"
+      ]
+    },
+    "preparar_assinatura": {
+      "type": "router",
+      "class_name": "Triagem",
+      "is_router": true,
+      "router_events": [
+        "revisar",
+        "aprovado"
+      ],
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "assinar"
+      ]
+    },
+    "registrar_aprovacao": {
+      "type": "listen",
+      "class_name": "Triagem",
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "aprovado"
+      ]
+    },
+    "solicitar_revisao": {
+      "type": "listen",
+      "class_name": "Triagem",
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "revisar"
+      ]
+    },
+    "finalizar": {
+      "type": "listen",
+      "class_name": "Triagem",
+      "trigger_condition_type": "OR",
+      "condition_type": "OR",
+      "trigger_methods": [
+        "solicitar_documentos",
+        "encaminhar_atendimento",
+        "registrar_aprovacao",
+        "solicitar_revisao"
+      ],
+      "trigger_condition": {
+        "type": "OR",
+        "conditions": [
+          "solicitar_documentos",
+          "encaminhar_atendimento",
+          "registrar_aprovacao",
+          "solicitar_revisao"
+        ]
+      }
+    }
+  },
+  "edges": [
+    {
+      "source": "receber",
+      "target": "distribuir",
+      "condition_type": "AND",
+      "is_router_event": false
+    },
+    {
+      "source": "conferir",
+      "target": "distribuir",
+      "condition_type": "AND",
+      "is_router_event": false
+    },
+    {
+      "source": "solicitar_documentos",
+      "target": "finalizar",
+      "condition_type": "OR",
+      "is_router_event": false
+    },
+    {
+      "source": "encaminhar_atendimento",
+      "target": "finalizar",
+      "condition_type": "OR",
+      "is_router_event": false
+    },
+    {
+      "source": "registrar_aprovacao",
+      "target": "finalizar",
+      "condition_type": "OR",
+      "is_router_event": false
+    },
+    {
+      "source": "solicitar_revisao",
+      "target": "finalizar",
+      "condition_type": "OR",
+      "is_router_event": false
+    },
+    {
+      "source": "distribuir",
+      "target": "solicitar_documentos",
+      "condition_type": null,
+      "is_router_event": true,
+      "router_event": "complementar"
+    },
+    {
+      "source": "distribuir",
+      "target": "encaminhar_atendimento",
+      "condition_type": null,
+      "is_router_event": true,
+      "router_event": "encaminhar"
+    },
+    {
+      "source": "distribuir",
+      "target": "preparar_assinatura",
+      "condition_type": null,
+      "is_router_event": true,
+      "router_event": "assinar"
+    },
+    {
+      "source": "preparar_assinatura",
+      "target": "solicitar_revisao",
+      "condition_type": null,
+      "is_router_event": true,
+      "router_event": "revisar"
+    },
+    {
+      "source": "preparar_assinatura",
+      "target": "registrar_aprovacao",
+      "condition_type": null,
+      "is_router_event": true,
+      "router_event": "aprovado"
+    }
+  ],
+  "start_methods": [
+    "receber",
+    "conferir"
+  ],
+  "router_methods": [
+    "distribuir",
+    "preparar_assinatura"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "75367449-f021-4dc6-9dc5-9f924ae2b84b",
+  "pedido": {
+    "protocolo": "LAB-003",
+    "objeto": "Renovação do suporte de backup",
+    "documentos": [
+      "solicitacao",
+      "termo_referencia"
+    ],
+    "restauracao_testada": false,
+    "divergencia_planejamento": true
+  },
+  "modo_router": "regra",
+  "entrada_recebida": true,
+  "conferencia_realizada": true,
+  "documentos_ok": true,
+  "rota": "assinar",
+  "pareceres": [
+    {
+      "etapa": "Especialista de infraestrutura",
+      "texto": "**Parecer técnico preliminar — Protocolo LAB-003**\n\nA renovação do suporte de backup apresenta risco técnico relevante, pois não há evidência de restauração testada. Assim, permanecem não comprovadas a recuperabilidade, a integridade dos dados e a aderência aos tempos de recuperação necessários. A divergência em relação ao planejamento também requer esclarecimento e registro formal, podendo afetar continuidade, cobertura contratual e priorização operacional. Recomenda-se realizar e documentar testes de restauração, validar retenção, cópias isoladas e monitoramento, além de avaliar a divergência antes de qualquer decisão técnica. Este parecer não certifica documentos nem autoriza mudanças em produção."
+    },
+    {
+      "etapa": "Especialista financeiro",
+      "texto": "**Parecer financeiro preliminar — Protocolo LAB-003**\n\nA renovação do suporte de backup apresenta divergência em relação ao planejamento de TI, que deve ser formalmente esclarecida, justificada e compatibilizada com os instrumentos de planejamento e a disponibilidade orçamentária, sem presumir saldo disponível. A documentação apresentada não permite concluir sobre valores, duplicidade, cobertura contratual ou enquadramento da despesa. Recomenda-se validar a demanda, verificar eventual sobreposição com contratos vigentes e registrar a análise da unidade competente antes do prosseguimento. Este parecer não atesta restauração, não certifica documentos e não autoriza despesa."
+    },
+    {
+      "etapa": "Especialista documental",
+      "texto": "**Minuta de parecer consolidado — Protocolo LAB-003**\n\nRecomenda-se o prosseguimento **condicionado** à revisão e manifestação das unidades competentes. Permanecem pendentes:  \n1. realizar e documentar teste de restauração, validando recuperabilidade, integridade, retenção, cópias isoladas, monitoramento e tempos de recuperação;  \n2. esclarecer, justificar e registrar formalmente a divergência em relação ao planejamento de TI;  \n3. compatibilizar a demanda com os instrumentos de planejamento e verificar disponibilidade orçamentária, sem presumir saldo;  \n4. analisar valores, cobertura contratual, eventual duplicidade ou sobreposição com contratos vigentes e enquadramento da despesa.\n\nOs documentos apresentados não permitem concluir sobre a suficiência técnica, financeira ou contratual da renovação. O presente parecer não certifica documentos, não atesta backup ou restauração, não autoriza despesa nem mudanças em produção. Submeta-se à revisão humana e, após o saneamento documental e as manifestações responsáveis, à eventual assinatura pelos responsáveis competentes."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1517,
+    "prompt_tokens": 1011,
+    "cached_prompt_tokens": 0,
+    "completion_tokens": 506,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  },
+  "aprovacoes": [],
+  "status": "aguardando_revisao_humana"
+}

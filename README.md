@@ -26,6 +26,8 @@ Neste módulo, estudamos como:
 | [Aula 01](aula01/README.md) | Planejamento da automação por agentes | Mapeamento de processos, riscos, etapas e estimativas de custo |
 | [Aula 02](aula02/README.md) | Introdução ao LangChain | Integração com modelos, extração de dados de documentos e avaliação de resultados |
 | [Aula 03](aula03/README.md) | Agente LangChain com acesso a ferramentas | Declaração de ferramentas, consultas e cálculos, medição de custo e testes de falhas |
+| [Aula 04](aula04/README.md) | Equipes CrewAI | Comparação de chamada única, agentes e validação de pareceres |
+| [Aula 05](aula05/README.md) | Orquestração CrewAI | Hierarquia, Flow com desvios, persistência e revisão humana |
 
 Cada aula possui seu próprio README com a proposta e as instruções de execução.
 

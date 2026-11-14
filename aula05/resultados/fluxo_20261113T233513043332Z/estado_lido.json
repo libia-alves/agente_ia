@@ -1,0 +1,43 @@
+{
+  "id": "8233bcb5-de62-4fdb-b1c4-0a5a7be37052",
+  "pedido": {
+    "protocolo": "LAB-003",
+    "objeto": "Renovação do suporte de backup",
+    "documentos": [
+      "solicitacao",
+      "termo_referencia"
+    ],
+    "restauracao_testada": false,
+    "divergencia_planejamento": true
+  },
+  "modo_router": "regra",
+  "entrada_recebida": true,
+  "conferencia_realizada": true,
+  "documentos_ok": true,
+  "rota": "assinar",
+  "pareceres": [
+    {
+      "etapa": "Especialista de infraestrutura",
+      "texto": "**Parecer técnico preliminar — Protocolo LAB-003**\n\nA renovação do suporte de backup apresenta risco elevado, pois não há evidência de restauração testada. Sem validação, permanecem incertos o tempo de recuperação, a integridade dos dados, a cobertura das políticas de retenção e a capacidade de resposta do fornecedor. A divergência em relação ao planejamento também requer esclarecimento formal, inclusive quanto a escopo, prazos e continuidade operacional. Recomenda-se não considerar a solução tecnicamente validada até a execução e documentação de testes de restauração, análise da divergência e confirmação dos requisitos de suporte. Parecer restrito à análise técnica; não avalia dotação nem autoriza mudanças em produção."
+    },
+    {
+      "etapa": "Especialista financeiro",
+      "texto": "**Parecer financeiro preliminar — Protocolo LAB-003**\n\nA documentação apresentada indica divergência em relação ao planejamento, sem elementos suficientes para confirmar aderência ao escopo, cronograma e previsão financeira. Não foram informados valores, dotação ou saldo disponível; portanto, não é possível quantificar impacto nem atestar disponibilidade orçamentária. Recomenda-se solicitar esclarecimento formal da divergência, confrontar o pedido com o instrumento de planejamento vigente e verificar eventual sobreposição com contratações ou despesas existentes. A ausência de teste de restauração é questão técnica, não validada por este parecer. Manifestação restrita à análise financeira preliminar, sem autorização de despesa."
+    },
+    {
+      "etapa": "Especialista documental",
+      "texto": "**Minuta de parecer consolidado — Protocolo LAB-003**\n\nRecomenda-se o prosseguimento **condicionado à complementação e revisão humana**. A renovação do suporte de backup não deve ser considerada tecnicamente validada enquanto não houver execução e documentação de teste de restauração, incluindo resultados, tempos de recuperação, integridade dos dados, retenção e cobertura do suporte do fornecedor.\n\nPermanece pendente o esclarecimento formal da divergência em relação ao planejamento, com confirmação de escopo, prazos, continuidade operacional e aderência ao instrumento vigente. Também devem ser apresentados valores, dotação e saldo, além da verificação de eventual sobreposição com despesas ou contratações existentes.\n\nEste parecer é preliminar e restrito às análises técnica e financeira documentadas. Não atesta backup, disponibilidade orçamentária, autorização de despesa ou mudanças em produção. A eventual assinatura deve ser realizada exclusivamente pelo responsável humano competente, após a análise e o saneamento formal das pendências."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1529,
+    "prompt_tokens": 1030,
+    "cached_prompt_tokens": 0,
+    "completion_tokens": 499,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  },
+  "aprovacoes": [],
+  "status": "aguardando_revisao_humana"
+}

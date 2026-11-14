@@ -1,0 +1,20 @@
+# Delegações observadas — dados fictícios
+
+| Gerente | ID | Esperada | Especialistas consultados (eventos) | Chamadas iniciadas/concluídas/falhas | Erro |
+|---|---|---|---|---|---|
+| automatico | M01 | infraestrutura | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| automatico | M02 | infraestrutura | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| automatico | M03 | financeiro | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| automatico | M04 | financeiro | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| automatico | M05 | documental | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| automatico | M06 | documental | Nenhum evento | 3/0/6 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M01 | infraestrutura | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M02 | infraestrutura | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M03 | financeiro | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M04 | financeiro | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M05 | documental | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+| definido | M06 | documental | Nenhum evento | 1/0/2 | Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}} |
+
+O gerente automático consultou mais de um especialista em 0 das seis manifestações.
+Contam-se destinos distintos nas tentativas de delegação/consulta; o JSON registra também término e falhas.
+Sem evento significa que não foi observada delegação, mesmo que o gerente tenha escrito uma área.

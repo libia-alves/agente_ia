@@ -1,0 +1,43 @@
+{
+  "id": "fea06bca-c6fb-4838-bcc0-58497e0fd356",
+  "pedido": {
+    "protocolo": "LAB-003",
+    "objeto": "Renovação do suporte de backup",
+    "documentos": [
+      "solicitacao",
+      "termo_referencia"
+    ],
+    "restauracao_testada": false,
+    "divergencia_planejamento": true
+  },
+  "modo_router": "regra",
+  "entrada_recebida": true,
+  "conferencia_realizada": true,
+  "documentos_ok": true,
+  "rota": "assinar",
+  "pareceres": [
+    {
+      "etapa": "Especialista de infraestrutura",
+      "texto": "**Parecer técnico preliminar — Protocolo LAB-003**\n\nA renovação do suporte de backup apresenta risco técnico relevante, pois a restauração não foi testada; portanto, não há evidência de recuperabilidade, integridade ou atendimento aos tempos de recuperação. A divergência em relação ao planejamento também requer esclarecimento e registro formal, podendo afetar escopo, continuidade e níveis de serviço. Recomenda-se executar e documentar testes de restauração, validar cobertura, retenção, monitoramento e alertas, além de justificar a divergência antes de eventual prosseguimento. Este parecer não avalia dotação, certifica documentos ou autoriza mudanças em produção."
+    },
+    {
+      "etapa": "Especialista financeiro",
+      "texto": "**Parecer financeiro preliminar — Protocolo LAB-003**\n\nA divergência de planejamento impede, neste momento, a confirmação de aderência do pedido ao planejamento de TI. Não foram apresentados valores, dotação ou saldo disponível; portanto, não é possível concluir sobre disponibilidade orçamentária. Recomenda-se formalizar a justificativa da divergência, confrontar o pedido com o planejamento vigente e verificar eventual sobreposição com contratações ou suportes existentes. O prosseguimento financeiro deve aguardar esses esclarecimentos e a documentação correspondente. Este parecer não atesta restauração, não certifica documentos e não autoriza despesa."
+    },
+    {
+      "etapa": "Especialista documental",
+      "texto": "**Minuta de parecer consolidado — Protocolo LAB-003**\n\nObjeto: renovação do suporte de backup.\n\nCom base na solicitação e no termo de referência apresentados, recomenda-se o prosseguimento **condicionado** à complementação e validação humana dos seguintes pontos:\n\n1. executar e documentar teste de restauração, incluindo evidências de recuperabilidade, integridade e atendimento aos tempos de recuperação;\n2. validar cobertura, retenção, monitoramento, alertas e níveis de serviço;\n3. formalizar a justificativa da divergência em relação ao planejamento e confrontá-la com o planejamento vigente;\n4. verificar eventual sobreposição com contratações ou suportes existentes;\n5. apresentar e conferir valores, dotação e saldo, quando aplicável.\n\nAs pendências acima permanecem em aberto. Este parecer não atesta backup ou restauração, não certifica a suficiência dos documentos, não confirma disponibilidade orçamentária, não autoriza despesa ou mudanças em produção e não substitui a revisão e eventual assinatura dos responsáveis competentes."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1483,
+    "prompt_tokens": 996,
+    "cached_prompt_tokens": 0,
+    "completion_tokens": 487,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  },
+  "aprovacoes": [],
+  "status": "aguardando_revisao_humana"
+}

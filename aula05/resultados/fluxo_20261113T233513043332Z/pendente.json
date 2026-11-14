@@ -1,0 +1,16 @@
+{
+  "flow_id": "8233bcb5-de62-4fdb-b1c4-0a5a7be37052",
+  "flow_class": "__main__.Triagem",
+  "method_name": "preparar_assinatura",
+  "method_output": "**Minuta de parecer consolidado — Protocolo LAB-003**\n\nRecomenda-se o prosseguimento **condicionado à complementação e revisão humana**. A renovação do suporte de backup não deve ser considerada tecnicamente validada enquanto não houver execução e documentação de teste de restauração, incluindo resultados, tempos de recuperação, integridade dos dados, retenção e cobertura do suporte do fornecedor.\n\nPermanece pendente o esclarecimento formal da divergência em relação ao planejamento, com confirmação de escopo, prazos, continuidade operacional e aderência ao instrumento vigente. Também devem ser apresentados valores, dotação e saldo, além da verificação de eventual sobreposição com despesas ou contratações existentes.\n\nEste parecer é preliminar e restrito às análises técnica e financeira documentadas. Não atesta backup, disponibilidade orçamentária, autorização de despesa ou mudanças em produção. A eventual assinatura deve ser realizada exclusivamente pelo responsável humano competente, após a análise e o saneamento formal das pendências.",
+  "message": "Revise a minuta e suas pendências. Aprovar autoriza apenas o encaminhamento da minuta à assinatura humana, sem autorizar despesa ou mudança em produção.",
+  "emit": [
+    "revisar",
+    "aprovado"
+  ],
+  "default_outcome": "revisar",
+  "metadata": {},
+  "llm": "openai/gpt-5.6-luna",
+  "requested_at": "2026-11-13T19:35:22.420176",
+  "execution_uuid": "81852563-338c-4ea5-ba30-392bcf37f689"
+}

@@ -1,0 +1,16 @@
+{
+  "flow_id": "75367449-f021-4dc6-9dc5-9f924ae2b84b",
+  "flow_class": "__main__.Triagem",
+  "method_name": "preparar_assinatura",
+  "method_output": "**Minuta de parecer consolidado — Protocolo LAB-003**\n\nRecomenda-se o prosseguimento **condicionado** à revisão e manifestação das unidades competentes. Permanecem pendentes:  \n1. realizar e documentar teste de restauração, validando recuperabilidade, integridade, retenção, cópias isoladas, monitoramento e tempos de recuperação;  \n2. esclarecer, justificar e registrar formalmente a divergência em relação ao planejamento de TI;  \n3. compatibilizar a demanda com os instrumentos de planejamento e verificar disponibilidade orçamentária, sem presumir saldo;  \n4. analisar valores, cobertura contratual, eventual duplicidade ou sobreposição com contratos vigentes e enquadramento da despesa.\n\nOs documentos apresentados não permitem concluir sobre a suficiência técnica, financeira ou contratual da renovação. O presente parecer não certifica documentos, não atesta backup ou restauração, não autoriza despesa nem mudanças em produção. Submeta-se à revisão humana e, após o saneamento documental e as manifestações responsáveis, à eventual assinatura pelos responsáveis competentes.",
+  "message": "Revise a minuta e suas pendências. Aprovar autoriza apenas o encaminhamento da minuta à assinatura humana, sem autorizar despesa ou mudança em produção.",
+  "emit": [
+    "revisar",
+    "aprovado"
+  ],
+  "default_outcome": "revisar",
+  "metadata": {},
+  "llm": "openai/gpt-5.6-luna",
+  "requested_at": "2026-11-13T19:36:35.487039",
+  "execution_uuid": "46de59f8-e16a-4511-b56e-fb4b4f08803d"
+}

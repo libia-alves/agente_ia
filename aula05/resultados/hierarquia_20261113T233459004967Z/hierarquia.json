@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "M01",
+    "gerente": "automatico",
+    "area_esperada": "infraestrutura",
+    "texto": "**Área de destino:** Infraestrutura — equipe de backup e restauração.\n\n**Parecer:** O backup noturno do servidor de arquivos falhou em duas ocasiões. Recomenda-se a análise das execuções e a verificação da possibilidade e da integridade da restauração. O relato não permite concluir a causa da falha, a existência de cópia válida ou o resultado de uma restauração.",
+    "token_usage": {
+      "total_tokens": 2013,
+      "prompt_tokens": 1635,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 378,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:59.091555+00:00",
+        "call_id": "859cb9e9-60e3-484e-a7c9-5ce9a802f342",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:01.128133+00:00",
+        "call_id": "859cb9e9-60e3-484e-a7c9-5ce9a802f342",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665",
+        "usage": {
+          "prompt_tokens": 546,
+          "completion_tokens": 130,
+          "total_tokens": 676,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:01.129021+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar tecnicamente a manifestação e emitir parecer breve sobre a área de destino e a necessidade de verificação da restauração, sem inventar providências.",
+          "context": "Manifestação recebida: \"O backup noturno do servidor de arquivos falhou duas vezes e preciso verificar a restauração.\" Faça a triagem, identifique a área de destino adequada e forneça um parecer conciso, limitado ao que pode ser concluído a partir do relato. Não presuma ações já realizadas nem invente procedimentos.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:01.131602+00:00",
+        "call_id": "7b67a612-aab7-442f-a751-f8e847297753",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "8c92a352-257d-4a59-96c0-b0b83c0e9c3d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:03.821654+00:00",
+        "call_id": "7b67a612-aab7-442f-a751-f8e847297753",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "8c92a352-257d-4a59-96c0-b0b83c0e9c3d",
+        "usage": {
+          "prompt_tokens": 236,
+          "completion_tokens": 164,
+          "total_tokens": 400,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:03.826387+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar tecnicamente a manifestação e emitir parecer breve sobre a área de destino e a necessidade de verificação da restauração, sem inventar providências.",
+          "context": "Manifestação recebida: \"O backup noturno do servidor de arquivos falhou duas vezes e preciso verificar a restauração.\" Faça a triagem, identifique a área de destino adequada e forneça um parecer conciso, limitado ao que pode ser concluído a partir do relato. Não presuma ações já realizadas nem invente procedimentos.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:03.827719+00:00",
+        "call_id": "5f7616fe-b085-4750-9fb4-7cb8765afe21",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:05.194232+00:00",
+        "call_id": "5f7616fe-b085-4750-9fb4-7cb8765afe21",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "2805638b-f58c-4fbb-8e1b-8c8a0b068665",
+        "usage": {
+          "prompt_tokens": 853,
+          "completion_tokens": 84,
+          "total_tokens": 937,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista de infraestrutura"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M02",
+    "gerente": "automatico",
+    "area_esperada": "infraestrutura",
+    "texto": "**Área de destino:** Infraestrutura de Redes/Conectividade.\n\n**Parecer:** Indisponibilidade de conexão com a rede interna após a troca do equipamento, caracterizando ocorrência de conectividade.",
+    "token_usage": {
+      "total_tokens": 1701,
+      "prompt_tokens": 1483,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 218,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:05.276193+00:00",
+        "call_id": "dc06b096-2fef-4535-a8fe-cd0168c3df75",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:06.855636+00:00",
+        "call_id": "dc06b096-2fef-4535-a8fe-cd0168c3df75",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575",
+        "usage": {
+          "prompt_tokens": 543,
+          "completion_tokens": 104,
+          "total_tokens": 647,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:06.856358+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve, indicando a área de destino apropriada. Não inventar providências; limitar-se à triagem técnica do relato.",
+          "context": "Relato recebido: \"Após a troca do equipamento, a unidade ficou sem conexão com a rede interna.\" É necessário classificar a área responsável e fornecer um parecer breve para a resposta final, em português.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:06.858324+00:00",
+        "call_id": "eea70b87-c9d8-4358-93a7-cc82cf1a5ea6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "75084698-dfc1-4525-9ee5-7ca8d2db1222"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:08.550820+00:00",
+        "call_id": "eea70b87-c9d8-4358-93a7-cc82cf1a5ea6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "75084698-dfc1-4525-9ee5-7ca8d2db1222",
+        "usage": {
+          "prompt_tokens": 210,
+          "completion_tokens": 70,
+          "total_tokens": 280,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:08.554736+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve, indicando a área de destino apropriada. Não inventar providências; limitar-se à triagem técnica do relato.",
+          "context": "Relato recebido: \"Após a troca do equipamento, a unidade ficou sem conexão com a rede interna.\" É necessário classificar a área responsável e fornecer um parecer breve para a resposta final, em português.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:08.555976+00:00",
+        "call_id": "1fc6ebba-fe7d-49f9-8d4a-e3309e7b09af",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:09.965272+00:00",
+        "call_id": "1fc6ebba-fe7d-49f9-8d4a-e3309e7b09af",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a6af02d1-6ae4-49a7-a623-e9b34c33b575",
+        "usage": {
+          "prompt_tokens": 730,
+          "completion_tokens": 44,
+          "total_tokens": 774,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista de infraestrutura"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M03",
+    "gerente": "automatico",
+    "area_esperada": "financeiro",
+    "texto": "**Área de destino:** Área financeira/orçamentária responsável pelo planejamento e acompanhamento do PTA.\n\n**Parecer:** A manifestação trata de divergência de valores entre o PCA e o PTA, relacionada ao planejamento da renovação do suporte de backup. Recomenda-se o encaminhamento à área financeira/orçamentária competente para conferência e conciliação dos registros. Não foram informados os valores ou documentos necessários para quantificar a diferença.",
+    "token_usage": {
+      "total_tokens": 2086,
+      "prompt_tokens": 1687,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 399,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:10.038058+00:00",
+        "call_id": "bfdea7dd-e9da-4265-adc7-baf622912ef9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:12.142080+00:00",
+        "call_id": "bfdea7dd-e9da-4265-adc7-baf622912ef9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d",
+        "usage": {
+          "prompt_tokens": 551,
+          "completion_tokens": 157,
+          "total_tokens": 708,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:12.143704+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área de destino adequada e a divergência de valores entre PCA e PTA, sem inventar providências.",
+          "context": "Relato recebido: “O planejamento da renovação do suporte de backup apresenta valores diferentes no PCA e no PTA. Solicito conciliação.” É necessário fazer a triagem, indicar a área de destino e fornecer parecer breve. Avalie a natureza do assunto e informe se deve ser encaminhado à área financeira, considerando que envolve conciliação de valores em instrumentos de planejamento (PCA e PTA). Não proponha providências não solicitadas nem invente dados ou valores.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:12.147488+00:00",
+        "call_id": "03484bd2-ad9e-4734-87ef-5bebf40a656f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "bedc7330-9890-4224-97da-7a83a8922c57"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:14.468280+00:00",
+        "call_id": "03484bd2-ad9e-4734-87ef-5bebf40a656f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "bedc7330-9890-4224-97da-7a83a8922c57",
+        "usage": {
+          "prompt_tokens": 262,
+          "completion_tokens": 153,
+          "total_tokens": 415,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:14.472087+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área de destino adequada e a divergência de valores entre PCA e PTA, sem inventar providências.",
+          "context": "Relato recebido: “O planejamento da renovação do suporte de backup apresenta valores diferentes no PCA e no PTA. Solicito conciliação.” É necessário fazer a triagem, indicar a área de destino e fornecer parecer breve. Avalie a natureza do assunto e informe se deve ser encaminhado à área financeira, considerando que envolve conciliação de valores em instrumentos de planejamento (PCA e PTA). Não proponha providências não solicitadas nem invente dados ou valores.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:14.473578+00:00",
+        "call_id": "85a11dd6-3b5b-40e6-9290-9fa5fd8e40f6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:16.209612+00:00",
+        "call_id": "85a11dd6-3b5b-40e6-9290-9fa5fd8e40f6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "1fdf7aae-8703-4fe6-b038-a25905b6a94d",
+        "usage": {
+          "prompt_tokens": 874,
+          "completion_tokens": 89,
+          "total_tokens": 963,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista financeiro"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M04",
+    "gerente": "automatico",
+    "area_esperada": "financeiro",
+    "texto": "**Área de destino:** Financeira/Orçamentária, com ciência da área de TI.\n\n**Parecer:** Há indício de duplicidade na previsão de despesa da licença, sendo necessária a conferência dos valores e da respectiva programação no planejamento. A área de TI pode confirmar a necessidade e a correta identificação da licença.",
+    "token_usage": {
+      "total_tokens": 1960,
+      "prompt_tokens": 1635,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 325,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:16.274545+00:00",
+        "call_id": "f8654313-58bc-4df1-9ae9-ed56abee23c2",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:18.773004+00:00",
+        "call_id": "f8654313-58bc-4df1-9ae9-ed56abee23c2",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e",
+        "usage": {
+          "prompt_tokens": 553,
+          "completion_tokens": 156,
+          "total_tokens": 709,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:18.773924+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a conferência dos valores, indicando a área de destino apropriada. Não inventar providências; limitar-se ao que pode ser concluído a partir do relato.",
+          "context": "Relato recebido: \"A previsão de despesa de uma licença foi duplicada na planilha de planejamento de TI. Solicito conferência dos valores.\" A resposta final deverá conter a área de destino e um parecer breve, sem inventar providências. Avalie o caso sob o aspecto financeiro/orçamentário e diga se deve ser encaminhado à área financeira, de TI ou outra, justificando concisamente.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:18.775667+00:00",
+        "call_id": "d8b653b9-eb42-410a-8cc6-669c841ac2f4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "4c9d049f-0091-4666-9684-0e2db331d5fa"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:20.825256+00:00",
+        "call_id": "d8b653b9-eb42-410a-8cc6-669c841ac2f4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "4c9d049f-0091-4666-9684-0e2db331d5fa",
+        "usage": {
+          "prompt_tokens": 261,
+          "completion_tokens": 99,
+          "total_tokens": 360,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:20.828296+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a conferência dos valores, indicando a área de destino apropriada. Não inventar providências; limitar-se ao que pode ser concluído a partir do relato.",
+          "context": "Relato recebido: \"A previsão de despesa de uma licença foi duplicada na planilha de planejamento de TI. Solicito conferência dos valores.\" A resposta final deverá conter a área de destino e um parecer breve, sem inventar providências. Avalie o caso sob o aspecto financeiro/orçamentário e diga se deve ser encaminhado à área financeira, de TI ou outra, justificando concisamente.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:20.829590+00:00",
+        "call_id": "052d207a-2c13-47af-96ee-577b01deeb86",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:22.153690+00:00",
+        "call_id": "052d207a-2c13-47af-96ee-577b01deeb86",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ea9e97cd-42ea-4b2d-8fe5-53a925d2627e",
+        "usage": {
+          "prompt_tokens": 821,
+          "completion_tokens": 70,
+          "total_tokens": 891,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista financeiro"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M05",
+    "gerente": "automatico",
+    "area_esperada": "documental",
+    "texto": "**Área de destino:** Área demandante/gestora do contrato e unidade responsável pela instrução e formalização da contratação.\n\n**Parecer:** Como o termo de referência não consta do recorte encaminhado, deve-se conferir nos autos sua versão vigente, além da justificativa da necessidade da renovação, da proposta ou documento comercial correspondente e da minuta do instrumento a ser assinado, verificando a compatibilidade entre objeto, prazo e valores. Também devem ser verificadas as manifestações de análise e aprovação já juntadas ao processo. Se o termo de referência ou outro documento essencial não for localizado, deve-se providenciar sua juntada ou complementação antes da assinatura.",
+    "token_usage": {
+      "total_tokens": 2480,
+      "prompt_tokens": 1891,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 589,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:22.211209+00:00",
+        "call_id": "6a4915dd-0580-4d03-a53e-3a940be41e05",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:24.810990+00:00",
+        "call_id": "6a4915dd-0580-4d03-a53e-3a940be41e05",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69",
+        "usage": {
+          "prompt_tokens": 556,
+          "completion_tokens": 202,
+          "total_tokens": 758,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:24.811674+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre quais documentos devem ser conferidos antes da assinatura de uma renovação de suporte quando o termo de referência não aparece no recorte enviado. Indicar a área de destino apropriada e limitar-se a providências/documentos efetivamente justificáveis, sem inventar exigências.",
+          "context": "Manifestação recebida: “O processo de renovação do suporte está sem o termo de referência no recorte enviado. Quais documentos precisam ser conferidos antes da assinatura?” Precisamos fazer a triagem, escolher a área responsável e obter um parecer breve para a resposta final. Não há outros documentos, fatos ou normas fornecidos; portanto, o parecer deve ser prudente, mencionar apenas a conferência do termo de referência e dos documentos essenciais do processo que possam ser confirmados nos autos, sem criar uma lista normativa específica não informada.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:24.813675+00:00",
+        "call_id": "674d7c5f-7bbd-4157-8f49-9c0dc5854101",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "db809ae8-8325-4e86-999d-8901c2fe6ef6"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:28.088637+00:00",
+        "call_id": "674d7c5f-7bbd-4157-8f49-9c0dc5854101",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "db809ae8-8325-4e86-999d-8901c2fe6ef6",
+        "usage": {
+          "prompt_tokens": 313,
+          "completion_tokens": 251,
+          "total_tokens": 564,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:28.091964+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre quais documentos devem ser conferidos antes da assinatura de uma renovação de suporte quando o termo de referência não aparece no recorte enviado. Indicar a área de destino apropriada e limitar-se a providências/documentos efetivamente justificáveis, sem inventar exigências.",
+          "context": "Manifestação recebida: “O processo de renovação do suporte está sem o termo de referência no recorte enviado. Quais documentos precisam ser conferidos antes da assinatura?” Precisamos fazer a triagem, escolher a área responsável e obter um parecer breve para a resposta final. Não há outros documentos, fatos ou normas fornecidos; portanto, o parecer deve ser prudente, mencionar apenas a conferência do termo de referência e dos documentos essenciais do processo que possam ser confirmados nos autos, sem criar uma lista normativa específica não informada.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:28.093606+00:00",
+        "call_id": "3cd4c902-e543-479b-b4f5-ba6d9a03ce1d",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:29.930775+00:00",
+        "call_id": "3cd4c902-e543-479b-b4f5-ba6d9a03ce1d",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "990aad9f-877d-4939-8a55-ab276007ba69",
+        "usage": {
+          "prompt_tokens": 1022,
+          "completion_tokens": 136,
+          "total_tokens": 1158,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista documental"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M06",
+    "gerente": "automatico",
+    "area_esperada": "documental",
+    "texto": "**Área de destino:** Unidade responsável pela elaboração/revisão da nota técnica.\n\n**Parecer:** A minuta não deve ser encaminhada à assinatura enquanto não estiver identificado o responsável pela revisão. Após a devida identificação e validação, poderá ser encaminhada para assinatura do responsável competente, conforme o fluxo aplicável.",
+    "token_usage": {
+      "total_tokens": 1871,
+      "prompt_tokens": 1587,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 284,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:29.997458+00:00",
+        "call_id": "3205bbed-e543-40db-8f03-723e98d7d0eb",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:31.981987+00:00",
+        "call_id": "3205bbed-e543-40db-8f03-723e98d7d0eb",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6",
+        "usage": {
+          "prompt_tokens": 551,
+          "completion_tokens": 143,
+          "total_tokens": 694,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:31.982802+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve, indicando a área de destino apropriada e a instrução de encaminhamento para assinatura, sem inventar providências.",
+          "context": "Relato recebido: “Recebi uma minuta de nota técnica sem identificação do responsável pela revisão. Solicito instrução para encaminhar à assinatura.” A resposta final deve conter a área de destino e um parecer breve, limitando-se ao que decorre do relato e sem criar procedimentos não informados. Avalie especialmente a necessidade de identificação/validação do responsável pela revisão antes do encaminhamento para assinatura.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:31.984932+00:00",
+        "call_id": "4651e3c9-56be-4ac2-955e-fd54d092b9a6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "512011ee-afe9-48ce-be1f-1f6f7b3cb5ab"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:33.592951+00:00",
+        "call_id": "4651e3c9-56be-4ac2-955e-fd54d092b9a6",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "512011ee-afe9-48ce-be1f-1f6f7b3cb5ab",
+        "usage": {
+          "prompt_tokens": 254,
+          "completion_tokens": 75,
+          "total_tokens": 329,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:33.596008+00:00",
+        "agent_role": "Crew Manager",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve, indicando a área de destino apropriada e a instrução de encaminhamento para assinatura, sem inventar providências.",
+          "context": "Relato recebido: “Recebi uma minuta de nota técnica sem identificação do responsável pela revisão. Solicito instrução para encaminhar à assinatura.” A resposta final deve conter a área de destino e um parecer breve, limitando-se ao que decorre do relato e sem criar procedimentos não informados. Avalie especialmente a necessidade de identificação/validação do responsável pela revisão antes do encaminhamento para assinatura.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:33.597209+00:00",
+        "call_id": "ebcb3e8e-21d3-413a-b327-75f800e4e52b",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:35.155434+00:00",
+        "call_id": "ebcb3e8e-21d3-413a-b327-75f800e4e52b",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "ac20138f-7bc9-46ed-846d-3e329dae3dd6",
+        "usage": {
+          "prompt_tokens": 782,
+          "completion_tokens": 66,
+          "total_tokens": 848,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista documental"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M01",
+    "gerente": "definido",
+    "area_esperada": "infraestrutura",
+    "texto": "Área de destino: Infraestrutura.\n\nParecer: A manifestação trata de falha recorrente no backup noturno do servidor de arquivos e da necessidade de verificar a restauração. Deve ser analisada pela equipe de infraestrutura/backup.",
+    "token_usage": {
+      "total_tokens": 1731,
+      "prompt_tokens": 1496,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 235,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:35.223646+00:00",
+        "call_id": "994a51a2-63b7-4285-944a-6e3f9929e3e1",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:37.099550+00:00",
+        "call_id": "994a51a2-63b7-4285-944a-6e3f9929e3e1",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d",
+        "usage": {
+          "prompt_tokens": 540,
+          "completion_tokens": 111,
+          "total_tokens": 651,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:37.100267+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre o encaminhamento adequado, sem inventar providências.",
+          "context": "A manifestação relata: \"O backup noturno do servidor de arquivos falhou duas vezes e preciso verificar a restauração.\" O pedido principal envolve falha de backup e verificação de restauração. Determine a área de destino competente e forneça um parecer breve, limitando-se ao que está informado.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:37.102290+00:00",
+        "call_id": "0cd4d61a-3713-498f-83cb-588174803c96",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "4b7a2995-0461-443a-98c9-28af66dea852"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:38.739125+00:00",
+        "call_id": "0cd4d61a-3713-498f-83cb-588174803c96",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "4b7a2995-0461-443a-98c9-28af66dea852",
+        "usage": {
+          "prompt_tokens": 217,
+          "completion_tokens": 75,
+          "total_tokens": 292,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:38.742202+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre o encaminhamento adequado, sem inventar providências.",
+          "context": "A manifestação relata: \"O backup noturno do servidor de arquivos falhou duas vezes e preciso verificar a restauração.\" O pedido principal envolve falha de backup e verificação de restauração. Determine a área de destino competente e forneça um parecer breve, limitando-se ao que está informado.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:38.743495+00:00",
+        "call_id": "3050a9a6-127b-47de-8183-2caa0842e943",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:40.095267+00:00",
+        "call_id": "3050a9a6-127b-47de-8183-2caa0842e943",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ad12e66a-4129-4852-a069-99b83c1a872d",
+        "usage": {
+          "prompt_tokens": 739,
+          "completion_tokens": 49,
+          "total_tokens": 788,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista de infraestrutura"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M02",
+    "gerente": "definido",
+    "area_esperada": "infraestrutura",
+    "texto": "Área de destino: **Infraestrutura**.\n\nParecer: **Trata-se de falha de conectividade com a rede interna após a troca de equipamento, devendo ser analisada pela equipe de infraestrutura de redes.**",
+    "token_usage": {
+      "total_tokens": 1733,
+      "prompt_tokens": 1490,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 243,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:40.168485+00:00",
+        "call_id": "c223030b-95ef-4c9a-91cb-02bcf621dd20",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:42.323225+00:00",
+        "call_id": "c223030b-95ef-4c9a-91cb-02bcf621dd20",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a",
+        "usage": {
+          "prompt_tokens": 537,
+          "completion_tokens": 102,
+          "total_tokens": 639,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:42.323989+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área de destino, sem inventar providências.",
+          "context": "A manifestação relata: \"Após a troca do equipamento, a unidade ficou sem conexão com a rede interna.\" O pedido principal é uma falha de rede/conectividade interna após substituição de equipamento. Avalie e informe o parecer para a triagem.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:42.326255+00:00",
+        "call_id": "dbd5e72a-30c1-4e1f-b75b-26a1ef7bdc03",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "04330fff-f7b6-4055-a8ff-358f0202813d"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:44.273959+00:00",
+        "call_id": "dbd5e72a-30c1-4e1f-b75b-26a1ef7bdc03",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista de infraestrutura",
+        "task_id": "04330fff-f7b6-4055-a8ff-358f0202813d",
+        "usage": {
+          "prompt_tokens": 208,
+          "completion_tokens": 93,
+          "total_tokens": 301,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:44.278006+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área de destino, sem inventar providências.",
+          "context": "A manifestação relata: \"Após a troca do equipamento, a unidade ficou sem conexão com a rede interna.\" O pedido principal é uma falha de rede/conectividade interna após substituição de equipamento. Avalie e informe o parecer para a triagem.",
+          "coworker": "Especialista de infraestrutura"
+        },
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:44.279410+00:00",
+        "call_id": "04a86c3a-52bd-4822-b327-767746ec1c77",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:45.496258+00:00",
+        "call_id": "04a86c3a-52bd-4822-b327-767746ec1c77",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "a839003f-514e-4903-abe8-e36f8c4f8c5a",
+        "usage": {
+          "prompt_tokens": 745,
+          "completion_tokens": 48,
+          "total_tokens": 793,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista de infraestrutura"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M03",
+    "gerente": "definido",
+    "area_esperada": "financeiro",
+    "texto": "**Área de destino:** Financeiro.\n\n**Parecer:** A manifestação trata da divergência entre os valores registrados no PCA e no PTA para a renovação do suporte de backup. Deve ser realizada a conciliação dos instrumentos, verificando quantitativos, preços estimados e eventuais diferenças de escopo ou duplicidades.",
+    "token_usage": {
+      "total_tokens": 2090,
+      "prompt_tokens": 1692,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 398,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:45.562519+00:00",
+        "call_id": "e0ba7da9-4394-40af-a539-d8810248c356",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:47.616168+00:00",
+        "call_id": "e0ba7da9-4394-40af-a539-d8810248c356",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf",
+        "usage": {
+          "prompt_tokens": 545,
+          "completion_tokens": 154,
+          "total_tokens": 699,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:47.616929+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a conciliação dos valores divergentes entre PCA e PTA na renovação do suporte de backup, indicando a área competente para tratar o caso. Não inventar providências além do que decorre do relato.",
+          "context": "Manifestação recebida: \"O planejamento da renovação do suporte de backup apresenta valores diferentes no PCA e no PTA. Solicito conciliação.\" O pedido principal é a divergência de valores entre instrumentos de planejamento (PCA/PTA), embora mencione suporte de backup. A triagem deve escolher a competência principal pelo tema de valores/PCA/PTA.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:47.618852+00:00",
+        "call_id": "571612ae-8419-47a0-bced-c91961dc8545",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "2023d274-afea-41e1-a6cf-b2643fa88058"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:50.413375+00:00",
+        "call_id": "571612ae-8419-47a0-bced-c91961dc8545",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "2023d274-afea-41e1-a6cf-b2643fa88058",
+        "usage": {
+          "prompt_tokens": 259,
+          "completion_tokens": 176,
+          "total_tokens": 435,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:50.417228+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a conciliação dos valores divergentes entre PCA e PTA na renovação do suporte de backup, indicando a área competente para tratar o caso. Não inventar providências além do que decorre do relato.",
+          "context": "Manifestação recebida: \"O planejamento da renovação do suporte de backup apresenta valores diferentes no PCA e no PTA. Solicito conciliação.\" O pedido principal é a divergência de valores entre instrumentos de planejamento (PCA/PTA), embora mencione suporte de backup. A triagem deve escolher a competência principal pelo tema de valores/PCA/PTA.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:50.418549+00:00",
+        "call_id": "31ee215c-1eaf-471c-a275-198b2e3f66f3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:52.054454+00:00",
+        "call_id": "31ee215c-1eaf-471c-a275-198b2e3f66f3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "f73e4405-a8b8-4cc6-b41f-a3555d5fdbbf",
+        "usage": {
+          "prompt_tokens": 888,
+          "completion_tokens": 68,
+          "total_tokens": 956,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista financeiro"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M04",
+    "gerente": "definido",
+    "area_esperada": "financeiro",
+    "texto": "**Área de destino:** Financeiro.\n\n**Parecer:** A manifestação trata de valores e possível duplicidade na previsão de despesa de uma licença. Deve ser conferida a planilha de planejamento de TI para confirmar a duplicidade e validar os valores lançados.",
+    "token_usage": {
+      "total_tokens": 1834,
+      "prompt_tokens": 1552,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 282,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:52.124152+00:00",
+        "call_id": "927d5ef2-8872-415e-b724-6542548e97c3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:54.101968+00:00",
+        "call_id": "927d5ef2-8872-415e-b724-6542548e97c3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f",
+        "usage": {
+          "prompt_tokens": 547,
+          "completion_tokens": 114,
+          "total_tokens": 661,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:54.102736+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a competência e o tratamento do caso.",
+          "context": "A manifestação informa: \"A previsão de despesa de uma licença foi duplicada na planilha de planejamento de TI. Solicito conferência dos valores.\" O pedido principal é conferir valores e identificar duplicidade em previsão de despesa. Determine a área de destino apropriada e forneça um parecer breve, sem inventar providências.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:54.105005+00:00",
+        "call_id": "86895e23-8e4c-4787-802f-b3d58dc82a3a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "68da8733-18ea-458f-836d-a304fe86bac6"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:56.117117+00:00",
+        "call_id": "86895e23-8e4c-4787-802f-b3d58dc82a3a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista financeiro",
+        "task_id": "68da8733-18ea-458f-836d-a304fe86bac6",
+        "usage": {
+          "prompt_tokens": 219,
+          "completion_tokens": 112,
+          "total_tokens": 331,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:35:56.120666+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a competência e o tratamento do caso.",
+          "context": "A manifestação informa: \"A previsão de despesa de uma licença foi duplicada na planilha de planejamento de TI. Solicito conferência dos valores.\" O pedido principal é conferir valores e identificar duplicidade em previsão de despesa. Determine a área de destino apropriada e forneça um parecer breve, sem inventar providências.",
+          "coworker": "Especialista financeiro"
+        },
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:56.121907+00:00",
+        "call_id": "6b32298b-4392-406a-8caa-ef105b2ae2e4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:57.331577+00:00",
+        "call_id": "6b32298b-4392-406a-8caa-ef105b2ae2e4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cdba7432-4116-4587-84ef-38ff2f00c56f",
+        "usage": {
+          "prompt_tokens": 786,
+          "completion_tokens": 56,
+          "total_tokens": 842,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista financeiro"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M05",
+    "gerente": "definido",
+    "area_esperada": "documental",
+    "texto": "**Área de destino:** Documental.\n\n**Parecer:** Antes da assinatura, devem ser conferidos no processo integral:\n\n- termo de referência ou documento equivalente;\n- contrato vigente e eventuais aditivos;\n- justificativa da renovação e da continuidade do suporte;\n- manifestação do gestor ou fiscal do contrato;\n- comprovação da manutenção da habilitação e da regularidade da contratada;\n- comprovação da vantajosidade, quando exigível;\n- minuta do termo aditivo ou instrumento de renovação, com as aprovações pertinentes.\n\nComo o termo de referência não aparece apenas no recorte enviado, deve-se verificar se ele consta do processo integral antes de concluir pela sua ausência.",
+    "token_usage": {
+      "total_tokens": 2317,
+      "prompt_tokens": 1779,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 538,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:57.408080+00:00",
+        "call_id": "b7c2b865-3242-4207-844c-2f5189c7f288",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:35:59.544616+00:00",
+        "call_id": "b7c2b865-3242-4207-844c-2f5189c7f288",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78",
+        "usage": {
+          "prompt_tokens": 550,
+          "completion_tokens": 158,
+          "total_tokens": 708,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:35:59.545331+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e informar quais documentos devem ser conferidos antes da assinatura, considerando que se trata de renovação de suporte e que o termo de referência não aparece no recorte enviado. Emitir parecer breve, sem inventar providências.",
+          "context": "Manifestação recebida: “O processo de renovação do suporte está sem o termo de referência no recorte enviado. Quais documentos precisam ser conferidos antes da assinatura?” O pedido principal é documental: identificação/conferência de documentos prévios à assinatura. Responda indicando a área de destino e um parecer breve, limitado ao que pode ser afirmado com segurança a partir do relato.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:35:59.547152+00:00",
+        "call_id": "20de1bfa-7301-4af4-9fc0-5748f0a60c39",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "012dd03f-ef5e-4871-923d-4ffb31ee769c"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:36:02.702158+00:00",
+        "call_id": "20de1bfa-7301-4af4-9fc0-5748f0a60c39",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "012dd03f-ef5e-4871-923d-4ffb31ee769c",
+        "usage": {
+          "prompt_tokens": 269,
+          "completion_tokens": 239,
+          "total_tokens": 508,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:36:02.705306+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e informar quais documentos devem ser conferidos antes da assinatura, considerando que se trata de renovação de suporte e que o termo de referência não aparece no recorte enviado. Emitir parecer breve, sem inventar providências.",
+          "context": "Manifestação recebida: “O processo de renovação do suporte está sem o termo de referência no recorte enviado. Quais documentos precisam ser conferidos antes da assinatura?” O pedido principal é documental: identificação/conferência de documentos prévios à assinatura. Responda indicando a área de destino e um parecer breve, limitado ao que pode ser afirmado com segurança a partir do relato.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:36:02.706470+00:00",
+        "call_id": "d93c6df9-048e-45de-97a2-bb646c09ee12",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:36:04.646204+00:00",
+        "call_id": "d93c6df9-048e-45de-97a2-bb646c09ee12",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "3084ace3-e431-4c3a-b7e2-63ce51a3fe78",
+        "usage": {
+          "prompt_tokens": 960,
+          "completion_tokens": 141,
+          "total_tokens": 1101,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista documental"
+    ],
+    "destino_esperado_consultado": true
+  },
+  {
+    "id": "M06",
+    "gerente": "definido",
+    "area_esperada": "documental",
+    "texto": "**Área de destino:** Documental.\n\n**Parecer:** Encaminhar a minuta à unidade responsável pela elaboração ou revisão para identificação formal do responsável e validação do documento. Após essa regularização, poderá ser encaminhada à assinatura conforme o fluxo institucional aplicável.",
+    "token_usage": {
+      "total_tokens": 1860,
+      "prompt_tokens": 1574,
+      "cached_prompt_tokens": 0,
+      "completion_tokens": 286,
+      "reasoning_tokens": 0,
+      "cache_creation_tokens": 0,
+      "successful_requests": 3
+    },
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 3,
+    "chamadas_falhas": 0,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:36:04.715142+00:00",
+        "call_id": "fc0a8c81-fc61-4d01-9b07-6a751677dbbf",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:36:06.587563+00:00",
+        "call_id": "fc0a8c81-fc61-4d01-9b07-6a751677dbbf",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018",
+        "usage": {
+          "prompt_tokens": 545,
+          "completion_tokens": 130,
+          "total_tokens": 675,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_started",
+        "instante": "2026-11-13T23:36:06.588320+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área competente e a orientação de encaminhamento, sem inventar providências.",
+          "context": "A manifestação recebida é: \"Recebi uma minuta de nota técnica sem identificação do responsável pela revisão. Solicito instrução para encaminhar à assinatura.\" O pedido principal trata de documento/minuta e identificação de responsável, com solicitação de instrução para encaminhamento à assinatura. Informe a área de destino e um parecer breve, limitando-se ao que consta no relato.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:36:06.590555+00:00",
+        "call_id": "7e151cef-def6-48ff-becf-4c66707822b8",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "f9accc41-dadd-4760-8dfc-235d0cd7065a"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:36:08.330902+00:00",
+        "call_id": "7e151cef-def6-48ff-becf-4c66707822b8",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Especialista documental",
+        "task_id": "f9accc41-dadd-4760-8dfc-235d0cd7065a",
+        "usage": {
+          "prompt_tokens": 241,
+          "completion_tokens": 100,
+          "total_tokens": 341,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      },
+      {
+        "tipo": "tool_usage_finished",
+        "instante": "2026-11-13T23:36:08.334071+00:00",
+        "agent_role": "Gerente de triagem de TI",
+        "tool_name": "delegate_work_to_coworker",
+        "tool_args": {
+          "task": "Analisar a manifestação e emitir parecer breve sobre a área competente e a orientação de encaminhamento, sem inventar providências.",
+          "context": "A manifestação recebida é: \"Recebi uma minuta de nota técnica sem identificação do responsável pela revisão. Solicito instrução para encaminhar à assinatura.\" O pedido principal trata de documento/minuta e identificação de responsável, com solicitação de instrução para encaminhamento à assinatura. Informe a área de destino e um parecer breve, limitando-se ao que consta no relato.",
+          "coworker": "Especialista documental"
+        },
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:36:08.335312+00:00",
+        "call_id": "82ea96bb-1dfe-457d-b944-5e7d2e70a80a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018"
+      },
+      {
+        "tipo": "llm_call_completed",
+        "instante": "2026-11-13T23:36:09.561494+00:00",
+        "call_id": "82ea96bb-1dfe-457d-b944-5e7d2e70a80a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ed0f4071-1f36-4f29-a6d9-c7c1a8a98018",
+        "usage": {
+          "prompt_tokens": 788,
+          "completion_tokens": 56,
+          "total_tokens": 844,
+          "cached_prompt_tokens": 0,
+          "reasoning_tokens": 0
+        }
+      }
+    ],
+    "especialistas": [
+      "Especialista documental"
+    ],
+    "destino_esperado_consultado": true
+  }
+]

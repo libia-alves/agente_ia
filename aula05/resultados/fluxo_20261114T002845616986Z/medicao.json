@@ -1,0 +1,87 @@
+{
+  "chamadas_iniciadas": 3,
+  "chamadas_concluidas": 3,
+  "chamadas_falhas": 0,
+  "cenario": "complexa",
+  "roteador": "regra",
+  "eventos": [
+    {
+      "tipo": "llm_call_started",
+      "instante": "2026-11-14T00:28:46.875405+00:00",
+      "call_id": "7ef4cfc2-595b-44f8-b94c-e669cd7a60ee",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista de infraestrutura",
+      "task_id": "01160bf9-520a-40e7-8532-a1565aa0eeb1"
+    },
+    {
+      "tipo": "llm_call_completed",
+      "instante": "2026-11-14T00:28:49.451695+00:00",
+      "call_id": "7ef4cfc2-595b-44f8-b94c-e669cd7a60ee",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista de infraestrutura",
+      "task_id": "01160bf9-520a-40e7-8532-a1565aa0eeb1",
+      "usage": {
+        "prompt_tokens": 185,
+        "completion_tokens": 142,
+        "total_tokens": 327,
+        "cached_prompt_tokens": 0,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "tipo": "llm_call_started",
+      "instante": "2026-11-14T00:28:49.468595+00:00",
+      "call_id": "78f7dea7-1bdc-44f2-827a-6fb34712924b",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista financeiro",
+      "task_id": "aa4457c5-5f32-4a20-92c3-74fec0fd2192"
+    },
+    {
+      "tipo": "llm_call_completed",
+      "instante": "2026-11-14T00:28:52.382863+00:00",
+      "call_id": "78f7dea7-1bdc-44f2-827a-6fb34712924b",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista financeiro",
+      "task_id": "aa4457c5-5f32-4a20-92c3-74fec0fd2192",
+      "usage": {
+        "prompt_tokens": 333,
+        "completion_tokens": 140,
+        "total_tokens": 473,
+        "cached_prompt_tokens": 0,
+        "reasoning_tokens": 0
+      }
+    },
+    {
+      "tipo": "llm_call_started",
+      "instante": "2026-11-14T00:28:52.395379+00:00",
+      "call_id": "281eea8a-733e-4b50-a90d-7d0b1ec45096",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista documental",
+      "task_id": "9e90a4d6-6149-43d1-864f-721729d26f29"
+    },
+    {
+      "tipo": "llm_call_completed",
+      "instante": "2026-11-14T00:28:54.977107+00:00",
+      "call_id": "281eea8a-733e-4b50-a90d-7d0b1ec45096",
+      "model": "gpt-5.6-luna",
+      "agent_role": "Especialista documental",
+      "task_id": "9e90a4d6-6149-43d1-864f-721729d26f29",
+      "usage": {
+        "prompt_tokens": 493,
+        "completion_tokens": 201,
+        "total_tokens": 694,
+        "cached_prompt_tokens": 0,
+        "reasoning_tokens": 0
+      }
+    }
+  ],
+  "token_usage_equipe": {
+    "total_tokens": 1494,
+    "prompt_tokens": 1011,
+    "cached_prompt_tokens": 0,
+    "completion_tokens": 483,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  }
+}

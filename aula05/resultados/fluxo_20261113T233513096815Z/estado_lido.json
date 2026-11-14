@@ -1,0 +1,27 @@
+{
+  "id": "7ddbdd56-cb4e-4a91-a13d-11cc89b05369",
+  "pedido": {
+    "protocolo": "LAB-002",
+    "objeto": "Renovação do suporte de backup",
+    "documentos": [
+      "solicitacao",
+      "termo_referencia"
+    ],
+    "restauracao_testada": true,
+    "divergencia_planejamento": false
+  },
+  "modo_router": "modelo",
+  "entrada_recebida": true,
+  "conferencia_realizada": true,
+  "documentos_ok": true,
+  "rota": "encaminhar",
+  "pareceres": [
+    {
+      "etapa": "triagem",
+      "texto": "Conferência documental concluída; encaminhar ao atendimento."
+    }
+  ],
+  "token_usage": {},
+  "aprovacoes": [],
+  "status": "encaminhado_para_atendimento"
+}

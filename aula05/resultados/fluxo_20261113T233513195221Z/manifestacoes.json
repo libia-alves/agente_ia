@@ -1,0 +1,8 @@
+[
+  {"id":"M01","texto":"O backup noturno do servidor de arquivos falhou duas vezes e preciso verificar a restauração.","area_esperada":"infraestrutura","origem":"ficticia"},
+  {"id":"M02","texto":"Após a troca do equipamento, a unidade ficou sem conexão com a rede interna.","area_esperada":"infraestrutura","origem":"ficticia"},
+  {"id":"M03","texto":"O planejamento da renovação do suporte de backup apresenta valores diferentes no PCA e no PTA. Solicito conciliação.","area_esperada":"financeiro","origem":"ficticia"},
+  {"id":"M04","texto":"A previsão de despesa de uma licença foi duplicada na planilha de planejamento de TI. Solicito conferência dos valores.","area_esperada":"financeiro","origem":"ficticia"},
+  {"id":"M05","texto":"O processo de renovação do suporte está sem o termo de referência no recorte enviado. Quais documentos precisam ser conferidos antes da assinatura?","area_esperada":"documental","origem":"ficticia"},
+  {"id":"M06","texto":"Recebi uma minuta de nota técnica sem identificação do responsável pela revisão. Solicito instrução para encaminhar à assinatura.","area_esperada":"documental","origem":"ficticia"}
+]

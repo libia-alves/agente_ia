@@ -1,0 +1,782 @@
+[
+  {
+    "id": "M01",
+    "gerente": "automatico",
+    "area_esperada": "infraestrutura",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:11.518617+00:00",
+        "call_id": "2be35574-f748-4f56-8f3e-3f0b280d817a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.211113+00:00",
+        "call_id": "2be35574-f748-4f56-8f3e-3f0b280d817a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.211289+00:00",
+        "call_id": "2be35574-f748-4f56-8f3e-3f0b280d817a",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:12.221255+00:00",
+        "call_id": "d08fa4d7-499e-48fc-a146-d28e07d6f579",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.517004+00:00",
+        "call_id": "d08fa4d7-499e-48fc-a146-d28e07d6f579",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.517288+00:00",
+        "call_id": "d08fa4d7-499e-48fc-a146-d28e07d6f579",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:12.521726+00:00",
+        "call_id": "fe614c0a-fe37-42ed-b0a6-c5c3f47c5ac4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.978688+00:00",
+        "call_id": "fe614c0a-fe37-42ed-b0a6-c5c3f47c5ac4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:12.978940+00:00",
+        "call_id": "fe614c0a-fe37-42ed-b0a6-c5c3f47c5ac4",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "a84e80db-710d-4a1e-a7c7-e64860105fd9",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M02",
+    "gerente": "automatico",
+    "area_esperada": "infraestrutura",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:13.039545+00:00",
+        "call_id": "b9ca5ab6-bc3a-4c8e-90b9-3071e6b39aec",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.335769+00:00",
+        "call_id": "b9ca5ab6-bc3a-4c8e-90b9-3071e6b39aec",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.335898+00:00",
+        "call_id": "b9ca5ab6-bc3a-4c8e-90b9-3071e6b39aec",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:13.340126+00:00",
+        "call_id": "0345880e-2f60-42da-9f80-a1cdf4a5fb3f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.643530+00:00",
+        "call_id": "0345880e-2f60-42da-9f80-a1cdf4a5fb3f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.643674+00:00",
+        "call_id": "0345880e-2f60-42da-9f80-a1cdf4a5fb3f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:13.648279+00:00",
+        "call_id": "3b89c0bc-e010-45e6-a650-7c10b8fa3aff",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.945302+00:00",
+        "call_id": "3b89c0bc-e010-45e6-a650-7c10b8fa3aff",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:13.945434+00:00",
+        "call_id": "3b89c0bc-e010-45e6-a650-7c10b8fa3aff",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "272ac281-615f-4c57-87a5-874cd028d436",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M03",
+    "gerente": "automatico",
+    "area_esperada": "financeiro",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:14.005908+00:00",
+        "call_id": "b2a44a22-4da4-4177-8c3c-2a7a98f1f668",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.290713+00:00",
+        "call_id": "b2a44a22-4da4-4177-8c3c-2a7a98f1f668",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.290853+00:00",
+        "call_id": "b2a44a22-4da4-4177-8c3c-2a7a98f1f668",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:14.294944+00:00",
+        "call_id": "ec9af12d-0e17-4b48-8a82-0d3632b775cc",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.564459+00:00",
+        "call_id": "ec9af12d-0e17-4b48-8a82-0d3632b775cc",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.564650+00:00",
+        "call_id": "ec9af12d-0e17-4b48-8a82-0d3632b775cc",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:14.568995+00:00",
+        "call_id": "6a85d6f1-f313-4463-84ce-a4882450bbd0",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.782222+00:00",
+        "call_id": "6a85d6f1-f313-4463-84ce-a4882450bbd0",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:14.782446+00:00",
+        "call_id": "6a85d6f1-f313-4463-84ce-a4882450bbd0",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "968506ef-83d5-4856-b8c6-e29b724393d0",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M04",
+    "gerente": "automatico",
+    "area_esperada": "financeiro",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:14.859433+00:00",
+        "call_id": "e0423d69-f38f-43b9-a5f6-b97d93bceab5",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.178799+00:00",
+        "call_id": "e0423d69-f38f-43b9-a5f6-b97d93bceab5",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.178945+00:00",
+        "call_id": "e0423d69-f38f-43b9-a5f6-b97d93bceab5",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:15.183594+00:00",
+        "call_id": "0db4ddc7-4960-4a24-bf20-77f3c0f5c736",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.386828+00:00",
+        "call_id": "0db4ddc7-4960-4a24-bf20-77f3c0f5c736",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.386975+00:00",
+        "call_id": "0db4ddc7-4960-4a24-bf20-77f3c0f5c736",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:15.391202+00:00",
+        "call_id": "0b9ce367-e073-41c6-b201-49c77845a504",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.597770+00:00",
+        "call_id": "0b9ce367-e073-41c6-b201-49c77845a504",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.598033+00:00",
+        "call_id": "0b9ce367-e073-41c6-b201-49c77845a504",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "f9345e56-5ce6-4618-be09-9517573ecb65",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M05",
+    "gerente": "automatico",
+    "area_esperada": "documental",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:15.663956+00:00",
+        "call_id": "503270f4-6c61-41f6-9435-9a097fcd86a3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.931727+00:00",
+        "call_id": "503270f4-6c61-41f6-9435-9a097fcd86a3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:15.931907+00:00",
+        "call_id": "503270f4-6c61-41f6-9435-9a097fcd86a3",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:15.936414+00:00",
+        "call_id": "b4c61d79-7eaa-43da-92ff-bf39d92b418f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.203248+00:00",
+        "call_id": "b4c61d79-7eaa-43da-92ff-bf39d92b418f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.203366+00:00",
+        "call_id": "b4c61d79-7eaa-43da-92ff-bf39d92b418f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:16.207613+00:00",
+        "call_id": "423e093f-685a-4b1c-b0f1-c709f8a0e8e9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.406206+00:00",
+        "call_id": "423e093f-685a-4b1c-b0f1-c709f8a0e8e9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.406430+00:00",
+        "call_id": "423e093f-685a-4b1c-b0f1-c709f8a0e8e9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "309f87d3-bc54-4327-b916-6193f899d8a4",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M06",
+    "gerente": "automatico",
+    "area_esperada": "documental",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 3,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 6,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:16.467686+00:00",
+        "call_id": "a781708f-5e8e-43fe-9db1-dd5b2aa2353c",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.746726+00:00",
+        "call_id": "a781708f-5e8e-43fe-9db1-dd5b2aa2353c",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.746947+00:00",
+        "call_id": "a781708f-5e8e-43fe-9db1-dd5b2aa2353c",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:16.751144+00:00",
+        "call_id": "b4163bd5-980b-41af-9a8a-fba64453e7de",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.993866+00:00",
+        "call_id": "b4163bd5-980b-41af-9a8a-fba64453e7de",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:16.994003+00:00",
+        "call_id": "b4163bd5-980b-41af-9a8a-fba64453e7de",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:16.998094+00:00",
+        "call_id": "7556cf07-8bb5-4676-b187-7d5d14448d78",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:17.228344+00:00",
+        "call_id": "7556cf07-8bb5-4676-b187-7d5d14448d78",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:17.228535+00:00",
+        "call_id": "7556cf07-8bb5-4676-b187-7d5d14448d78",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Crew Manager",
+        "task_id": "e3671903-7710-42dc-abbc-4f019bd5bbec",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M01",
+    "gerente": "definido",
+    "area_esperada": "infraestrutura",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:17.294543+00:00",
+        "call_id": "4c77b05a-e2b6-4fc1-b973-53dcdb8ab0f2",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "b911793c-5b90-4671-a704-4b3bc072d2a3"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:17.741059+00:00",
+        "call_id": "4c77b05a-e2b6-4fc1-b973-53dcdb8ab0f2",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "b911793c-5b90-4671-a704-4b3bc072d2a3",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:17.741275+00:00",
+        "call_id": "4c77b05a-e2b6-4fc1-b973-53dcdb8ab0f2",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "b911793c-5b90-4671-a704-4b3bc072d2a3",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M02",
+    "gerente": "definido",
+    "area_esperada": "infraestrutura",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:17.813915+00:00",
+        "call_id": "43451645-b9a2-4fc9-825b-8c16c6b33bb9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ab78acaa-406c-4b03-98f9-f212dc3d6aeb"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.088039+00:00",
+        "call_id": "43451645-b9a2-4fc9-825b-8c16c6b33bb9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ab78acaa-406c-4b03-98f9-f212dc3d6aeb",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.088163+00:00",
+        "call_id": "43451645-b9a2-4fc9-825b-8c16c6b33bb9",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "ab78acaa-406c-4b03-98f9-f212dc3d6aeb",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M03",
+    "gerente": "definido",
+    "area_esperada": "financeiro",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:18.153352+00:00",
+        "call_id": "28dd9635-a702-4192-8bc4-27ec4473a02f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "de14ada7-502b-4200-9d6d-29491e175c20"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.454441+00:00",
+        "call_id": "28dd9635-a702-4192-8bc4-27ec4473a02f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "de14ada7-502b-4200-9d6d-29491e175c20",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.454561+00:00",
+        "call_id": "28dd9635-a702-4192-8bc4-27ec4473a02f",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "de14ada7-502b-4200-9d6d-29491e175c20",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M04",
+    "gerente": "definido",
+    "area_esperada": "financeiro",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:18.526089+00:00",
+        "call_id": "7d5e95af-16c9-41ea-be04-1b6da0b42a35",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "59d13489-fbac-4382-9952-9eb1b2f110bf"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.865808+00:00",
+        "call_id": "7d5e95af-16c9-41ea-be04-1b6da0b42a35",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "59d13489-fbac-4382-9952-9eb1b2f110bf",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:18.866126+00:00",
+        "call_id": "7d5e95af-16c9-41ea-be04-1b6da0b42a35",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "59d13489-fbac-4382-9952-9eb1b2f110bf",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M05",
+    "gerente": "definido",
+    "area_esperada": "documental",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:18.930388+00:00",
+        "call_id": "d1609ec7-9226-4e64-a40c-a58afe8463b1",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cc47d211-7b74-4e89-823c-c7631fef4f7f"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:19.195994+00:00",
+        "call_id": "d1609ec7-9226-4e64-a40c-a58afe8463b1",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cc47d211-7b74-4e89-823c-c7631fef4f7f",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:19.196160+00:00",
+        "call_id": "d1609ec7-9226-4e64-a40c-a58afe8463b1",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "cc47d211-7b74-4e89-823c-c7631fef4f7f",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  },
+  {
+    "id": "M06",
+    "gerente": "definido",
+    "area_esperada": "documental",
+    "erro": "Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}",
+    "chamadas_iniciadas": 1,
+    "chamadas_concluidas": 0,
+    "chamadas_falhas": 2,
+    "eventos": [
+      {
+        "tipo": "llm_call_started",
+        "instante": "2026-11-13T23:34:19.262898+00:00",
+        "call_id": "88794a68-16ae-4362-a125-b0836f5cfa90",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "48e978d9-9894-4140-9d77-87cb0a66b002"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:19.584520+00:00",
+        "call_id": "88794a68-16ae-4362-a125-b0836f5cfa90",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "48e978d9-9894-4140-9d77-87cb0a66b002",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      },
+      {
+        "tipo": "llm_call_failed",
+        "instante": "2026-11-13T23:34:19.584744+00:00",
+        "call_id": "88794a68-16ae-4362-a125-b0836f5cfa90",
+        "model": "gpt-5.6-luna",
+        "agent_role": "Gerente de triagem de TI",
+        "task_id": "48e978d9-9894-4140-9d77-87cb0a66b002",
+        "error": "OpenAI API call failed: Error code: 400 - {'error': {'message': \"Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.\", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}"
+      }
+    ],
+    "especialistas": [],
+    "destino_esperado_consultado": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "inicio_utc": "2026-11-13T23:35:13.043857+00:00",
+  "modelo": "gpt-5.6-luna",
+  "dados": "ficticios",
+  "sha256_antes_da_execucao": {
+    "minilab.py": "e3e6757ac7c744632c29c576301122bbf39487c72cb15161ca73ad0b0a22f06b",
+    "manifestacoes.json": "726997dedf9f07e3cf3ab03996c1c34a3308ec85a836373ee99b3166444fd7e9",
+    "rotinas.json": "21e21a0580dcdb7c9a1deb196f86b104cb23260d8d658191d332e9a4d67082b8"
+  }
+}

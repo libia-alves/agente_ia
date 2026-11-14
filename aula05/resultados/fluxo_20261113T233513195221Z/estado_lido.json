@@ -1,0 +1,26 @@
+{
+  "id": "ffd2a2c7-19df-4731-a0e0-caed1761ed34",
+  "pedido": {
+    "protocolo": "LAB-001",
+    "objeto": "Renovação do suporte de backup",
+    "documentos": [
+      "solicitacao"
+    ],
+    "restauracao_testada": true,
+    "divergencia_planejamento": false
+  },
+  "modo_router": "regra",
+  "entrada_recebida": true,
+  "conferencia_realizada": true,
+  "documentos_ok": false,
+  "rota": "complementar",
+  "pareceres": [
+    {
+      "etapa": "conferencia",
+      "texto": "Solicitar documentos obrigatórios faltantes."
+    }
+  ],
+  "token_usage": {},
+  "aprovacoes": [],
+  "status": "aguardando_documentos"
+}
