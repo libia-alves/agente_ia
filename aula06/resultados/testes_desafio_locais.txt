@@ -1,0 +1,8 @@
+test_crewai_argumentos_json_e_retorno_ausente (test_desafio_frameworks.RegistroFrameworks.test_crewai_argumentos_json_e_retorno_ausente) ... ok
+test_langchain_correlaciona_ids_fora_de_ordem (test_desafio_frameworks.RegistroFrameworks.test_langchain_correlaciona_ids_fora_de_ordem) ... ok
+test_sem_ferramentas_nao_inventa_consulta (test_desafio_frameworks.RegistroFrameworks.test_sem_ferramentas_nao_inventa_consulta) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

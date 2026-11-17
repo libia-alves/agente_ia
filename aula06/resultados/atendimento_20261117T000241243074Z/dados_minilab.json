@@ -1,0 +1,76 @@
+{
+  "origem": "ficticia",
+  "setor": "Atendimento de TI da SEFAZ-MT",
+  "perguntas_dia": null,
+  "dias_mes": 22,
+  "perguntas": [
+    {
+      "id": "Q01",
+      "texto": "Qual a situação do chamado 2026001234?"
+    },
+    {
+      "id": "Q02",
+      "texto": "Quem está atendendo a falha de rede do chamado 2026005678?"
+    },
+    {
+      "id": "Q03",
+      "texto": "Como peço acesso a um sistema e qual o prazo?"
+    },
+    {
+      "id": "Q04",
+      "texto": "Esqueci minha senha. Como devo proceder?"
+    },
+    {
+      "id": "Q05",
+      "texto": "Quais informações preciso enviar para restaurar um arquivo?"
+    },
+    {
+      "id": "Q06",
+      "texto": "Onde comunico um incidente de segurança?"
+    },
+    {
+      "id": "Q07",
+      "texto": "Qual a situação do chamado 2026009012 e quando vencem cinco dias úteis contados da última movimentação?"
+    },
+    {
+      "id": "Q08",
+      "texto": "Consulte o chamado 2026999999. Ele já foi resolvido?"
+    }
+  ],
+  "minutas": [
+    {
+      "id": "M1",
+      "tipo": "resposta a e-mail do cidadão",
+      "texto": "Prezado, em sede de análise do pleito de acesso, chamado 2026001234, cumpre informar que o pedido encontra-se aguardando autorização da chefia e que a documentação deverá ser juntada oportunamente pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema. CPF 123.456.789-00. Atenciosamente.",
+      "faltas_previas": [
+        "Prazo não informado",
+        "Canal institucional ausente",
+        "CPF exposto",
+        "Documentação pendente não especificada",
+        "Identificação do setor ausente"
+      ]
+    },
+    {
+      "id": "M2",
+      "tipo": "despacho",
+      "texto": "Ao João. Encaminhe-se o feito para providências quanto à falha de rede do chamado 2026005678. Meu telefone é (65) 99999-1234.",
+      "faltas_previas": [
+        "Destinatário indicado por pessoa, sem cargo ou unidade",
+        "Encaminhamento sem equipe responsável",
+        "Falta data e identificação funcional",
+        "Telefone pessoal exposto"
+      ]
+    },
+    {
+      "id": "M3",
+      "tipo": "resposta a e-mail do cidadão",
+      "texto": "Sr. Requerente, seu pedido de restauração foi indeferido conforme as regras. Os arquivo solicitado não pode ser restaurada. Em breve entraremos em contato.",
+      "faltas_previas": [
+        "Indeferimento sem fundamento indicado",
+        "Prazo não informado",
+        "Canal institucional ausente",
+        "Identificação do setor ausente"
+      ]
+    }
+  ]
+}

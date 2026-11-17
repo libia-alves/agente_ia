@@ -1,0 +1,38 @@
+[
+  {
+    "modo": "sem_filtro",
+    "status": "COMPLETED",
+    "linhas": 52,
+    "cpf_no_log": true,
+    "telefone_no_log": true,
+    "email_no_log": true,
+    "rg_no_log": true,
+    "protocolo_preservado": true,
+    "processo_preservado": true,
+    "aprovado": false
+  },
+  {
+    "modo": "pre_hook",
+    "status": "COMPLETED",
+    "linhas": 57,
+    "cpf_no_log": false,
+    "telefone_no_log": false,
+    "email_no_log": false,
+    "rg_no_log": false,
+    "protocolo_preservado": true,
+    "processo_preservado": true,
+    "aprovado": true
+  },
+  {
+    "modo": "antes_e_pre_hook",
+    "status": "COMPLETED",
+    "linhas": 53,
+    "cpf_no_log": false,
+    "telefone_no_log": false,
+    "email_no_log": false,
+    "rg_no_log": false,
+    "protocolo_preservado": true,
+    "processo_preservado": true,
+    "aprovado": true
+  }
+]

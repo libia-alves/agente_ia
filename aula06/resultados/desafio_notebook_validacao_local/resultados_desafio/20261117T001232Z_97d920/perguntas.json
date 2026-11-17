@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Q01",
+    "texto": "Qual a situação do chamado 2026001234?"
+  },
+  {
+    "id": "Q02",
+    "texto": "Quem está atendendo a falha de rede do chamado 2026005678?"
+  },
+  {
+    "id": "Q03",
+    "texto": "Como peço acesso a um sistema e qual o prazo?"
+  },
+  {
+    "id": "Q04",
+    "texto": "Esqueci minha senha. Como devo proceder?"
+  },
+  {
+    "id": "Q05",
+    "texto": "Quais informações preciso enviar para restaurar um arquivo?"
+  },
+  {
+    "id": "Q06",
+    "texto": "Onde comunico um incidente de segurança?"
+  },
+  {
+    "id": "Q07",
+    "texto": "Qual a situação do chamado 2026009012 e quando vencem cinco dias úteis contados da última movimentação?"
+  },
+  {
+    "id": "Q08",
+    "texto": "Consulte o chamado 2026999999. Ele já foi resolvido?"
+  }
+]

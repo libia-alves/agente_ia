@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_rRJ7nJRkh4uso4pCeTFX97K4",
+      "nome": "consultar_canal",
+      "argumentos": {
+        "assunto": "seguranca"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'canal': 'Canal interno de incidentes de segurança (hipotético)', 'fonte': 'Catálogo fictício de canais de TI'}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "Você deve comunicar um incidente de segurança pelo \"Canal interno de incidentes de segurança (hipotético)\", conforme indicado no Catálogo fictício de canais de TI.",
+  "pergunta": {
+    "id": "Q06",
+    "texto": "Onde comunico um incidente de segurança?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 1.8,
+  "status": "concluido"
+}

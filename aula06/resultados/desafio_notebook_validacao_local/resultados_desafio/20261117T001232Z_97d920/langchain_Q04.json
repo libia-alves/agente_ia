@@ -1,0 +1,24 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_EKOWuyhBCjwUXnh2fnfAX8DE",
+      "nome": "consultar_servico",
+      "argumentos": {
+        "servico": "senha"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": true, \"servico\": \"senha\", \"orientacao\": \"Use a recuperação de senha no portal institucional; se falhar, abra chamado sem informar a senha.\", \"prazo_dias_uteis\": 1}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "Para recuperar sua senha, siga estas orientações:\n\n1. Utilize a opção de recuperação de senha no portal institucional.\n2. Se a recuperação falhar, você deve abrir um chamado sem informar a senha.\n\nO prazo didático para a resolução desse tipo de chamado é de 1 dia útil.",
+  "pergunta": {
+    "id": "Q04",
+    "texto": "Esqueci minha senha. Como devo proceder?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 2.158,
+  "status": "concluido"
+}

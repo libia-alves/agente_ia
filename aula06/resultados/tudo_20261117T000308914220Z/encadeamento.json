@@ -1,0 +1,248 @@
+[
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados da última movimentação do chamado 2026009012 (realizada em 13 de novembro de 2026) é 20 de novembro de 2026. Feriados não foram considerados nesta contagem; o prazo é hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 113,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035295,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.176,
+    "paralelas": true,
+    "repeticao": 1,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento, considerando cinco dias úteis a partir da última movimentação do chamado 2026009012 (em 13 de novembro de 2026), é 20 de novembro de 2026. \n\nLembrando que a contagem de dias úteis não considerou feriados, sendo este um prazo hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 120,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035715,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.975,
+    "paralelas": true,
+    "repeticao": 2,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é no dia 20 de novembro de 2026. \n\n*Observação: Feriados não foram considerados; este prazo é hipotético.*",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 119,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035654999999999997,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.864,
+    "paralelas": true,
+    "repeticao": 3,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento de cinco dias úteis contados a partir da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, será no dia 20 de novembro de 2026. Lembre-se que essa é uma estimativa didática e feriados não foram considerados.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 119,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035654999999999997,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.681,
+    "paralelas": false,
+    "repeticao": 1,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento de cinco dias úteis contados da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é 20 de novembro de 2026. Lembrando que essa data é hipotética e feriados não foram considerados.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 113,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035295,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.295,
+    "paralelas": false,
+    "repeticao": 2,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento de cinco dias úteis contados da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é em **20 de novembro de 2026**. \n\nObs: O cálculo não considera feriados e o prazo é hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      540,
+      631,
+      730
+    ],
+    "tokens_entrada": 1901,
+    "tokens_saida": 115,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00035414999999999996,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.068,
+    "paralelas": false,
+    "repeticao": 3,
+    "dados_segunda_ferramenta": [
+      "2026-11-13"
+    ],
+    "data_esperada": "2026-11-13",
+    "datas_corretas": true
+  }
+]

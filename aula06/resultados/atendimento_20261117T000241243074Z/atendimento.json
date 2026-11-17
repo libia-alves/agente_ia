@@ -1,0 +1,220 @@
+[
+  {
+    "id": "Q01",
+    "texto": "Qual a situação do chamado 2026001234?",
+    "status": "COMPLETED",
+    "resposta": "O chamado 2026001234 está com a seguinte situação:\n\n- **Assunto:** Acesso ao sistema\n- **Situação:** Aguardando autorização da chefia\n- **Equipe responsável:** Gestão de acessos\n- **Última movimentação:** 9 de novembro de 2026",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026001234"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026001234', 'assunto': 'Acesso ao sistema', 'situacao': 'Aguardando autorização da chefia', 'ultima_movimentacao': '2026-11-09', 'equipe': 'Gestão de acessos'}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      531,
+      626
+    ],
+    "tokens_entrada": 1157,
+    "tokens_saida": 82,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00022274999999999997,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.339
+  },
+  {
+    "id": "Q02",
+    "texto": "Quem está atendendo a falha de rede do chamado 2026005678?",
+    "status": "COMPLETED",
+    "resposta": "O chamado 2026005678, que trata de uma falha de rede, está em atendimento pela equipe de Infraestrutura. A última movimentação foi em 12 de novembro de 2026.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026005678"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026005678', 'assunto': 'Falha de rede', 'situacao': 'Em atendimento', 'ultima_movimentacao': '2026-11-12', 'equipe': 'Infraestrutura'}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      537,
+      624
+    ],
+    "tokens_entrada": 1161,
+    "tokens_saida": 62,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00021135,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.133
+  },
+  {
+    "id": "Q03",
+    "texto": "Como peço acesso a um sistema e qual o prazo?",
+    "status": "COMPLETED",
+    "resposta": "Para solicitar acesso a um sistema, você deve:\n\n1. Abrir um chamado.\n2. Informar o sistema e o perfil que deseja solicitar.\n3. Incluir a autorização da chefia.\n\n**Prazo**: O prazo para a análise do pedido é de 2 dias úteis. \n\nLembre-se de nunca enviar senhas.",
+    "ferramentas": [
+      {
+        "nome": "consultar_servico",
+        "argumentos": {
+          "servico": "acesso"
+        },
+        "retorno": "{'encontrado': True, 'servico': 'acesso', 'orientacao': 'Abra chamado com sistema, perfil solicitado e autorização da chefia. Nunca envie senha.', 'prazo_dias_uteis': 2}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      532,
+      609
+    ],
+    "tokens_entrada": 1141,
+    "tokens_saida": 88,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00022395,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.562
+  },
+  {
+    "id": "Q04",
+    "texto": "Esqueci minha senha. Como devo proceder?",
+    "status": "COMPLETED",
+    "resposta": "Para recuperar sua senha, você deve seguir as seguintes orientações:\n\n- Utilize a opção de recuperação de senha disponível no portal institucional.\n- Se a recuperação falhar, você deve abrir um chamado, mas não informe sua senha ao fazer isso.\n\nO prazo didático para o atendimento desse serviço é de 1 dia útil.",
+    "ferramentas": [
+      {
+        "nome": "consultar_servico",
+        "argumentos": {
+          "servico": "senha"
+        },
+        "retorno": "{'encontrado': True, 'servico': 'senha', 'orientacao': 'Use a recuperação de senha no portal institucional; se falhar, abra chamado sem informar a senha.', 'prazo_dias_uteis': 1}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      530,
+      608
+    ],
+    "tokens_entrada": 1138,
+    "tokens_saida": 82,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00021989999999999998,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.32
+  },
+  {
+    "id": "Q05",
+    "texto": "Quais informações preciso enviar para restaurar um arquivo?",
+    "status": "COMPLETED",
+    "resposta": "Para restaurar um arquivo, você precisa enviar as seguintes informações:\n\n- Caminho da pasta\n- Nome do arquivo\n- Data aproximada da versão desejada\n\nO prazo didático para a restauração é de 5 dias úteis.",
+    "ferramentas": [
+      {
+        "nome": "consultar_servico",
+        "argumentos": {
+          "servico": "restauracao"
+        },
+        "retorno": "{'encontrado': True, 'servico': 'restauracao', 'orientacao': 'Informe caminho da pasta, nome do arquivo e data aproximada da versão desejada.', 'prazo_dias_uteis': 5}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      531,
+      610
+    ],
+    "tokens_entrada": 1141,
+    "tokens_saida": 68,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00021195,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 1.978
+  },
+  {
+    "id": "Q06",
+    "texto": "Onde comunico um incidente de segurança?",
+    "status": "COMPLETED",
+    "resposta": "Você deve comunicar um incidente de segurança pelo \"Canal interno de incidentes de segurança (hipotético)\". Essa informação vem de um catálogo fictício de canais de TI.",
+    "ferramentas": [
+      {
+        "nome": "consultar_canal",
+        "argumentos": {
+          "assunto": "seguranca"
+        },
+        "retorno": "{'encontrado': True, 'canal': 'Canal interno de incidentes de segurança (hipotético)', 'fonte': 'Catálogo fictício de canais de TI'}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      528,
+      596
+    ],
+    "tokens_entrada": 1124,
+    "tokens_saida": 56,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00020219999999999998,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 1.946
+  },
+  {
+    "id": "Q07",
+    "texto": "Qual a situação do chamado 2026009012 e quando vencem cinco dias úteis contados da última movimentação?",
+    "status": "COMPLETED",
+    "resposta": "A situação do chamado 2026009012 é \"Aguardando indicação da pasta\" e o assunto é \"Restauração de arquivo\". A equipe responsável é a equipe de Backup.\n\nO vencimento para cinco dias úteis contados a partir da última movimentação (13 de novembro de 2026) é 20 de novembro de 2026. Lembre-se que feriados não foram considerados, e esse prazo é hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      544,
+      635,
+      734
+    ],
+    "tokens_entrada": 1913,
+    "tokens_saida": 143,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00037275,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.378
+  },
+  {
+    "id": "Q08",
+    "texto": "Consulte o chamado 2026999999. Ele já foi resolvido?",
+    "status": "COMPLETED",
+    "resposta": "O chamado 2026999999 não foi encontrado. Ele pode não existir ou ter sido digitado incorretamente. Verifique o número do chamado e tente novamente.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026999999"
+        },
+        "retorno": "{'encontrado': False, 'numero': '2026999999'}"
+      }
+    ],
+    "chamadas_modelo": 2,
+    "entrada_por_chamada": [
+      536,
+      583
+    ],
+    "tokens_entrada": 1119,
+    "tokens_saida": 55,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00020085,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.662
+  }
+]

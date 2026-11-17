@@ -1,0 +1,24 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_GTvGRgmxvTZNKXLfEzI0Yh4w",
+      "nome": "consultar_servico",
+      "argumentos": {
+        "servico": "restauracao"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": true, \"servico\": \"restauracao\", \"orientacao\": \"Informe caminho da pasta, nome do arquivo e data aproximada da versão desejada.\", \"prazo_dias_uteis\": 5}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "Para restaurar um arquivo, você precisa informar:\n\n- Caminho da pasta\n- Nome do arquivo\n- Data aproximada da versão desejada\n\nO prazo didático para a restauração é de 5 dias úteis.",
+  "pergunta": {
+    "id": "Q05",
+    "texto": "Quais informações preciso enviar para restaurar um arquivo?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 2.231,
+  "status": "concluido"
+}

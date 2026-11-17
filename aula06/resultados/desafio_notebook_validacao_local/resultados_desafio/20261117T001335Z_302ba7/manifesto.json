@@ -1,0 +1,17 @@
+{
+  "inicio_utc": "2026-11-17T00:13:35.807417+00:00",
+  "ambiente": "Validação local",
+  "python": "3.12.16",
+  "modelo": "gpt-4o-mini",
+  "dados": "fictícios",
+  "setor": "Atendimento de TI da SEFAZ-MT",
+  "versoes": {
+    "crewai": "1.15.21",
+    "langchain": "1.4.10",
+    "langchain-openai": "1.8.0"
+  },
+  "sha256_fontes": {
+    "atendimento.py": "62d0c427c6a0b9a69f35da3ca0fcbf4dfa18cf803d4d9ee00db50f295712acd7",
+    "desafio_frameworks.py": "34167f638b10537c74c18041d83726eb1f74313d808d1ac2e7b30b3764c96f1d"
+  }
+}

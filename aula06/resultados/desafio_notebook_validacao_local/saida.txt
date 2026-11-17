@@ -1,0 +1,36 @@
+{"ferramenta": "consultar_chamado", "argumentos": {"numero": "2026001234"}, "retorno": {"encontrado": true, "numero": "2026001234", "assunto": "Acesso ao sistema", "situacao": "Aguardando autorização da chefia", "ultima_movimentacao": "2026-11-09", "equipe": "Gestão de acessos"}}
+{"ferramenta": "consultar_servico", "argumentos": {"servico": "acesso"}, "retorno": {"encontrado": true, "servico": "acesso", "orientacao": "Abra chamado com sistema, perfil solicitado e autorização da chefia. Nunca envie senha.", "prazo_dias_uteis": 2}}
+{"ferramenta": "calcular_prazo", "argumentos": {"data_inicial": "2026-11-09", "dias": 5}, "retorno": {"data_inicial": "2026-11-09", "dias": 5, "uteis": true, "vencimento": "2026-11-16", "ressalva": "Feriados não considerados; prazo hipotético."}}
+{"ferramenta": "consultar_canal", "argumentos": {"assunto": "seguranca"}, "retorno": {"encontrado": true, "canal": "Canal interno de incidentes de segurança (hipotético)", "fonte": "Catálogo fictício de canais de TI"}}
+Consulta encadeada em Python puro: {'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}
+Modelo: gpt-4o-mini · chave configurada, sem exibição
+Pasta desta execução: resultados_desafio/20261117T001335Z_302ba7
+langchain Q01 concluido consultar_chamado
+langchain Q02 concluido consultar_chamado
+langchain Q03 concluido consultar_servico
+langchain Q04 concluido consultar_servico
+langchain Q05 concluido consultar_servico
+langchain Q06 concluido consultar_canal
+langchain Q07 concluido consultar_chamado, calcular_prazo
+langchain Q08 concluido consultar_chamado
+crewai Q01 concluido consultar_chamado
+crewai Q02 concluido consultar_chamado
+crewai Q03 concluido consultar_servico
+crewai Q04 concluido consultar_servico
+crewai Q05 concluido consultar_servico
+crewai Q06 concluido consultar_canal
+crewai Q07 concluido consultar_chamado, calcular_prazo
+crewai Q08 concluido consultar_chamado
+[{'framework': 'langchain', 'pergunta': 'Q01', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 2.56}, {'framework': 'langchain', 'pergunta': 'Q02', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 2.453}, {'framework': 'langchain', 'pergunta': 'Q03', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 2.145}, {'framework': 'langchain', 'pergunta': 'Q04', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 2.856}, {'framework': 'langchain', 'pergunta': 'Q05', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 1.842}, {'framework': 'langchain', 'pergunta': 'Q06', 'status': 'concluido', 'ferramentas': 'consultar_canal', 'consultas_com_retorno': 1, 'segundos': 1.943}, {'framework': 'langchain', 'pergunta': 'Q07', 'status': 'concluido', 'ferramentas': 'consultar_chamado, calcular_prazo', 'consultas_com_retorno': 2, 'segundos': 3.366}, {'framework': 'langchain', 'pergunta': 'Q08', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 1.805}, {'framework': 'crewai', 'pergunta': 'Q01', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 1.968}, {'framework': 'crewai', 'pergunta': 'Q02', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 1.899}, {'framework': 'crewai', 'pergunta': 'Q03', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 1.74}, {'framework': 'crewai', 'pergunta': 'Q04', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 2.005}, {'framework': 'crewai', 'pergunta': 'Q05', 'status': 'concluido', 'ferramentas': 'consultar_servico', 'consultas_com_retorno': 1, 'segundos': 1.886}, {'framework': 'crewai', 'pergunta': 'Q06', 'status': 'concluido', 'ferramentas': 'consultar_canal', 'consultas_com_retorno': 1, 'segundos': 1.528}, {'framework': 'crewai', 'pergunta': 'Q07', 'status': 'concluido', 'ferramentas': 'consultar_chamado, calcular_prazo', 'consultas_com_retorno': 2, 'segundos': 2.755}, {'framework': 'crewai', 'pergunta': 'Q08', 'status': 'concluido', 'ferramentas': 'consultar_chamado', 'consultas_com_retorno': 1, 'segundos': 1.381}]
+### langchain — Q07
+O chamado 2026009012 está com a situação "Aguardando indicação da pasta" e foi movimentado pela equipe de Backup. A última movimentação ocorreu em 13 de novembro de 2026.
+
+Contando cinco dias úteis a partir dessa data, o vencimento é em 20 de novembro de 2026. Lembre-se que essa contagem não considera feriados e é um prazo hipotético.
+[{'id': 'call_lxJfUvHJUiamfPLJOxEC438p', 'nome': 'consultar_chamado', 'argumentos': {'numero': '2026009012'}, 'retorno_observado': True, 'retorno': '{"encontrado": true, "numero": "2026009012", "assunto": "Restauração de arquivo", "situacao": "Aguardando indicação da pasta", "ultima_movimentacao": "2026-11-13", "equipe": "Backup"}', 'status_ferramenta': 'success'}, {'id': 'call_rJzDH23xu0HIC6Dck2J0laOG', 'nome': 'calcular_prazo', 'argumentos': {'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True}, 'retorno_observado': True, 'retorno': '{"data_inicial": "2026-11-13", "dias": 5, "uteis": true, "vencimento": "2026-11-20", "ressalva": "Feriados não considerados; prazo hipotético."}', 'status_ferramenta': 'success'}]
+Conferência: {'framework': 'langchain', 'datas_entregues_ao_calculo': ['2026-11-13'], 'data_correta': True, 'consulta_antes_do_calculo_no_registro': True}
+### crewai — Q07
+A situação do chamado 2026009012 é "Aguardando indicação da pasta". O vencimento para cinco dias úteis contados da última movimentação é em 20 de novembro de 2026. (Feriados não considerados; prazo hipotético.)
+[{'tarefa': 0, 'id': 'call_ll7c0i3pj7OocFWXvlEEj6vV', 'nome': 'consultar_chamado', 'argumentos': {'numero': '2026009012'}, 'retorno_observado': True, 'retorno': "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}", 'status_ferramenta': None}, {'tarefa': 0, 'id': 'call_FZQy4YMJqyHFB11KhZcZVZGZ', 'nome': 'calcular_prazo', 'argumentos': {'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True}, 'retorno_observado': True, 'retorno': "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}", 'status_ferramenta': None}]
+Conferência: {'framework': 'crewai', 'datas_entregues_ao_calculo': ['2026-11-13'], 'data_correta': True, 'consulta_antes_do_calculo_no_registro': True}
+ZIP pronto: /home/ficdevia-15-noite/Área de trabalho/libia/agente_ia/aula06/resultados/desafio_notebook_validacao_local/resultados_desafio/20261117T001335Z_302ba7.zip
+Download exclusivo do Colab; ZIP local gerado.

@@ -1,0 +1,38 @@
+{
+  "_comentario": "Minutas de resposta ao cidadão redigidas por servidores do atendimento da SECITECI. Cada uma traz defeitos reais de redação oficial, declarados no campo 'defeitos' para que a correção possa ser conferida.",
+  "minutas": [
+    {
+      "id": "M1",
+      "tipo": "resposta a e-mail do cidadão",
+      "texto": "Prezado, em sede de análise exordial do pleito formulado por Vossa Senhoria, protocolo 2026001234, cumpre informar que o requerimento de licença-prêmio encontra-se em fase de instrução processual junto à Gerência de Recursos Humanos desta Secretaria, restando pendente a juntada de documentação complementar a ser oportunamente especificada pelo setor competente, razão pela qual, s.m.j., não há como precisar neste momento a data de conclusão do feito. O CPF 123.456.789-00 consta do processo. Qualquer dúvida estamos à disposição.",
+      "defeitos": [
+        "jargão jurídico sem necessidade: 'em sede de análise exordial', 'pleito', 'feito', 's.m.j.'",
+        "frase única de mais de 60 palavras",
+        "CPF completo no corpo da mensagem",
+        "não informa prazo nem qual documento falta"
+      ]
+    },
+    {
+      "id": "M2",
+      "tipo": "resposta a e-mail do cidadão",
+      "texto": "Senhor cidadão, informamos que o assunto não é da nossa alçada. O senhor deve procurar o setor responsável. Consulte o SIGEP. Caso queira falar comigo diretamente meu celular é (65) 99999-1234. Atenciosamente.",
+      "defeitos": [
+        "encaminhamento sem indicar o órgão nem o canal",
+        "sigla SIGEP usada sem explicação",
+        "telefone pessoal do servidor no lugar do canal institucional",
+        "tom ríspido e ausência de orientação útil"
+      ]
+    },
+    {
+      "id": "M3",
+      "tipo": "resposta a e-mail do cidadão",
+      "texto": "Sr. Requerente, seu pedido de certidão foi indeferido conforme a legislação. As informações solicitada não pode ser fornecida. Em breve entraremos em contato.",
+      "defeitos": [
+        "indeferimento sem indicar a norma nem o fundamento",
+        "erro de concordância em 'As informações solicitada não pode'",
+        "promessa de contato sem prazo",
+        "não informa como recorrer"
+      ]
+    }
+  ]
+}

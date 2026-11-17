@@ -1,0 +1,29 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_UW1U8Bhxec0dWSQqiUJQhwfq",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026009012"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": true, \"numero\": \"2026009012\", \"assunto\": \"Restauração de arquivo\", \"situacao\": \"Aguardando indicação da pasta\", \"ultima_movimentacao\": \"2026-11-13\", \"equipe\": \"Backup\"}",
+      "status_ferramenta": "success"
+    },
+    {
+      "id": "call_NLc8YgfadydoVc6olGjF0FKz",
+      "nome": "calcular_prazo",
+      "argumentos": {
+        "data_inicial": "2026-11-13",
+        "dias": 5,
+        "uteis": true
+      },
+      "retorno_observado": true,
+      "retorno": "{\"data_inicial\": \"2026-11-13\", \"dias\": 5, \"uteis\": true, \"vencimento\": \"2026-11-20\", \"ressalva\": \"Feriados não considerados; prazo hipotético.\"}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "O vencimento de cinco dias úteis contados da última movimentação do chamado 2026009012 é em **20 de novembro de 2026**. Lembre-se que essa contagem não considera feriados e é um prazo hipotético."
+}

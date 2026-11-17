@@ -1,0 +1,14 @@
+test_pii_preserva_identificadores (test_minilab.Verificacoes.test_pii_preserva_identificadores) ... ok
+test_prazo_encadeado (test_minilab.Verificacoes.test_prazo_encadeado) ... ok
+test_prazo_invalido (test_minilab.Verificacoes.test_prazo_invalido) ... ok
+test_revisor_falha_sem_metricas (test_minilab.Verificacoes.test_revisor_falha_sem_metricas) ... ok
+test_status_nao_expoe_erro (test_minilab.Verificacoes.test_status_nao_expoe_erro) ... ok
+test_tela_falha_sem_resultado_anterior (test_minilab.Verificacoes.test_tela_falha_sem_resultado_anterior) ... 2026-11-16 20:03:48.685 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_tela_mostra_formulario (test_minilab.Verificacoes.test_tela_mostra_formulario) ... 2026-11-16 20:03:48.920 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.468s
+
+OK

@@ -1,0 +1,20 @@
+{
+  "_nota": "Quinze perguntas típicas do atendimento da SECITECI, com a resposta esperada escrita antes de qualquer execução. Cada consulta indica a ferramenta que deveria ser usada e um trecho que precisa aparecer na resposta. O critério tolera variações de grafia, conforme a Aula 03, Seção 5.2. Os dados são hipotéticos.",
+  "consultas": [
+    {"id": "Q01", "tipo": "uma ferramenta", "pergunta": "Qual a situação do protocolo 2026005678?", "ferramentas": ["consultar_protocolo"], "deve_conter": ["deferido"]},
+    {"id": "Q02", "tipo": "uma ferramenta", "pergunta": "Em que etapa está o processo de protocolo 2026001234?", "ferramentas": ["consultar_protocolo"], "deve_conter": ["RH"]},
+    {"id": "Q03", "tipo": "uma ferramenta", "pergunta": "O protocolo 2026009012 já foi concluído?", "ferramentas": ["consultar_protocolo"], "deve_conter": ["documenta"]},
+    {"id": "Q04", "tipo": "uma ferramenta", "pergunta": "Contando de 2026-03-10, quando vence um prazo de 30 dias corridos?", "ferramentas": ["calcular_prazo"], "deve_conter": ["2026-04-09"]},
+    {"id": "Q05", "tipo": "uma ferramenta", "pergunta": "A partir de 2026-05-04, qual a data final de um prazo de 15 dias úteis?", "ferramentas": ["calcular_prazo"], "deve_conter": ["2026-05-25"]},
+    {"id": "Q06", "tipo": "uma ferramenta", "pergunta": "Qual norma trata do direito de eliminação de dados pessoais?", "ferramentas": ["buscar_legislacao_mt"], "deve_conter": ["13.709"]},
+    {"id": "Q07", "tipo": "uma ferramenta", "pergunta": "Qual o limite de acréscimo em contrato administrativo e em que norma está?", "ferramentas": ["buscar_legislacao_mt"], "deve_conter": ["25"]},
+    {"id": "Q08", "tipo": "uma ferramenta", "pergunta": "Calcule a atualização de um débito de R$ 10.000,00 com 12 meses de atraso, com multa.", "ferramentas": ["calcular_atualizacao_debito"], "deve_conter": ["11.988"]},
+    {"id": "Q09", "tipo": "duas em cadeia", "pergunta": "O protocolo 2026001234 teve movimentação em 2026-03-14. Se o prazo de resposta é de 20 dias corridos a partir dessa data, quando vence?", "ferramentas": ["consultar_protocolo", "calcular_prazo"], "deve_conter": ["2026-04-03"]},
+    {"id": "Q10", "tipo": "duas em cadeia", "pergunta": "Um débito de R$ 25.000,00 está com 6 meses de atraso. Calcule o valor atualizado e informe qual norma fundamenta os juros.", "ferramentas": ["calcular_atualizacao_debito", "buscar_legislacao_mt"], "deve_conter": ["987"]},
+    {"id": "Q11", "tipo": "duas em cadeia", "pergunta": "Qual o prazo de recurso administrativo previsto em lei e, se a ciência foi em 2026-06-01, qual a data limite em dias úteis?", "ferramentas": ["buscar_legislacao_mt", "calcular_prazo"], "deve_conter": ["2026-06-15"]},
+    {"id": "Q12", "tipo": "duas em cadeia", "pergunta": "Qual o prazo de resposta a pedido de acesso à informação e, contando de 2026-02-10, quando ele vence em dias corridos?", "ferramentas": ["buscar_legislacao_mt", "calcular_prazo"], "deve_conter": ["2026-03-02"]},
+    {"id": "Q13", "tipo": "sem ferramenta", "pergunta": "Em uma frase, explique a diferença entre prazo em dias úteis e prazo em dias corridos.", "ferramentas": [], "deve_conter": ["úteis"]},
+    {"id": "Q14", "tipo": "sem ferramenta", "pergunta": "O que significa a sigla CNPq?", "ferramentas": [], "deve_conter": ["Conselho Nacional"]},
+    {"id": "Q15", "tipo": "armadilha", "pergunta": "Calcule a atualização daquele débito que conversamos, com o atraso de sempre.", "ferramentas": [], "deve_conter": ["informe"], "observacao": "Não há valor nem prazo. A resposta correta é pedir os dados que faltam."}
+  ]
+}

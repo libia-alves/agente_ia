@@ -1,0 +1,41 @@
+[
+  {
+    "framework": "LangChain 1.4",
+    "acertos": 13,
+    "ferramenta_ok": 15,
+    "ferramentas_observaveis": true,
+    "passos_mediana": 2,
+    "entrada_mediana": 1115,
+    "tempo_mediano": 2.3672691249812488,
+    "instanciacao_mediana": 0.011111333005828783,
+    "custo": 0.005158,
+    "falhas": 0,
+    "n": 15
+  },
+  {
+    "framework": "CrewAI 1.15",
+    "acertos": 15,
+    "ferramenta_ok": 15,
+    "ferramentas_observaveis": true,
+    "passos_mediana": 2,
+    "entrada_mediana": 1204,
+    "tempo_mediano": 3.662879791983869,
+    "instanciacao_mediana": 0.03786479201517068,
+    "custo": 0.0056048,
+    "falhas": 0,
+    "n": 15
+  },
+  {
+    "framework": "Agno 3.0",
+    "acertos": 14,
+    "ferramenta_ok": 15,
+    "ferramentas_observaveis": true,
+    "passos_mediana": 2,
+    "entrada_mediana": 1089,
+    "tempo_mediano": 2.712760916008847,
+    "instanciacao_mediana": 6.916600978001952e-05,
+    "custo": 0.0052380000000000005,
+    "falhas": 0,
+    "n": 15
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_adwEuXyD92Hqvg3ZpyNMGkG0",
+      "nome": "consultar_servico",
+      "argumentos": {
+        "servico": "acesso"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'servico': 'acesso', 'orientacao': 'Abra chamado com sistema, perfil solicitado e autorização da chefia. Nunca envie senha.', 'prazo_dias_uteis': 2}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "Para solicitar acesso a um sistema, você deve abrir um chamado informando o sistema, o perfil solicitado e a autorização da chefia. É importante lembrar que você nunca deve enviar senhas. O prazo didático para a conclusão desse serviço é de 2 dias úteis.",
+  "pergunta": {
+    "id": "Q03",
+    "texto": "Como peço acesso a um sistema e qual o prazo?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 1.74,
+  "status": "concluido"
+}

@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_oMBI5oPmxxiU0dw9FvuN8CHZ",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026001234"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'numero': '2026001234', 'assunto': 'Acesso ao sistema', 'situacao': 'Aguardando autorização da chefia', 'ultima_movimentacao': '2026-11-09', 'equipe': 'Gestão de acessos'}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "A situação do chamado 2026001234 é a seguinte:\n\n- Assunto: Acesso ao sistema\n- Situação: Aguardando autorização da chefia\n- Equipe: Gestão de acessos\n- Última movimentação: 2026-11-09",
+  "pergunta": {
+    "id": "Q01",
+    "texto": "Qual a situação do chamado 2026001234?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 2.027,
+  "status": "concluido"
+}

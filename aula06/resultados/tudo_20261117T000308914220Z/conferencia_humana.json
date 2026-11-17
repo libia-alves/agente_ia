@@ -1,0 +1,109 @@
+[
+  {
+    "id": "M1",
+    "avisos_agente": [],
+    "faltas_previas_didaticas": [
+      "Prazo não informado",
+      "Canal institucional ausente",
+      "CPF exposto",
+      "Documentação pendente não especificada",
+      "Identificação do setor ausente"
+    ],
+    "avaliacao_servidor": [
+      {
+        "falta": "Prazo não informado",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Canal institucional ausente",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "CPF exposto",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Documentação pendente não especificada",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Identificação do setor ausente",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      }
+    ],
+    "falsos_positivos": null
+  },
+  {
+    "id": "M2",
+    "avisos_agente": [
+      "Meu telefone é (65) 99999-1234."
+    ],
+    "faltas_previas_didaticas": [
+      "Destinatário indicado por pessoa, sem cargo ou unidade",
+      "Encaminhamento sem equipe responsável",
+      "Falta data e identificação funcional",
+      "Telefone pessoal exposto"
+    ],
+    "avaliacao_servidor": [
+      {
+        "falta": "Destinatário indicado por pessoa, sem cargo ou unidade",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Encaminhamento sem equipe responsável",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Falta data e identificação funcional",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Telefone pessoal exposto",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      }
+    ],
+    "falsos_positivos": null
+  },
+  {
+    "id": "M3",
+    "avisos_agente": [],
+    "faltas_previas_didaticas": [
+      "Indeferimento sem fundamento indicado",
+      "Prazo não informado",
+      "Canal institucional ausente",
+      "Identificação do setor ausente"
+    ],
+    "avaliacao_servidor": [
+      {
+        "falta": "Indeferimento sem fundamento indicado",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Prazo não informado",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Canal institucional ausente",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      },
+      {
+        "falta": "Identificação do setor ausente",
+        "vista_em_avisos": null,
+        "justificativa": ""
+      }
+    ],
+    "falsos_positivos": null
+  }
+]

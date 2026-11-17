@@ -1,0 +1,24 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_ZS10Ss8BNqhTAWBG37t4uEfO",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026999999"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": false, \"numero\": \"2026999999\"}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "O chamado 2026999999 não foi encontrado. Ele pode não existir ou ter sido digitado incorretamente. Se precisar de ajuda com outro chamado, por favor, forneça o número correto.",
+  "pergunta": {
+    "id": "Q08",
+    "texto": "Consulte o chamado 2026999999. Ele já foi resolvido?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 1.805,
+  "status": "concluido"
+}

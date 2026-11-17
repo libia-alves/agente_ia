@@ -1,0 +1,163 @@
+[
+  {
+    "id": "M1",
+    "status": "completed",
+    "revisao": {
+      "texto_revisado": "Prezado,\n\nEm análise do pedido de acesso, chamado 2026001234, informamos que o pedido está aguardando autorização da chefia. A documentação deve ser apresentada pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema.\n\nAtenciosamente,\n[Nome do Setor].",
+      "alteracoes": [
+        {
+          "trecho_original": "Prezado, em sede de análise do pleito de acesso, chamado 2026001234, cumpre informar que o pedido encontra-se aguardando autorização da chefia e que a documentação deverá ser juntada oportunamente pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema.",
+          "trecho_novo": "Prezado,\n\nEm análise do pedido de acesso, chamado 2026001234, informamos que o pedido está aguardando autorização da chefia. A documentação deve ser apresentada pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema.",
+          "motivo": "A linguagem foi simplificada e as frases longas foram divididas para melhorar a clareza e a legibilidade da resposta."
+        }
+      ],
+      "avisos": [
+        "O CPF foi encontrado na minuta e a decisão sobre a supressão depende do servidor."
+      ]
+    },
+    "medidas": {
+      "segundos": 9.97,
+      "chamadas": 4,
+      "tokens_entrada": 4588,
+      "tokens_saida": 499,
+      "ferramentas": [
+        "consultar_manual_redacao",
+        "verificar_dados_pessoais",
+        "medir_legibilidade"
+      ],
+      "registro_ferramentas": [
+        {
+          "nome": "consultar_manual_redacao",
+          "argumentos": {
+            "tipo_documento": "resposta a e-mail do cidadão"
+          },
+          "retorno": "- Use tratamento respeitoso e linguagem simples; explique siglas na primeira ocorrência.\n- Informe situação, próximo passo, prazo e canal institucional. Se ausentes, sinalize para preenchimento.\n- Em indeferimentos, indique o fundamento e as orientações de revisão cabíveis sem inventar norma ou prazo.\n- Feche com Atenciosamente e identificação do setor.\n- Destaque dados pessoais em avisos para decisão do servidor."
+        },
+        {
+          "nome": "verificar_dados_pessoais",
+          "argumentos": {
+            "texto": "Prezado, em sede de análise do pleito de acesso, chamado 2026001234, cumpre informar que o pedido encontra-se aguardando autorização da chefia e que a documentação deverá ser juntada oportunamente pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema. CPF 123.456.789-00. Atenciosamente."
+          },
+          "retorno": "Dados pessoais localizados (a supressão depende de decisão do servidor):\n- CPF: 123.456.789-00"
+        },
+        {
+          "nome": "medir_legibilidade",
+          "argumentos": {
+            "texto": "Prezado, em sede de análise do pleito de acesso, chamado 2026001234, cumpre informar que o pedido encontra-se aguardando autorização da chefia e que a documentação deverá ser juntada oportunamente pelo requerente para que possamos dar continuidade à instrução e realizar a concessão do perfil solicitado no sistema. CPF 123.456.789-00. Atenciosamente."
+          },
+          "retorno": "50 palavras em 3 frases (média de 16.7 palavras por frase).\n- frase 1, com 47 palavras: \"Prezado, em sede de análise do pleito de acesso, chamado 202...\""
+        }
+      ],
+      "custo": 0.0009876
+    }
+  },
+  {
+    "id": "M2",
+    "status": "completed",
+    "revisao": {
+      "texto_revisado": "Ao João,\n\nEncaminhe-se o feito para as providências sobre a falha de rede do chamado 2026005678. \n\nData: [informar a data]\n\nIdentificação funcional: [informar identificação]",
+      "alteracoes": [
+        {
+          "trecho_original": "Encaminhe-se o feito para providências quanto à falha de rede do chamado 2026005678.",
+          "trecho_novo": "Encaminhe-se o feito para as providências sobre a falha de rede do chamado 2026005678.",
+          "motivo": "Uso de linguagem simples."
+        },
+        {
+          "trecho_original": "Meu telefone é (65) 99999-1234.",
+          "trecho_novo": "",
+          "motivo": "Identificação de dado pessoal (telefone) para decisão do servidor."
+        }
+      ],
+      "avisos": [
+        "Informar a data.",
+        "Informar identificação funcional.",
+        "Decidir sobre a supressão do telefone (65) 99999-1234, que é dado pessoal."
+      ]
+    },
+    "medidas": {
+      "segundos": 7.29,
+      "chamadas": 4,
+      "tokens_entrada": 4176,
+      "tokens_saida": 344,
+      "ferramentas": [
+        "consultar_manual_redacao",
+        "verificar_dados_pessoais",
+        "medir_legibilidade"
+      ],
+      "registro_ferramentas": [
+        {
+          "nome": "consultar_manual_redacao",
+          "argumentos": {
+            "tipo_documento": "despacho"
+          },
+          "retorno": "- Indique cargo ou unidade destinatária, assunto e número do chamado/processo.\n- Explicite o encaminhamento e a unidade responsável; não invente providências.\n- Inclua data e identificação funcional; sinalize informações ausentes.\n- Use linguagem simples e destaque dados pessoais em avisos para decisão do servidor."
+        },
+        {
+          "nome": "verificar_dados_pessoais",
+          "argumentos": {
+            "texto": "Ao João. Encaminhe-se o feito para providências quanto à falha de rede do chamado 2026005678. Meu telefone é (65) 99999-1234."
+          },
+          "retorno": "Dados pessoais localizados (a supressão depende de decisão do servidor):\n- telefone: (65) 99999-1234"
+        },
+        {
+          "nome": "medir_legibilidade",
+          "argumentos": {
+            "texto": "Ao João. Encaminhe-se o feito para providências quanto à falha de rede do chamado 2026005678. Meu telefone é (65) 99999-1234."
+          },
+          "retorno": "20 palavras em 3 frases (média de 6.7 palavras por frase).\n- nenhuma frase acima de trinta palavras."
+        }
+      ],
+      "custo": 0.0008328
+    }
+  },
+  {
+    "id": "M3",
+    "status": "completed",
+    "revisao": {
+      "texto_revisado": "Prezado(a) Sr(a). Requerente,\n\nInformamos que seu pedido de restauração foi indeferido, conforme as regras estabelecidas. O arquivo solicitado não pode ser restaurado. \n\nEm breve, entraremos em contato para fornecer mais informações.\n\nAtenciosamente,\nSetor de Atendimento da SEFAZ-MT.",
+      "alteracoes": [
+        {
+          "trecho_original": "Sr. Requerente, seu pedido de restauração foi indeferido conforme as regras. Os arquivo solicitado não pode ser restaurada. Em breve entraremos em contato.",
+          "trecho_novo": "Prezado(a) Sr(a). Requerente,\n\nInformamos que seu pedido de restauração foi indeferido, conforme as regras estabelecidas. O arquivo solicitado não pode ser restaurado. \n\nEm breve, entraremos em contato para fornecer mais informações.\n\nAtenciosamente,\nSetor de Atendimento da SEFAZ-MT.",
+          "motivo": "Uso de tratamento respeitoso e linguagem simples; correção de concordância verbal e nominal; fechamento apropriado com identificação do setor."
+        }
+      ],
+      "avisos": []
+    },
+    "medidas": {
+      "segundos": 8.22,
+      "chamadas": 4,
+      "tokens_entrada": 4211,
+      "tokens_saida": 372,
+      "ferramentas": [
+        "consultar_manual_redacao",
+        "verificar_dados_pessoais",
+        "medir_legibilidade"
+      ],
+      "registro_ferramentas": [
+        {
+          "nome": "consultar_manual_redacao",
+          "argumentos": {
+            "tipo_documento": "resposta a e-mail do cidadão"
+          },
+          "retorno": "- Use tratamento respeitoso e linguagem simples; explique siglas na primeira ocorrência.\n- Informe situação, próximo passo, prazo e canal institucional. Se ausentes, sinalize para preenchimento.\n- Em indeferimentos, indique o fundamento e as orientações de revisão cabíveis sem inventar norma ou prazo.\n- Feche com Atenciosamente e identificação do setor.\n- Destaque dados pessoais em avisos para decisão do servidor."
+        },
+        {
+          "nome": "verificar_dados_pessoais",
+          "argumentos": {
+            "texto": "Sr. Requerente, seu pedido de restauração foi indeferido conforme as regras. Os arquivo solicitado não pode ser restaurada. Em breve entraremos em contato."
+          },
+          "retorno": "Nenhum dado pessoal localizado no texto."
+        },
+        {
+          "nome": "medir_legibilidade",
+          "argumentos": {
+            "texto": "Sr. Requerente, seu pedido de restauração foi indeferido conforme as regras. Os arquivo solicitado não pode ser restaurada. Em breve entraremos em contato."
+          },
+          "retorno": "23 palavras em 4 frases (média de 5.8 palavras por frase).\n- nenhuma frase acima de trinta palavras."
+        }
+      ],
+      "custo": 0.0008548499999999999
+    }
+  }
+]

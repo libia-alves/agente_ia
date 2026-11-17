@@ -1,0 +1,130 @@
+[
+  {
+    "framework": "langchain",
+    "pergunta": "Q01",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 2.378
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q02",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 2.116
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q03",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 2.244
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q04",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 2.158
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q05",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 2.231
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q06",
+    "status": "concluido",
+    "ferramentas": "consultar_canal",
+    "consultas_com_retorno": 1,
+    "segundos": 1.98
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q07",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado, calcular_prazo",
+    "consultas_com_retorno": 2,
+    "segundos": 4.021
+  },
+  {
+    "framework": "langchain",
+    "pergunta": "Q08",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 2.172
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q01",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 2.027
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q02",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 1.798
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q03",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 2.273
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q04",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 1.83
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q05",
+    "status": "concluido",
+    "ferramentas": "consultar_servico",
+    "consultas_com_retorno": 1,
+    "segundos": 1.766
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q06",
+    "status": "concluido",
+    "ferramentas": "consultar_canal",
+    "consultas_com_retorno": 1,
+    "segundos": 1.8
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q07",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado, calcular_prazo",
+    "consultas_com_retorno": 2,
+    "segundos": 2.703
+  },
+  {
+    "framework": "crewai",
+    "pergunta": "Q08",
+    "status": "concluido",
+    "ferramentas": "consultar_chamado",
+    "consultas_com_retorno": 1,
+    "segundos": 1.574
+  }
+]

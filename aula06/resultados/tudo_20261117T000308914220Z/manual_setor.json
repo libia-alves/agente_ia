@@ -1,0 +1,19 @@
+{
+  "origem": "hipotetica",
+  "fonte": "Regras didáticas propostas para o laboratório; substituir pelo manual adotado pelo setor.",
+  "tipos": {
+    "resposta a e-mail do cidadão": [
+      "Use tratamento respeitoso e linguagem simples; explique siglas na primeira ocorrência.",
+      "Informe situação, próximo passo, prazo e canal institucional. Se ausentes, sinalize para preenchimento.",
+      "Em indeferimentos, indique o fundamento e as orientações de revisão cabíveis sem inventar norma ou prazo.",
+      "Feche com Atenciosamente e identificação do setor.",
+      "Destaque dados pessoais em avisos para decisão do servidor."
+    ],
+    "despacho": [
+      "Indique cargo ou unidade destinatária, assunto e número do chamado/processo.",
+      "Explicite o encaminhamento e a unidade responsável; não invente providências.",
+      "Inclua data e identificação funcional; sinalize informações ausentes.",
+      "Use linguagem simples e destaque dados pessoais em avisos para decisão do servidor."
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_tZFjADz8ttoSbR0Y4zER3IK5",
+      "nome": "consultar_servico",
+      "argumentos": {
+        "servico": "senha"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'servico': 'senha', 'orientacao': 'Use a recuperação de senha no portal institucional; se falhar, abra chamado sem informar a senha.', 'prazo_dias_uteis': 1}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "Para recuperar sua senha, siga estas orientações:\n\n- Utilize a recuperação de senha no portal institucional.\n- Se a recuperação falhar, abra um chamado sem informar a senha.\n\nO prazo didático para a resolução desse serviço é de 1 dia útil.",
+  "pergunta": {
+    "id": "Q04",
+    "texto": "Esqueci minha senha. Como devo proceder?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 2.005,
+  "status": "concluido"
+}

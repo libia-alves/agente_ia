@@ -1,0 +1,4 @@
+# Usar ambiente Python 3.10 a 3.13, conforme exigido pelo CrewAI fixado.
+crewai==1.15.21
+langchain==1.4.10
+langchain-openai==1.8.0

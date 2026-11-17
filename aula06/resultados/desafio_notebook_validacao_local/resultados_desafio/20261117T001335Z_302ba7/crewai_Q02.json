@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_AEKEeLwnFrvwrHkoa0W1FYrf",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026005678"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'numero': '2026005678', 'assunto': 'Falha de rede', 'situacao': 'Em atendimento', 'ultima_movimentacao': '2026-11-12', 'equipe': 'Infraestrutura'}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "O chamado 2026005678, referente à falha de rede, está em atendimento pela equipe de Infraestrutura. A última movimentação foi em 12 de novembro de 2026.",
+  "pergunta": {
+    "id": "Q02",
+    "texto": "Quem está atendendo a falha de rede do chamado 2026005678?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 1.899,
+  "status": "concluido"
+}

@@ -1,0 +1,36 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_lxJfUvHJUiamfPLJOxEC438p",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026009012"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": true, \"numero\": \"2026009012\", \"assunto\": \"Restauração de arquivo\", \"situacao\": \"Aguardando indicação da pasta\", \"ultima_movimentacao\": \"2026-11-13\", \"equipe\": \"Backup\"}",
+      "status_ferramenta": "success"
+    },
+    {
+      "id": "call_rJzDH23xu0HIC6Dck2J0laOG",
+      "nome": "calcular_prazo",
+      "argumentos": {
+        "data_inicial": "2026-11-13",
+        "dias": 5,
+        "uteis": true
+      },
+      "retorno_observado": true,
+      "retorno": "{\"data_inicial\": \"2026-11-13\", \"dias\": 5, \"uteis\": true, \"vencimento\": \"2026-11-20\", \"ressalva\": \"Feriados não considerados; prazo hipotético.\"}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "O chamado 2026009012 está com a situação \"Aguardando indicação da pasta\" e foi movimentado pela equipe de Backup. A última movimentação ocorreu em 13 de novembro de 2026.\n\nContando cinco dias úteis a partir dessa data, o vencimento é em 20 de novembro de 2026. Lembre-se que essa contagem não considera feriados e é um prazo hipotético.",
+  "pergunta": {
+    "id": "Q07",
+    "texto": "Qual a situação do chamado 2026009012 e quando vencem cinco dias úteis contados da última movimentação?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 3.366,
+  "status": "concluido"
+}

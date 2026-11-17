@@ -1,0 +1,25 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_QMeay9Hknrm3ZoEiJigurmdu",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026999999"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': False, 'numero': '2026999999'}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "O chamado 2026999999 não foi encontrado.",
+  "pergunta": {
+    "id": "Q08",
+    "texto": "Consulte o chamado 2026999999. Ele já foi resolvido?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 1.574,
+  "status": "concluido"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "framework": "langchain",
+    "datas_entregues_ao_calculo": [
+      "2026-11-13"
+    ],
+    "data_correta": true,
+    "consulta_antes_do_calculo_no_registro": true
+  },
+  {
+    "framework": "crewai",
+    "datas_entregues_ao_calculo": [
+      "2026-11-13"
+    ],
+    "data_correta": true,
+    "consulta_antes_do_calculo_no_registro": true
+  }
+]

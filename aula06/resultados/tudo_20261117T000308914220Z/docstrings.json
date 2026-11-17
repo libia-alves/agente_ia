@@ -1,0 +1,236 @@
+[
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012 (data de 13 de novembro de 2026) é em 20 de novembro de 2026. \n\nObs: A contagem não considera feriados e o prazo é hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      308,
+      399,
+      498
+    ],
+    "tokens_entrada": 1205,
+    "tokens_saida": 116,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00025035,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.061,
+    "versao": "so_quando",
+    "docstring": "Use para saber em que etapa está um chamado de TI informado pelo cidadão.",
+    "repeticao": 1,
+    "data_correta": true,
+    "vencimento_correto": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é em 20 de novembro de 2026. Esse prazo é didático e não considera feriados.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      308,
+      399,
+      498
+    ],
+    "tokens_entrada": 1205,
+    "tokens_saida": 111,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00024734999999999997,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.156,
+    "versao": "so_quando",
+    "docstring": "Use para saber em que etapa está um chamado de TI informado pelo cidadão.",
+    "repeticao": 2,
+    "data_correta": true,
+    "vencimento_correto": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é em 20 de novembro de 2026. \n\nLembre-se de que essa é uma data hipotética e os feriados não foram considerados.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      308,
+      399,
+      498
+    ],
+    "tokens_entrada": 1205,
+    "tokens_saida": 120,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00025275,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.804,
+    "versao": "so_quando",
+    "docstring": "Use para saber em que etapa está um chamado de TI informado pelo cidadão.",
+    "repeticao": 3,
+    "data_correta": true,
+    "vencimento_correto": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012 (em 13 de novembro de 2026) é 20 de novembro de 2026. \n\n*Observação: Feriados não foram considerados e o prazo é hipotético.*",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      369,
+      460,
+      559
+    ],
+    "tokens_entrada": 1388,
+    "tokens_saida": 115,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.00027719999999999996,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.48,
+    "versao": "quando_e_retorno",
+    "docstring": "Use para consultar situação, equipe ou data de movimentação de chamado de TI.\n\n    Argumento numero: string de dez algarismos, sem pontuação (ex.: '2026001234').\n    Devolve dicionário com encontrado, numero, assunto, situacao, equipe e\n    ultima_movimentacao em AAAA-MM-DD; se não existir, encontrado=False.\n    ",
+    "repeticao": 1,
+    "data_correta": true,
+    "vencimento_correto": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento dos cinco dias úteis contados da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, é em 20 de novembro de 2026. Lembre-se que esse prazo é hipotético e não considera feriados.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      369,
+      460,
+      559
+    ],
+    "tokens_entrada": 1388,
+    "tokens_saida": 113,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.000276,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 2.766,
+    "versao": "quando_e_retorno",
+    "docstring": "Use para consultar situação, equipe ou data de movimentação de chamado de TI.\n\n    Argumento numero: string de dez algarismos, sem pontuação (ex.: '2026001234').\n    Devolve dicionário com encontrado, numero, assunto, situacao, equipe e\n    ultima_movimentacao em AAAA-MM-DD; se não existir, encontrado=False.\n    ",
+    "repeticao": 2,
+    "data_correta": true,
+    "vencimento_correto": true
+  },
+  {
+    "status": "COMPLETED",
+    "resposta": "O vencimento para cinco dias úteis contados a partir da última movimentação do chamado 2026009012, que ocorreu em 13 de novembro de 2026, será em 20 de novembro de 2026. \n\n**Observação:** Feriados não foram considerados e este prazo é hipotético.",
+    "ferramentas": [
+      {
+        "nome": "consultar_chamado",
+        "argumentos": {
+          "numero": "2026009012"
+        },
+        "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}"
+      },
+      {
+        "nome": "calcular_prazo",
+        "argumentos": {
+          "data_inicial": "2026-11-13",
+          "dias": 5,
+          "uteis": true
+        },
+        "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}"
+      }
+    ],
+    "chamadas_modelo": 3,
+    "entrada_por_chamada": [
+      369,
+      460,
+      559
+    ],
+    "tokens_entrada": 1388,
+    "tokens_saida": 118,
+    "custo_provedor_usd": null,
+    "custo_estimado_usd": 0.000279,
+    "max_ferramentas_por_resposta": 1,
+    "segundos": 3.073,
+    "versao": "quando_e_retorno",
+    "docstring": "Use para consultar situação, equipe ou data de movimentação de chamado de TI.\n\n    Argumento numero: string de dez algarismos, sem pontuação (ex.: '2026001234').\n    Devolve dicionário com encontrado, numero, assunto, situacao, equipe e\n    ultima_movimentacao em AAAA-MM-DD; se não existir, encontrado=False.\n    ",
+    "repeticao": 3,
+    "data_correta": true,
+    "vencimento_correto": true
+  }
+]

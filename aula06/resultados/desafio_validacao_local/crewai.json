@@ -1,0 +1,31 @@
+{
+  "framework": "CrewAI",
+  "campo_do_resultado": "resultado.tasks_output[i].messages",
+  "ferramentas": [
+    {
+      "tarefa": 0,
+      "id": "call_zs4QL8ToBEHHVgq2E3kbqd2n",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026009012"
+      },
+      "retorno_observado": true,
+      "retorno": "{'encontrado': True, 'numero': '2026009012', 'assunto': 'Restauração de arquivo', 'situacao': 'Aguardando indicação da pasta', 'ultima_movimentacao': '2026-11-13', 'equipe': 'Backup'}",
+      "status_ferramenta": null
+    },
+    {
+      "tarefa": 0,
+      "id": "call_RtHOuXyZDWaWHFxeoPtWuJoU",
+      "nome": "calcular_prazo",
+      "argumentos": {
+        "data_inicial": "2026-11-13",
+        "dias": 5,
+        "uteis": true
+      },
+      "retorno_observado": true,
+      "retorno": "{'data_inicial': '2026-11-13', 'dias': 5, 'uteis': True, 'vencimento': '2026-11-20', 'ressalva': 'Feriados não considerados; prazo hipotético.'}",
+      "status_ferramenta": null
+    }
+  ],
+  "resposta": "O vencimento de cinco dias úteis contados da última movimentação do chamado 2026009012 é em 2026-11-20. Feriados não considerados; prazo hipotético."
+}

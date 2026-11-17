@@ -1,0 +1,18 @@
+{
+  "inicio_utc": "2026-11-17T00:03:08.915143+00:00",
+  "origem_dados": "ficticia",
+  "modelo": "gpt-4o-mini",
+  "preco_entrada_usd_milhao": 0.15,
+  "preco_saida_usd_milhao": 0.6,
+  "sha256_antes_execucao": {
+    "minilab.py": "5c5f3f5105489b01b04b52e5cb9113f3a40bfcf6f3130a97be007c7f41f9bfd6",
+    "atendimento.py": "6d8c884b51ae78b63d1fec408def264705241183ddfbaf9c86013b13de80d428",
+    "configuracao.py": "99c05abf89e27ef8b1bb0dbf3cfdc529a8fd953be45734cbfeb699a9ca352e3e",
+    "privacidade.py": "5dcff3b3f0e9cedd75048ad8a51e6782b325fab973a957c9b6426926e3cc0305",
+    "registro.py": "40811244898eac327d8a5567cbb797358a662991cc4a006e9b74fd38e7868872",
+    "revisor.py": "835b2b5916848426d9f0f35d698498bf94abb081d6e40d219c1f86fcfaa78dca",
+    "app_revisor.py": "3cba459423468075cd008d65f7491d006fa7cf8aa6f16bb34827c726ccab6633",
+    "dados_minilab.json": "27ffa5d5b50f71571035f11914682538f608965f2017d051576fb3e947847732",
+    "manual_setor.json": "3a3215cd4df4bc48bc478878103f89251a805039233cd14273c4627871b6e2e5"
+  }
+}

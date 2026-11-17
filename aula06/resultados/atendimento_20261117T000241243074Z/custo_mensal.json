@@ -1,0 +1,11 @@
+{
+  "respostas_concluidas": 8,
+  "total_perguntas": 8,
+  "custo_medio_usd": 0.00023321249999999998,
+  "perguntas_dia": null,
+  "dias_mes": 22,
+  "custo_mensal_usd": null,
+  "formula": "perguntas_dia × dias_mes × custo_medio_usd",
+  "simulacao_50_perguntas_dia_usd": 0.25653375,
+  "nota": "Estimativa por tokens sem desconto de cache; volume de 50/dia é apenas hipótese. Falhas ficam fora da média; métricas ausentes não são zero."
+}

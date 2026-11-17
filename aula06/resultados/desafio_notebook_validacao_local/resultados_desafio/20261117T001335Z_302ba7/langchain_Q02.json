@@ -1,0 +1,24 @@
+{
+  "framework": "LangChain",
+  "campo_do_resultado": "resultado[\"messages\"]",
+  "ferramentas": [
+    {
+      "id": "call_MKeFW5knONGysHPGkbsCaigy",
+      "nome": "consultar_chamado",
+      "argumentos": {
+        "numero": "2026005678"
+      },
+      "retorno_observado": true,
+      "retorno": "{\"encontrado\": true, \"numero\": \"2026005678\", \"assunto\": \"Falha de rede\", \"situacao\": \"Em atendimento\", \"ultima_movimentacao\": \"2026-11-12\", \"equipe\": \"Infraestrutura\"}",
+      "status_ferramenta": "success"
+    }
+  ],
+  "resposta": "O chamado 2026005678, referente à falha de rede, está em atendimento pela equipe de Infraestrutura. A última movimentação foi registrada em 12 de novembro de 2026.",
+  "pergunta": {
+    "id": "Q02",
+    "texto": "Quem está atendendo a falha de rede do chamado 2026005678?"
+  },
+  "modelo": "gpt-4o-mini",
+  "segundos": 2.453,
+  "status": "concluido"
+}

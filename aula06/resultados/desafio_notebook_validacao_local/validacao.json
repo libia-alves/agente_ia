@@ -1,0 +1,25 @@
+{
+  "ambiente": "local, Python 3.12; não executado no serviço Google Colab",
+  "notebook_sha256": "d30e2864e9f45a2ea67ca98aa586b9fb7b82e26b5f0261d703b45cef1ae4c4ab",
+  "execucoes": 16,
+  "concluidas": 16,
+  "consultas_encadeadas": [
+    {
+      "framework": "langchain",
+      "datas_entregues_ao_calculo": [
+        "2026-11-13"
+      ],
+      "data_correta": true,
+      "consulta_antes_do_calculo_no_registro": true
+    },
+    {
+      "framework": "crewai",
+      "datas_entregues_ao_calculo": [
+        "2026-11-13"
+      ],
+      "data_correta": true,
+      "consulta_antes_do_calculo_no_registro": true
+    }
+  ],
+  "nota": "Instalação e download da interface Colab não executados; demais células executadas com API real."
+}
