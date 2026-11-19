@@ -1,8 +1,10 @@
 # Aula 08 · Fluxos e agente de pesquisa com Langflow
 
-## Abrir o agente de pesquisa
+## Abrir o fluxo de pesquisa
 
-No Langflow, siga **Starter Project → Pesquisa institucional — TI SEFAZ-MT → Playground**. Procure a linha **Pesquisa institucional** na lista do projeto. [Abrir o agente no servidor local](http://127.0.0.1:7860/flow/bd858c08-f679-4975-b6a6-df336b92641b)
+**Pesquisa institucional — TI SEFAZ-MT** é um fluxo do Langflow. No editor, o bloco **Agent** é o componente que usa o modelo e chama as ferramentas **Web Search** e **URL**. O **Playground** é a interface para testar o comportamento desse fluxo.
+
+No Langflow, clique no nome **Pesquisa institucional — TI SEFAZ-MT** na lista do **Starter Project**. A caixa de seleção marca a linha para operações na lista. No editor, clique em **Playground** para enviar uma pergunta. [Abrir o fluxo no servidor local](http://127.0.0.1:7860/flow/bd858c08-f679-4975-b6a6-df336b92641b)
 
 | O que você quer ver | Onde encontrar |
 | --- | --- |
@@ -16,6 +18,8 @@ O atalho do servidor local abre o fluxo desta instalação. Em outro computador,
 O Mini LAB usa o atendimento de TI da **SEFAZ-MT** como cenário didático. Ele reúne três fluxos de prompt e um agente que pesquisa fontes públicas. Os testes mostram se cada fluxo cumpriu sua instrução, quantos tokens consumiu e quanto tempo levou. O classificador também é executado pela API para comparar os resultados dos dois caminhos.
 
 O laboratório usa **Langflow 1.12.10** e preserva **`gpt-6-luna`** como modelo OpenAI nos quatro fluxos. O modelo é configurado em **Language Model** nos fluxos de prompt e no bloco **Agent** no fluxo de pesquisa.
+
+[Veja o que caracteriza o agente da aula 08](#o-que-caracteriza-o-agente)
 
 ## 1. Instalar e configurar
 
@@ -85,7 +89,18 @@ flowchart LR
     A --> O[Chat Output]
 ```
 
-A instrução do agente pede que ele abra diretamente uma URL oficial fornecida na pergunta. Para perguntas vagas, pede que ele pesquise, abra um resultado institucional e indique a página que realmente conseguiu ler. Quando não consegue verificar uma informação, ele deve dizer o que faltou confirmar.
+### O que caracteriza o agente
+
+O **Agent** interpreta a tarefa, escolhe uma ferramenta, lê o resultado e decide se já tem informação suficiente para responder ou se precisa de outra chamada. Nos três fluxos de prompt, as conexões seguem uma sequência fixa até o **Chat Output**. No fluxo de pesquisa, o modelo decide quais chamadas de ferramenta fazer durante a execução.
+
+| Peça | Configuração na aula 08 |
+| --- | --- |
+| **Modelo de linguagem** | O `gpt-6-luna` interpreta a pergunta, decide o próximo passo e redige a resposta em português. |
+| **Ferramentas** | **Web Search** localiza páginas. **URL** abre a página e devolve o conteúdo para o agente analisar. |
+| **Critérios e limites** | A instrução orienta a consultar fontes públicas da SEFAZ-MT, citar apenas as páginas oficiais que conseguiu ler e indicar o que ficou sem verificação. O agente tem limite de oito iterações por execução. |
+| **Memória de conversa** | Com o armazenamento habilitado, o agente pode recuperar até 100 mensagens da mesma sessão e do mesmo fluxo. Isso permite perguntas de continuação. Usamos sessões separadas nos dois testes de pesquisa. A memória é opcional, e esses testes demonstram a escolha de ferramentas. |
+
+Os testes mostram essa decisão na prática. Em **G01**, a pergunta trouxe uma URL oficial e o agente usou **URL** diretamente. Em **G02**, a pergunta era vaga e o agente chamou **Web Search**, escolheu uma página institucional e então usou **URL** para ler a fonte antes de responder.
 
 ### Como trocar o nome exibido no chat
 
