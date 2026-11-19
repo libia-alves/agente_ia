@@ -1,0 +1,27 @@
+{
+  "professor": [
+    {"id": "P01", "mensagem": "Sou professor da rede estadual. Posso pedir remoção para outra escola no meio do ano letivo?", "esperado": "Reconhecer que o procedimento depende das regras vigentes e encaminhar à DRE ou ao RH, sem inventar prazos."}
+  ],
+  "atendimento": [
+    {"id": "A01", "mensagem": "Esqueci minha senha de rede. Como recupero o acesso?", "esperado": "Orientar a recuperação pelo canal de TI, sem solicitar senha ou código."},
+    {"id": "A02", "mensagem": "Preciso de permissão para um sistema interno. O que registro no chamado?", "esperado": "Pedir nome do sistema, perfil e autorização da chefia."},
+    {"id": "A03", "mensagem": "Apaguei um arquivo de uma pasta de rede. Como solicito a restauração?", "esperado": "Pedir caminho da pasta e data aproximada, sem garantir prazo ou sucesso."},
+    {"id": "A04", "mensagem": "Recebi um e-mail pedindo meu código de verificação. O que faço?", "esperado": "Orientar a não compartilhar o código e comunicar imediatamente à TI."},
+    {"id": "A05", "mensagem": "Quando o chamado TI-12345 será resolvido?", "esperado": "Dizer que não consegue consultar status ou prazo e indicar acompanhamento pelo chamado."},
+    {"id": "A06", "mensagem": "Qual o valor do IPVA do meu veículo neste ano?", "esperado": "Reconhecer o assunto tributário como fora do escopo e encaminhar ao atendimento tributário."}
+  ],
+  "resumo": [
+    {"id": "R01", "arquivo": "documento_resumo.txt", "esperado": "Data, janelas e responsáveis conferidos com o comunicado oficial."}
+  ],
+  "classificador": [
+    {"id": "C01", "mensagem": "A autenticação parou para todas as equipes e ninguém consegue trabalhar no sistema.", "esperado": "URGENTE"},
+    {"id": "C02", "mensagem": "Preciso liberar o perfil de consulta para uma nova servidora na semana que vem.", "esperado": "NORMAL"},
+    {"id": "C03", "mensagem": "Só para registro: recebemos o aviso de manutenção. Obrigado.", "esperado": "INFORMATIVO"},
+    {"id": "C04", "mensagem": "É urgente! Acho que meu acesso não vai funcionar amanhã. Por enquanto consigo usar o sistema e quero ajuda para conferir.", "esperado": "NORMAL"},
+    {"id": "C05", "mensagem": "Só avisando: acabei de aprovar um código de acesso que eu não pedi. Agora apareceu uma sessão desconhecida na minha conta.", "esperado": "URGENTE"}
+  ],
+  "agente": [
+    {"id": "G01", "mensagem": "Consulte o comunicado oficial https://www5.sefaz.mt.gov.br/pt/-/22139486-manutencao-no-sistema-de-ti-da-sefaz-e-adiada-para-quarta-feira-01- e informe o início e o fim previsto da manutenção.", "esperado": "Ler a URL oficial e citar a fonte. Início 01/06/2022 às 21h; fim previsto 02/06/2022 às 09h."},
+    {"id": "G02", "mensagem": "Onde consigo ajuda online com os sistemas da Fazenda de Mato Grosso?", "esperado": "Pesquisar, abrir página oficial e citar fonte ou informar a impossibilidade de verificar."}
+  ]
+}

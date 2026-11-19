@@ -1,0 +1,200 @@
+[
+  {
+    "id": "P01",
+    "fluxo": "professor",
+    "mensagem": "Sou professor da rede estadual. Posso pedir remoção para outra escola no meio do ano letivo?",
+    "resposta": "A possibilidade de solicitar remoção durante o ano letivo depende das regras vigentes e de eventual processo ou prazo aberto; o pedido não garante o deferimento. Como não posso confirmar o prazo aplicável, consulte a Diretoria Regional de Educação (DRE) ou a unidade de recursos humanos da sua escola.",
+    "esperado": "Reconhecer que o procedimento depende das regras vigentes e encaminhar à DRE ou ao RH, sem inventar prazos.",
+    "correta": true,
+    "tokens": 309,
+    "tempo_playground": "3.2s",
+    "sessao": "b076feba-3968-490a-a57b-6ca54f2f688a",
+    "trace_id": "d81b5760-c930-45f2-9498-bfbf07687cf5"
+  },
+  {
+    "id": "A01",
+    "fluxo": "atendimento",
+    "mensagem": "Esqueci minha senha de rede. Como recupero o acesso?",
+    "resposta": "Situação: Para recuperar sua senha de rede, use a recuperação institucional ou contate a Central de Atendimento de TI.\nPróximo passo: Não compartilhe sua senha nem códigos de recuperação.\nCanal: Central de Atendimento de TI.",
+    "esperado": "Orientar a recuperação pelo canal de TI, sem solicitar senha ou código.",
+    "correta": true,
+    "tokens": 333,
+    "tempo_playground": "1.9s",
+    "sessao": "New Session 0",
+    "trace_id": "e2f6ba03-b7e9-4de8-8957-46e9e59df811"
+  },
+  {
+    "id": "A02",
+    "fluxo": "atendimento",
+    "mensagem": "Preciso de permissão para um sistema interno. O que registro no chamado?",
+    "resposta": "Situação: Para solicitar acesso a um sistema interno, registre um chamado.\nPróximo passo: Informe o nome do sistema, o perfil desejado e a autorização da chefia.\nCanal: Use o canal institucional de abertura de chamados da SEFAZ-MT.",
+    "esperado": "Pedir nome do sistema, perfil e autorização da chefia.",
+    "correta": true,
+    "tokens": 342,
+    "tempo_playground": "1.9s",
+    "sessao": "New Session 1",
+    "trace_id": "3be9bbcf-8983-4496-9934-4f51bb266c32"
+  },
+  {
+    "id": "A03",
+    "fluxo": "atendimento",
+    "mensagem": "Apaguei um arquivo de uma pasta de rede. Como solicito a restauração?",
+    "resposta": "Situação: É possível solicitar a restauração do arquivo apagado da pasta de rede.\nPróximo passo: Informe o caminho da pasta e a data aproximada da perda.\nCanal: Encaminhe a solicitação à Central de Atendimento de TI.",
+    "esperado": "Pedir caminho da pasta e data aproximada, sem garantir prazo ou sucesso.",
+    "correta": true,
+    "tokens": 426,
+    "tempo_playground": "3.2s",
+    "sessao": "New Session 2",
+    "trace_id": "2114ce6a-365d-4df9-95d5-ae3740707b0d"
+  },
+  {
+    "id": "A04",
+    "fluxo": "atendimento",
+    "mensagem": "Recebi um e-mail pedindo meu código de verificação. O que faço?",
+    "resposta": "Situação: Pode ser uma tentativa de fraude; não compartilhe o código nem sua senha.  \nPróximo passo: Comunique imediatamente a suspeita à equipe de TI.  \nCanal: Central de Atendimento de TI.",
+    "esperado": "Orientar a não compartilhar o código e comunicar imediatamente à TI.",
+    "correta": true,
+    "tokens": 381,
+    "tempo_playground": "1.8s",
+    "sessao": "New Session 5",
+    "trace_id": "81d3aae3-fedc-4089-be6f-96a977ecd992"
+  },
+  {
+    "id": "A05",
+    "fluxo": "atendimento",
+    "mensagem": "Quando o chamado TI-12345 será resolvido?",
+    "resposta": "Situação: Não posso confirmar o prazo de resolução do chamado TI-12345.\nPróximo passo: Consulte o chamado existente para verificar o andamento.\nCanal: Acompanhe pelo canal em que o chamado foi registrado.",
+    "esperado": "Dizer que não consegue consultar status ou prazo e indicar acompanhamento pelo chamado.",
+    "correta": true,
+    "tokens": 328,
+    "tempo_playground": "2.5s",
+    "sessao": "New Session 3",
+    "trace_id": "a46c77a4-663d-4ab0-95ee-d6c4fc6b142f"
+  },
+  {
+    "id": "A06",
+    "fluxo": "atendimento",
+    "mensagem": "Qual o valor do IPVA do meu veículo neste ano?",
+    "resposta": "Situação: O valor do IPVA é uma questão tributária.\nPróximo passo: Consulte o atendimento tributário para obter essa informação.\nCanal: Use o canal institucional de atendimento tributário.",
+    "esperado": "Reconhecer o assunto tributário como fora do escopo e encaminhar ao atendimento tributário.",
+    "correta": true,
+    "tokens": 365,
+    "tempo_playground": "2.5s",
+    "sessao": "New Session 4",
+    "trace_id": "708a23e8-4ea9-436c-ab3a-84cb6c1b9813"
+  },
+  {
+    "id": "R01",
+    "fluxo": "resumo",
+    "mensagem": "Comunicado público da Secretaria de Fazenda de Mato Grosso publicado em 28/06/2024, às 10h34. Tema: manutenção programada no banco de dados.\n\nA SEFAZ-MT fará uma atualização do banco de dados, com parada a partir das 07h de domingo, 30/06/2024. A autorização de notas fiscais nos sistemas fazendários ficará indisponível durante a manutenção.\n\nA SEFAZ Virtual de Contingência do Rio Grande do Sul (SVRS) será usada para autorizar NF-e durante a parada. Essa contingência permanece ativa até as 09h de segunda-feira, 01/07/2024. O texto não identifica a equipe encarregada de ativá-la.\n\nPara NFC-e, o contribuinte pode emitir em contingência pelo próprio sistema emissor. O aviso não traz horário específico para essa emissão. A NF3-e e a Guia Florestal integrada à Sema ficam indisponíveis até o restabelecimento do sistema, sem horário informado para esse restabelecimento.",
+    "resposta": "**Tipo:** Comunicado público  \n**Número:** não informado  \n**Data:** 28/06/2024, às 10h34  \n**Unidade emissora:** Secretaria de Fazenda de Mato Grosso (SEFAZ-MT)\n\n**Resumo:** A SEFAZ-MT fará atualização do banco de dados, com parada a partir das 07h de domingo, 30/06/2024, durante a qual a autorização de notas fiscais nos sistemas fazendários ficará indisponível. A autorização de NF-e será feita pela SVRS em contingência até as 09h de segunda-feira, 01/07/2024; para NFC-e, o contribuinte poderá emitir em contingência pelo próprio sistema emissor. NF3-e e Guia Florestal integrada à Sema ficarão indisponíveis até o restabelecimento do sistema, sem horário informado.\n\n| Providência | Responsável | Prazo ou janela |\n|---|---|---|\n| Atualizar o banco de dados | SEFAZ-MT | Início da parada: 07h de domingo, 30/06/2024; previsão de término: não informado |\n| Usar a SVRS para autorizar NF-e durante a parada | Responsável pela ativação: não informado | Início: durante a parada, a partir das 07h de domingo, 30/06/2024; fim da contingência: 09h de segunda-feira, 01/07/2024 |\n| Emitir NFC-e em contingência pelo próprio sistema emissor | Contribuinte | Horário não informado |\n| Indisponibilidade da NF3-e e da Guia Florestal integrada à Sema | não informado | Até o restabelecimento do sistema; horário não informado |",
+    "esperado": "Data, janelas e responsáveis conferidos com o comunicado oficial.",
+    "correta": true,
+    "tokens": 1407,
+    "tempo_playground": "9.5s",
+    "sessao": "New Session 0",
+    "trace_id": "b3576ced-9704-46f7-be8f-fe4e9d1a5c7d"
+  },
+  {
+    "id": "C01",
+    "fluxo": "classificador",
+    "mensagem": "A autenticação parou para todas as equipes e ninguém consegue trabalhar no sistema.",
+    "resposta": "URGENTE\nA autenticação parou para todas as equipes, indicando interrupção generalizada que impede o trabalho no sistema.",
+    "esperado": "URGENTE",
+    "correta": true,
+    "tokens": 268,
+    "tempo_playground": "1.6s",
+    "sessao": "New Session 0",
+    "trace_id": "85351406-c89c-4c89-9a07-5dea99a3f726"
+  },
+  {
+    "id": "C02",
+    "fluxo": "classificador",
+    "mensagem": "Preciso liberar o perfil de consulta para uma nova servidora na semana que vem.",
+    "resposta": "NORMAL\nÉ um pedido de liberação de acesso, sem sinal de urgência.",
+    "esperado": "NORMAL",
+    "correta": true,
+    "tokens": 266,
+    "tempo_playground": "1.5s",
+    "sessao": "New Session 1",
+    "trace_id": "b959f63b-2eb4-49c8-a636-1630ac244616"
+  },
+  {
+    "id": "C03",
+    "fluxo": "classificador",
+    "mensagem": "Só para registro: recebemos o aviso de manutenção. Obrigado.",
+    "resposta": "INFORMATIVO\nÉ apenas um registro de recebimento e agradecimento, sem pedido de ação ou sinal de urgência.",
+    "esperado": "INFORMATIVO",
+    "correta": true,
+    "tokens": 269,
+    "tempo_playground": "2.5s",
+    "sessao": "New Session 2",
+    "trace_id": "49ba2e8f-d6f9-4473-ad96-dfa89adff060"
+  },
+  {
+    "id": "C04",
+    "fluxo": "classificador",
+    "mensagem": "É urgente! Acho que meu acesso não vai funcionar amanhã. Por enquanto consigo usar o sistema e quero ajuda para conferir.",
+    "resposta": "NORMAL\nHá um pedido de ajuda para conferir o acesso, mas o sistema ainda está funcionando e não há sinal concreto de urgência.",
+    "esperado": "NORMAL",
+    "correta": true,
+    "tokens": 294,
+    "tempo_playground": "2.1s",
+    "sessao": "New Session 3",
+    "trace_id": "daf37498-bc4e-4881-9eab-e9b79df5735e"
+  },
+  {
+    "id": "C05",
+    "fluxo": "classificador",
+    "mensagem": "Só avisando: acabei de aprovar um código de acesso que eu não pedi. Agora apareceu uma sessão desconhecida na minha conta.",
+    "resposta": "URGENTE\nHá sinais concretos de incidente de segurança ativo: código de acesso não solicitado e sessão desconhecida na conta.",
+    "esperado": "URGENTE",
+    "correta": true,
+    "tokens": 281,
+    "tempo_playground": "1.2s",
+    "sessao": "New Session 4",
+    "trace_id": "851e397d-7fc6-4160-95f4-838e990f28de"
+  },
+  {
+    "id": "G01",
+    "fluxo": "agente",
+    "mensagem": "Consulte o comunicado oficial https://www5.sefaz.mt.gov.br/pt/-/22139486-manutencao-no-sistema-de-ti-da-sefaz-e-adiada-para-quarta-feira-01- e informe o início e o fim previsto da manutenção.",
+    "resposta": "A manutenção estava prevista para começar na quarta-feira, 1º de junho de 2022, às 21h, e terminar na quinta-feira, 2 de junho, às 9h. [Comunicado oficial da SEFAZ-MT](https://www5.sefaz.mt.gov.br/pt/-/22139486-manutencao-no-sistema-de-ti-da-sefaz-e-adiada-para-quarta-feira-01-)",
+    "esperado": "Ler a URL oficial e citar a fonte. Início 01/06/2022 às 21h; fim previsto 02/06/2022 às 09h.",
+    "correta": true,
+    "tokens": 1979,
+    "tempo_playground": "3.6s",
+    "sessao": "New Session 1",
+    "trace_id": "8a77e716-a45d-4a4d-9ba2-6a78d2438ba8",
+    "tempo_flow_activity_ms": 3617,
+    "ferramentas_playground": [
+      {
+        "nome": "FETCH CONTENT",
+        "latencia_ms": 310
+      }
+    ]
+  },
+  {
+    "id": "G02",
+    "fluxo": "agente",
+    "mensagem": "Onde consigo ajuda online com os sistemas da Fazenda de Mato Grosso?",
+    "resposta": "Você pode obter ajuda online pela [Central de Atendimento da SEFAZ-MT](https://www5.sefaz.mt.gov.br/central-de-atendimento), indicada para dúvidas sobre serviços e procedimentos tributários; a página também direciona ao atendimento via chat. Informa ainda atendimento telefônico pelo **(65) 3617-2900**, em dias úteis, das **8h às 11h30 e das 13h às 16h30** (horário local).",
+    "esperado": "Pesquisar, abrir página oficial e citar fonte ou informar a impossibilidade de verificar.",
+    "correta": true,
+    "tokens": 5581,
+    "tempo_playground": "8.0s",
+    "sessao": "New Session 2",
+    "trace_id": "9942ce21-5c85-4cb3-91f6-dd11f9662e64",
+    "tempo_flow_activity_ms": 7993,
+    "ferramentas_playground": [
+      {
+        "nome": "PERFORM SEARCH",
+        "latencia_ms": 2678
+      },
+      {
+        "nome": "FETCH CONTENT",
+        "latencia_ms": 460
+      }
+    ]
+  }
+]

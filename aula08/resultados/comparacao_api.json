@@ -1,0 +1,57 @@
+[
+  {
+    "id": "C01",
+    "mensagem": "A autenticação parou para todas as equipes e ninguém consegue trabalhar no sistema.",
+    "gabarito": "URGENTE",
+    "playground": "URGENTE",
+    "api": "URGENTE",
+    "coincidem": true,
+    "api_correta": true,
+    "tempo_api_s": 1.396,
+    "resposta_api": "URGENTE\nA autenticação parou para todas as equipes, causando interrupção generalizada do trabalho no sistema."
+  },
+  {
+    "id": "C02",
+    "mensagem": "Preciso liberar o perfil de consulta para uma nova servidora na semana que vem.",
+    "gabarito": "NORMAL",
+    "playground": "NORMAL",
+    "api": "NORMAL",
+    "coincidem": true,
+    "api_correta": true,
+    "tempo_api_s": 1.453,
+    "resposta_api": "NORMAL\nHá um pedido de liberação de acesso, sem sinal concreto de urgência."
+  },
+  {
+    "id": "C03",
+    "mensagem": "Só para registro: recebemos o aviso de manutenção. Obrigado.",
+    "gabarito": "INFORMATIVO",
+    "playground": "INFORMATIVO",
+    "api": "INFORMATIVO",
+    "coincidem": true,
+    "api_correta": true,
+    "tempo_api_s": 1.312,
+    "resposta_api": "INFORMATIVO\nÉ apenas um registro de aviso e agradecimento, sem pedido de ação ou sinal concreto de urgência."
+  },
+  {
+    "id": "C04",
+    "mensagem": "É urgente! Acho que meu acesso não vai funcionar amanhã. Por enquanto consigo usar o sistema e quero ajuda para conferir.",
+    "gabarito": "NORMAL",
+    "playground": "NORMAL",
+    "api": "NORMAL",
+    "coincidem": true,
+    "api_correta": true,
+    "tempo_api_s": 1.497,
+    "resposta_api": "NORMAL\nHá um pedido de ajuda para conferir o acesso, mas não há sinal concreto de urgência."
+  },
+  {
+    "id": "C05",
+    "mensagem": "Só avisando: acabei de aprovar um código de acesso que eu não pedi. Agora apareceu uma sessão desconhecida na minha conta.",
+    "gabarito": "URGENTE",
+    "playground": "URGENTE",
+    "api": "URGENTE",
+    "coincidem": true,
+    "api_correta": true,
+    "tempo_api_s": 2.565,
+    "resposta_api": "URGENTE\nHá sinal concreto de incidente de segurança ativo: código de acesso aprovado sem solicitação e sessão desconhecida na conta."
+  }
+]

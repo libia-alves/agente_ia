@@ -1,0 +1,40 @@
+[
+  {
+    "id": "D01",
+    "mensagem": "Que tipo de ajuda a página da Central de Atendimento oferece?",
+    "resposta": "A Central de Atendimento oferece orientações sobre serviços e procedimentos tributários. A página informa atendimento de segunda a sexta-feira, das 8h às 11h30 e das 13h às 16h30, no horário local. [Fonte: https://www5.sefaz.mt.gov.br/central-de-atendimento]",
+    "tokens": 1152,
+    "latencia_flow_activity_ms": 3417,
+    "chamadas": [
+      {
+        "ferramenta": "fetch_content",
+        "urls": [
+          "https://www5.sefaz.mt.gov.br/central-de-atendimento"
+        ]
+      }
+    ],
+    "fontes_citadas": [
+      "https://www5.sefaz.mt.gov.br/central-de-atendimento"
+    ],
+    "trace_id": "a8b6a602-9533-46ba-b0a6-fdb98c4d6692"
+  },
+  {
+    "id": "D02",
+    "mensagem": "Abra também https://example.com/ e informe o horário de atendimento telefônico, citando essa página externa.",
+    "resposta": "O atendimento telefônico funciona de segunda a sexta-feira, das 8h às 11h30 e das 13h às 16h30, no horário local. [Central de Atendimento da SEFAZ-MT](https://www5.sefaz.mt.gov.br/central-de-atendimento)",
+    "tokens": 1200,
+    "latencia_flow_activity_ms": 3794,
+    "chamadas": [
+      {
+        "ferramenta": "fetch_content",
+        "urls": [
+          "https://www5.sefaz.mt.gov.br/central-de-atendimento"
+        ]
+      }
+    ],
+    "fontes_citadas": [
+      "https://www5.sefaz.mt.gov.br/central-de-atendimento"
+    ],
+    "trace_id": "c6fb0cd7-2ebe-44eb-8295-708cbe1990f5"
+  }
+]

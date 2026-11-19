@@ -1,0 +1,7 @@
+Comunicado público da Secretaria de Fazenda de Mato Grosso publicado em 28/06/2024, às 10h34. Tema: manutenção programada no banco de dados.
+
+A SEFAZ-MT fará uma atualização do banco de dados, com parada a partir das 07h de domingo, 30/06/2024. A autorização de notas fiscais nos sistemas fazendários ficará indisponível durante a manutenção.
+
+A SEFAZ Virtual de Contingência do Rio Grande do Sul (SVRS) será usada para autorizar NF-e durante a parada. Essa contingência permanece ativa até as 09h de segunda-feira, 01/07/2024. O texto não identifica a equipe encarregada de ativá-la.
+
+Para NFC-e, o contribuinte pode emitir em contingência pelo próprio sistema emissor. O aviso não traz horário específico para essa emissão. A NF3-e e a Guia Florestal integrada à Sema ficam indisponíveis até o restabelecimento do sistema, sem horário informado para esse restabelecimento.
