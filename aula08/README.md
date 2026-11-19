@@ -1,5 +1,18 @@
 # Aula 08 · Fluxos e agente de pesquisa com Langflow
 
+## Abrir o agente de pesquisa
+
+No Langflow, siga **Starter Project → Pesquisa institucional — TI SEFAZ-MT → Playground**. Procure a linha **Pesquisa institucional** na lista do projeto. [Abrir o agente no servidor local](http://127.0.0.1:7860/flow/bd858c08-f679-4975-b6a6-df336b92641b)
+
+| O que você quer ver | Onde encontrar |
+| --- | --- |
+| Conversas anteriores | No **Playground**, escolha uma sessão na barra lateral **Sessions**. Nesta instalação, G01 (pergunta direta) está em **New Session 1** e G02 (pergunta vaga) está em **New Session 2**. |
+| Histórico de execuções | No editor do fluxo, abra **Traces → Flow Activity** para ver as chamadas, os tokens e a latência. |
+| Arquivo do agente | [fluxo04-agente.json](setor-ti-sefaz-mt/fluxo04-agente.json), na pasta `setor-ti-sefaz-mt`. |
+| Histórico no Git | O agente entrou no commit `4c79cb8`. Na raiz do repositório, rode `git log --oneline -- aula08/setor-ti-sefaz-mt/fluxo04-agente.json` para ver suas versões. |
+
+O atalho do servidor local abre o fluxo desta instalação. Em outro computador, importe o JSON e abra o fluxo na lista do Langflow.
+
 O Mini LAB usa o atendimento de TI da **SEFAZ-MT** como cenário didático. Ele reúne três fluxos de prompt e um agente que pesquisa fontes públicas. Os testes mostram se cada fluxo cumpriu sua instrução, quantos tokens consumiu e quanto tempo levou. O classificador também é executado pela API para comparar os resultados dos dois caminhos.
 
 O laboratório usa **Langflow 1.12.10** e preserva **`gpt-6-luna`** como modelo OpenAI nos quatro fluxos. O modelo é configurado em **Language Model** nos fluxos de prompt e no bloco **Agent** no fluxo de pesquisa.

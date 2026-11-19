@@ -2,6 +2,8 @@
 
 Este repositório reúne as atividades do **módulo de Agentes Autônomos do curso de Formação em IA**. Ao longo das aulas, vamos construir agentes de inteligência artificial, conectar modelos a ferramentas e aprender a avaliar suas decisões antes de ampliar sua autonomia.
 
+**Agente de pesquisa da aula 08** — Pesquisa institucional da SEFAZ-MT com Langflow e `gpt-6-luna`. [Onde abrir o agente e encontrar o histórico](aula08/README.md#abrir-o-agente-de-pesquisa)
+
 Cada pasta registra uma etapa desse aprendizado: conceitos, exemplos em Python, exercícios práticos e resultados. O repositório será ampliado conforme novas aulas e novos agentes forem desenvolvidos.
 
 ## O que estamos aprendendo?
@@ -28,6 +30,7 @@ Neste módulo, estudamos como:
 | [Aula 03](aula03/README.md) | Agente LangChain com acesso a ferramentas | Declaração de ferramentas, consultas e cálculos, medição de custo e testes de falhas |
 | [Aula 04](aula04/README.md) | Equipes CrewAI | Comparação de chamada única, agentes e validação de pareceres |
 | [Aula 05](aula05/README.md) | Orquestração CrewAI | Hierarquia, Flow com desvios, persistência e revisão humana |
+| [Aula 08](aula08/README.md) | Fluxos e agente de pesquisa no Langflow | Atendimento, resumo, classificação e pesquisa em fontes da SEFAZ-MT |
 
 Cada aula possui seu próprio README com a proposta e as instruções de execução.
 
