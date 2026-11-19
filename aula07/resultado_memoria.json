@@ -1,0 +1,62 @@
+[
+  {
+    "rotulo": "A · sem memória",
+    "acertos": 0,
+    "verificacoes": 6,
+    "entrada_t1": 81,
+    "entrada_t6": 61,
+    "entrada_t12": 69,
+    "entrada_total": 786,
+    "saida_total": 664,
+    "tempo": 16.126959508001164,
+    "custo": 0.000954
+  },
+  {
+    "rotulo": "B · histórico completo",
+    "acertos": 6,
+    "verificacoes": 6,
+    "entrada_t1": 81,
+    "entrada_t6": 616,
+    "entrada_t12": 1086,
+    "entrada_total": 7400,
+    "saida_total": 845,
+    "tempo": 17.101804867998,
+    "custo": 0.002494
+  },
+  {
+    "rotulo": "C · janela de 3 execuções",
+    "acertos": 5,
+    "verificacoes": 6,
+    "entrada_t1": 81,
+    "entrada_t6": 349,
+    "entrada_t12": 289,
+    "entrada_total": 3307,
+    "saida_total": 693,
+    "tempo": 16.589551814002334,
+    "custo": 0.001493
+  },
+  {
+    "rotulo": "D · resumo + janela de 3",
+    "acertos": 5,
+    "verificacoes": 6,
+    "entrada_t1": 359,
+    "entrada_t6": 1324,
+    "entrada_t12": 1799,
+    "entrada_total": 15531,
+    "saida_total": 2583,
+    "tempo": 41.059054623998236,
+    "custo": 0.006205799999999999
+  },
+  {
+    "rotulo": "E · memórias de usuário + janela de 3",
+    "acertos": 3,
+    "verificacoes": 6,
+    "entrada_t1": 1106,
+    "entrada_t6": 1475,
+    "entrada_t12": 1340,
+    "entrada_total": 16026,
+    "saida_total": 1447,
+    "tempo": 20.06807743599711,
+    "custo": 0.0049416
+  }
+]
