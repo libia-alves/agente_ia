@@ -31,6 +31,7 @@ Neste módulo, estudamos como:
 | [Aula 04](aula04/README.md) | Equipes CrewAI | Comparação de chamada única, agentes e validação de pareceres |
 | [Aula 05](aula05/README.md) | Orquestração CrewAI | Hierarquia, Flow com desvios, persistência e revisão humana |
 | [Aula 06](aula06/README.md) | Atendimento de TI com Agno | Ferramentas de atendimento, revisão humana, privacidade e comparação com LangChain e CrewAI |
+| [Aula 07](aula07/README.md) | Agentes com memória persistente | Histórico, resumo de sessão, custo da memória e exclusão de dados em SQLite |
 | [Aula 08](aula08/README.md) | Fluxos e agente de pesquisa no Langflow | Atendimento, resumo, classificação e pesquisa em fontes da SEFAZ-MT |
 
 Cada aula possui seu próprio README com a proposta e as instruções de execução.
